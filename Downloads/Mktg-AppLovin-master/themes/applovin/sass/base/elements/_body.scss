@@ -1,0 +1,30 @@
+@use "../../abstracts/mixins/mixins";
+@use "../../abstracts/variables/colors";
+
+body.no-scroll {
+  overflow: hidden; 
+}
+
+body {
+	background: colors.$color__background-body; // Fallback for when there is no custom background color defined.
+}
+
+.wrapper {
+    @include mixins.wrapper(1264px, 64px 32px);
+
+    @include mixins.mq('mobile') {
+      @include mixins.wrapper(1312px, 80px 56px);
+    }
+
+    @include mixins.mq('laptop') {
+      @include mixins.wrapper(1312px, 96px 56px);
+    }
+  }
+
+  .nav-wrapper {
+    @include mixins.wrapper(1264px, 0 32px);
+
+    @include mixins.mq('desktop-lg') {
+      @include mixins.wrapper(1512px, 0 56px);
+    }
+  }

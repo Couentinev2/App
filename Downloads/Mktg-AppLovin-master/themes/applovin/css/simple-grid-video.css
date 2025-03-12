@@ -1,0 +1,138 @@
+.single-grid{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr; 
+  grid-column-gap: 80px;
+  grid-row-gap: 0px;
+  align-items: center;
+  height: 100%;
+}
+
+.single-section {
+    padding:  96px 120px 96px 120px;
+    background-color: #F7F8FC;
+}
+
+
+.single-one .grid-text{
+  margin-left: 80px;
+}
+
+.single-grid  ul{
+  columns: 2;
+  padding-left: 0;
+}
+
+.single-with-local-video .single-grid ul li{
+    background: url(/wp-content/themes/applovin/images/blue-check.svg) no-repeat left top!important;
+    padding: 0px 10px 0 40px;
+    margin-bottom: 16px;
+    list-style: none;
+    vertical-align: middle;
+
+}
+
+.single-grid ul{
+  margin: 40px 0;
+  margin-bottom: 0;
+}
+
+.footnote{
+  font-size: 14px;
+  color: #808080;
+  text-align: left;
+}
+
+ iframe{
+  width: 100%;
+ }
+
+ .div2-video iframe {
+  width: 100%;
+  border-radius: 16px;
+}
+.single-grid .div1-single{
+  max-width: 640px;
+}
+
+.single-grid .div2-single{
+  padding-right: 0!important;
+  max-width: 520px;
+}
+
+[id$="_popover_container"] {
+  position: static;
+}
+
+.single-video video{
+  max-width: 517px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+
+.single-grid{
+  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: initial;
+grid-column-gap: 0px;
+grid-row-gap: 40px; 
+}
+
+.single-grid .div1-single{
+ width: 100%;
+ margin: auto ;
+}
+
+.single-grid .div2-single{
+ width: 100%;
+ margin: auto!important ;
+}
+.results-quote-section .div2-quote {
+
+  margin: auto;
+}
+
+.single-section {
+    padding:  80px 56px;
+    background-color: #F7F8FC;
+}
+
+.grid-text ul li{
+ text-align: left;
+ columns: initial;
+}
+
+.single-image{
+  margin: auto;
+}
+
+.single-grid .div2-single{
+  max-width: initial;
+}
+
+}
+
+
+@media screen and (max-width: 760px) {
+
+.single-section {
+    padding:  64px 32px;
+    background-color: #F7F8FC;
+}
+
+.grid-text ul li{
+ text-align: left;
+ columns: initial;
+}
+
+
+.single-video video {
+width: 100%;
+}
+
+.single-grid ul{
+  columns: 1;
+}
+
+}

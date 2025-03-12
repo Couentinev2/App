@@ -1,0 +1,143 @@
+.video-section{
+	padding: 120px;
+	background-color:#181625;
+	color: 	#fff;
+}
+
+
+.video-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 80px;
+	grid-row-gap: 0px;
+} 
+
+.div1-video {
+	margin: auto;
+}
+
+
+.div2-video iframe {
+	width: 100%;
+	border-radius: 16px;
+}
+
+.repeater-video-grid{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 80px;
+grid-row-gap: 0px; 
+}
+
+.repeater-video-grid .div2-video{
+	display: inline-flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.repeater-video-grid{
+	margin-top: 80px;
+}
+
+.description-result-video{
+
+}
+
+.description-result-video h2{
+	margin-bottom: 0;
+		border-left: 1px solid #105FFB;
+	padding-left: 24px;
+}
+
+.description-result-video p{
+
+	padding-left: 24px;
+}
+
+.repeater-video-grid .div1-text{
+	padding-left: 48px;
+}
+
+.alx-sec::before {
+content: "";
+display: inline-block;
+position: absolute;
+width: 32px;
+height: 32px;
+background-size: contain !important;
+background: url(/wp-content/themes/applovin/images/icon-alx.svg) no-repeat;
+  background-size: auto;
+background-size: auto;
+left: -1.9em;
+transition: all .2s;
+}
+
+.div1-text strong{
+	font-family: var(--font-wt-Black);
+}
+
+[id$="_popover_container"] {
+  position: static;
+}
+
+@media screen and (max-width: 1000px) {
+	.video-section{
+	padding: 80px 56px;
+} 
+
+.video-grid ,  .repeater-video-grid{
+display: grid;
+grid-template-columns: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 40px; 
+}
+.repeater-video-grid{
+	margin-top: 40px;
+}
+
+.repeater-video-grid .div1-text {
+  padding-left: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-section .div1-video{
+	text-align: center;
+}
+
+.description-result-video:last-child p{   margin-bottom: 0px;
+ }
+
+ .alx-sec::before {
+left: -2.5em;
+
+}
+
+}
+
+@media screen and (max-width: 760px) {
+	.video-section{
+	padding: 64px 32px;
+} 
+
+
+
+.alx-sec::before {
+
+width: 32px;
+height: 32px;
+
+}
+
+.video-grid, .repeater-video-grid{
+	grid-template-rows: initial;
+}
+
+.repeater-video-grid .div2-video{
+	display: block;
+}
+
+
+}

@@ -1,0 +1,20 @@
+{
+    "name": "applovin/myapp",
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "greenhouse-api/",
+            "NewApp\\": "hubspot-api/",
+            "PressFeed\\": "pressfeed-api/",
+            "NewsFeed\\": "newsfeed-api/",
+            "WistiaFeed\\": "wistia-api/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AppLovin"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    }
+}

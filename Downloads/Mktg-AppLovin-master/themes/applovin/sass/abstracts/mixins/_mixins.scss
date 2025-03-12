@@ -1,0 +1,492 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:math";
+@use "../variables/breakpoints";
+@use "../variables/colors";
+@use "../variables/columns";
+@use "../variables/typography";
+
+
+// Wrapper Mixin Definition
+@mixin wrapper($max-width, $padding, $center: true) {
+    max-width: $max-width;
+    padding: $padding;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  
+    // Conditionally apply centering
+    @if $center == false {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+}
+  
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Push auto
+@mixin push--auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+// Box
+@mixin box($width, $height: $width) {
+    width: #{$width}px;
+    height: #{$height}px;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map.get(columns.$columns, $numberColumns) - ( ( columns.$columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+// Media queries
+@mixin mq($width, $type: min) {
+    @if map.has-key(breakpoints.$breakpoints, $width) {
+        $width: map.get(breakpoints.$breakpoints, $width);
+
+        @if $type == max {
+            $width: $width - 1px;
+        }
+
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+// Rem units
+@mixin font-size($size, $line-height: normal, $letter-spacing: normal) {
+    $base: 16; // Default base font size set within the mixin
+    
+    // Fallback for older browsers
+    font-size: $size * 1px;
+    
+    // Convert px to rem for modern browsers
+    font-size: math.div($size, $base) * 1rem;
+    
+    // Adjust line-height
+    @if $line-height==normal {
+      line-height: normal;
+    }
+
+ @else {
+      // Ensure unitless ratio for line-height by dividing by font size
+      line-height: math.div($line-height, $size);
+    }
+    
+    // Adjust letter-spacing
+    @if $letter-spacing==normal {
+      letter-spacing: normal;
+    }
+
+ @else {
+      // Convert letter-spacing from px to em relative to font size
+      letter-spacing: #{$letter-spacing / $size}em;
+    }
+}
+
+
+// Cover Background
+@mixin cover-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+// Pseudo
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+
+// Z-index
+@function z($name) {
+    @if list.index($z-indexes, $name) {
+        @return (list.length($z-indexes) - list.index($z-indexes, $name)) + 1;
+    }
+
+ @else {
+        @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+
+        @return null;
+    }
+}
+$z-indexes: (
+    "outdated-browser",
+    "modal",
+    "site-header",
+    "page-wrapper",
+    "site-footer"
+);
+
+// Truncate
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// Horizontal List
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+@mixin horizontal-list {
+@include reset-list;
+
+    li {
+        display: inline-block;
+        margin: {
+        left: -2px;
+        right: 2em;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+    }
+}
+
+// Vertical List
+@mixin vertical-list {
+  @include reset-list;
+
+  li {
+    margin-bottom: .5em;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// CSS Opacity with fallback for IE8+.
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+
+    filter: alpha(opacity = $opacity-ie); //IE8
+}
+
+// Font face  
+@mixin font-face($font-name, $file-path, $weight: normal, $style: normal, $display: swap, $unicode-range: null) {
+  @font-face {
+    font-family: $font-name;
+    src: url('#{$file-path}.woff2') format('woff2'),
+         url('#{$file-path}.woff') format('woff');
+    font-weight: $weight;
+    font-style: $style;
+    font-display: $display;
+
+    @if $unicode-range != null {
+      unicode-range: $unicode-range;
+    }
+  }
+}
+
+// Border radius 
+@mixin border-radius($tl: 0, $tr: null, $br: null, $bl: null, $base-font-size: 16) {
+    // If only one value is provided, apply it to all corners
+    @if $tr == null and $br == null and $bl == null {
+        border-radius: math.div($tl, $base-font-size) * 1rem;
+    }
+    // If multiple values are provided, apply them individually
+    @else {
+        border-radius: math.div($tl, $base-font-size) * 1rem if($tr == null, math.div($tl, $base-font-size) * 1rem, math.div($tr, $base-font-size) * 1rem) if($br == null, math.div($tl, $base-font-size) * 1rem, math.div($br, $base-font-size) * 1rem) if($bl == null, math.div($tl, $base-font-size) * 1rem, math.div($bl, $base-font-size) * 1rem);
+    }
+}
+
+
+// Padding
+@mixin padding($top: 0, $right: null, $bottom: null, $left: null, $base-font-size: 16) {
+  // If only one value is provided, apply it to all sides
+  @if $right == null and $bottom == null and $left == null {
+      padding: math.div($top, $base-font-size) * 1rem;
+  }
+  // If two values are provided, apply the first to top-bottom and the second to left-right
+  @else if $bottom == null and $left == null {
+      padding: math.div($top, $base-font-size) * 1rem math.div($right, $base-font-size) * 1rem;
+  }
+  // If three values are provided, set the first to top, second to left-right, and third to bottom
+  @else if $left == null {
+      padding: math.div($top, $base-font-size) * 1rem math.div($right, $base-font-size) * 1rem math.div($bottom, $base-font-size) * 1rem;
+  }
+  // If all four values are provided, apply them individually
+  @else {
+      padding: math.div($top, $base-font-size) * 1rem math.div($right, $base-font-size) * 1rem math.div($bottom, $base-font-size) * 1rem math.div($left, $base-font-size) * 1rem;
+  }
+}
+
+// Margin
+@mixin margin($top: 0, $right: null, $bottom: null, $left: null, $base-font-size: 16) {
+  // If only one value is provided, apply it to all sides
+  @if $right == null and $bottom == null and $left == null {
+    margin: math.div($top, $base-font-size) * 1rem;
+  }
+  // If two values are provided, apply the first to top-bottom and the second to left-right
+  @else if $bottom == null and $left == null {
+    margin: math.div($top, $base-font-size) * 1rem math.div($right, $base-font-size) * 1rem;
+  }
+  // If three values are provided, set the first to top, second to left-right, and third to bottom
+  @else if $left == null {
+    margin: math.div($top, $base-font-size) * 1rem math.div($right, $base-font-size) * 1rem math.div($bottom, $base-font-size) * 1rem;
+  }
+  // If all four values are provided, apply them individually
+  @else {
+    margin: math.div($top, $base-font-size) * 1rem math.div($right, $base-font-size) * 1rem math.div($bottom, $base-font-size) * 1rem math.div($left, $base-font-size) * 1rem;
+  }
+}
+
+// Gradient
+@mixin linear-gradient($direction, $color-stops...) {
+    // Direction has been omitted and happens to be a color-stop
+    @if is-direction($direction) == false {
+        $color-stops: $direction, $color-stops;
+        $direction: 180deg;
+    }
+
+    background: list.nth(list.nth($color-stops, 1), 1);
+    background: linear-gradient(legacy-direction($direction), $color-stops);
+    background: linear-gradient($direction, $color-stops);
+}
+
+// Button Styles
+@mixin button($type, $color, $fill) {
+  font-family: typography.$font__btn;
+  display: flex;
+  width: fit-content;
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
+  position: relative;
+  overflow: hidden; 
+  transition: box-shadow 1s ease;
+
+  @include font-size(16, 16);
+  @include border-radius(8);
+
+  cursor: pointer;
+
+  svg {
+    height: 16px;
+    width: 16px;
+    fill: $fill;
+    z-index: 1;
+  }
+
+  a {
+      position: relative; 
+      z-index: 1; 
+
+      @include padding(16, 12, 16, 12);
+
+      text-decoration: none;
+      color: $color;
+      display: flex;
+      align-items: center;
+
+      span {
+        @include padding(4, 8, 0, 8);
+
+        line-height: 1;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+  }
+
+  &:hover {
+    box-shadow: 0 12px 40px -12px rgb(16 95 251 / 0.50);
+    color: $color;
+
+    &::after {
+      opacity: 1; 
+    }
+  }
+
+  &:focus {
+      outline: none;
+  }
+
+  &:active {
+    opacity: 1; 
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+
+
+    a {
+      cursor: not-allowed;
+    }
+
+    &::after {
+      opacity: 0;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  
+  // Apply custom styles based on the $type
+  @if $type == 'primary-gradient' {
+    background: linear-gradient(104deg, #105FFB 0%, #6C58FB 50%, #A15AF0 100%);
+    color: colors.$color__white;
+    border: none;
+
+    &::after {
+      background: radial-gradient(124.47% 310.63% at 83.73% 175%, colors.$color__tech-blue 0%, #A15AF0 75.77%);
+    }
+
+    &:active {
+      &::after {
+        background: linear-gradient(0deg, rgb(24 22 37 / 0.20) 0%, rgb(24 22 37 / 0.20) 100%), 
+        radial-gradient(124.47% 310.63% at 83.73% 175%, #105FFB 0%, #A15AF0 75.77%);
+        transition: opacity 1s ease; 
+      }
+    }
+    
+  }
+
+  @else if $type == 'primary-slate' {
+    background-color: colors.$color__gray-500;
+    color: colors.$color__white;
+
+    @include buttonAfterBackground(colors.$color__gray-500);
+
+    border: none;
+  }
+
+  @else if $type == 'primary-white' {
+    background-color: colors.$color__white;
+    color: colors.$color__gray-500;
+
+    @include buttonAfterBackground(colors.$color__white);
+
+    border: none;
+  }
+
+  @else if $type == 'secondary-slate' {
+    background-color: colors.$color__white;
+    color: colors.$color__gray-500;
+    border: 2px solid colors.$color__gray-500;
+
+    @include buttonAfterBackground(colors.$color__white);
+    @include buttonHoverBorder(2);
+
+    transition: all 0.7s ease;
+    background: linear-gradient(colors.$color__white, colors.$color__white) padding-box,
+                linear-gradient(to right, rgb(161 90 240 / 0.5), rgba(colors.$color__tech-blue, 0.5)) border-box;
+  }   
+
+  @else if $type == 'secondary-slate-gray' {
+    background-color: colors.$color__gray-100;
+    color: colors.$color__gray-500;
+    border: 2px solid colors.$color__gray-500;
+
+    @include buttonAfterBackground(colors.$color__gray-100);
+    @include buttonHoverBorder(2);
+
+    transition: all 0.7s ease;
+    background: linear-gradient(colors.$color__gray-100, colors.$color__gray-100) padding-box,
+                linear-gradient(to right, rgb(161 90 240 / 0.5), rgba(colors.$color__tech-blue, 0.5)) border-box;
+  }   
+
+  @else if $type == 'secondary-white' {
+    // background-color: $color__gray-500;
+    color: colors.$color__white;
+    border: 2px solid colors.$color__white;
+
+    @include buttonAfterBackground(colors.$color__gray-500);
+    @include buttonHoverBorder(2);
+
+    transition: all 0.7s ease;
+    background: linear-gradient(colors.$color__gray-500, colors.$color__gray-500) padding-box,
+                linear-gradient(to right, rgb(161 90 240 / 0.5), rgba(colors.$color__tech-blue, 0.5)) border-box;
+  }  
+
+}
+
+@mixin buttonHoverBorder($size, $color: transparent) {
+  &:hover {
+    border: #{$size}px solid $color;
+  }
+}
+
+@mixin buttonAfterBackground($color) {
+  &::after {
+    background: right -100px top 130px, 
+      linear-gradient(to bottom, $color 0%, transparent 70%), 
+      radial-gradient(ellipse at top,$color 60%, transparent 100%), 
+      radial-gradient(at right, $color 0%, transparent 90%), 
+      linear-gradient(to right, #A15AF0 50%, colors.$color__tech-blue 50%);
+  }
+}
+// Button Styles End
+
+
+// Link Styles
+@mixin link($color, $font-size, $size) {
+  font-family: typography.$font__btn;
+  width: fit-content;
+
+  svg {
+    @include box($size);
+
+    fill: $color;
+    transition: transform 0.3s ease;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    @include font-size($font-size);
+
+    color: $color;
+
+    span {
+      @include padding(4, 8, 0, 0);
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    svg {
+      transform: translateX(3px);
+    }
+  }
+}
+

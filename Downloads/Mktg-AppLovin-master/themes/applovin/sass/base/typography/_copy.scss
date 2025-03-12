@@ -1,0 +1,107 @@
+@use "../../abstracts/mixins/mixins";
+@use "../../abstracts/variables/colors";
+@use "../../abstracts/variables/typography";
+
+p {
+	font-family: typography.$font__avenir-light;
+	margin-bottom: 32px;
+
+	@include mixins.font-size(16, 27);
+
+	a {
+		color: colors.$color__dark-blue;
+	  }
+
+	@include mixins.mq('mobile') {
+		@include mixins.font-size(18, 27);
+	}
+}
+
+.p-16 {
+	@include mixins.font-size(16, 24);
+}
+
+.p-14 {
+	@include mixins.font-size(14, 21);
+}
+
+.p-12 {
+	@include mixins.font-size(12, 18);
+}
+
+.label-14 {
+	@include mixins.font-size(14, 19);
+}
+
+.label-12 {
+	@include mixins.font-size(12, 9);
+}
+
+.label-10 {
+	@include mixins.font-size(10, 14);
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: colors.$color__background-pre;
+	font-family: typography.$font__pre;
+	line-height: typography.$font__line-height-pre;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: typography.$font__code;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted colors.$color__border-abbr;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: colors.$color__background-ins;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+p>strong,
+p>b,
+li>strong,
+p>a>strong,
+p>a>b,
+li>a>strong {
+  font-family: typography.$font__avenir-heavy;
+  font-weight: 700;
+}
+
+em, 
+p>em {
+  font-family: typography.$font__avenir-light-oblique;
+  font-weight: 400;
+  font-style: italic;
+}

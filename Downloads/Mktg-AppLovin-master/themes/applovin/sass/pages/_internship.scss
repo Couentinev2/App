@@ -1,0 +1,178 @@
+@use "../abstracts/mixins/mixins";
+
+#internship {
+    .top-section {
+        position: relative;
+        background: url("/wp-content/themes/applovin/images/illo-internship-header-background.svg"), linear-gradient(to bottom, #E0E6F0, #F7F8FC);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 15%;
+    }
+
+    .programs-section {
+        .deck {
+            font-family: TTBackwardsSansBlack;
+            font-weight: 400;
+        }
+
+        ul {
+            margin-left: 0;
+
+            li {
+                background: url("/wp-content/themes/applovin/images/blue-tcheck_filled.svg") no-repeat left top;
+                background-size: 24px;
+                padding: 0 10px 0 40px;
+                margin-bottom: 16px;
+                list-style: none;
+                vertical-align: middle;
+                display: inline-block;
+                width: 100%;
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+
+    }
+
+    .internship-slider {
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(180deg, rgb(255 255 255 / 0.40) 0%, #F7F8FC 100%);
+
+        @include mixins.border-radius(40, 40, 0, 0);
+
+        @include mixins.mq('laptop') {
+            @include mixins.border-radius(64, 64, 0, 0);
+        }
+
+        @include mixins.mq('desktop') {
+            @include mixins.border-radius(80, 80, 0, 0);
+        }
+
+        .deck {
+            font-family: TTBackwardsSansBlack;
+            font-weight: 400;
+        }
+
+        ul {
+            margin-left: 0;
+
+            li {
+                background: url("/wp-content/themes/applovin/images/green_check_filled.svg") no-repeat left top;
+                background-size: 24px;
+                padding: 0 10px 0 40px;
+                margin-bottom: 16px;
+                list-style: none;
+                vertical-align: middle;
+                display: inline-block;
+                width: 100%;
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+
+        .slide-one {
+            background: url("/wp-content/themes/applovin/images/internship_card_one.svg"), #7B32CD;
+            background-position: bottom center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 65%;
+                background: linear-gradient(180deg, rgb(123 50 205 / 0.00) 5.53%, #7B32CD 58.3%);
+                z-index: 1; /* Ensure the pseudo-element is above the background but below other content */
+                border-radius: 0 0 15px 15px;
+            }
+        }
+
+        .slide-two {
+            background: url("/wp-content/themes/applovin/images/internship_card_two.svg"), #105FFB;
+            background-position: bottom center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 65%;
+                background: linear-gradient(180deg, rgb(16 95 251 / 0.00) 5.53%, #105FFB 58.3%);
+                z-index: 1; /* Ensure the pseudo-element is above the background but below other content */
+                border-radius: 0 0 15px 15px;
+            }
+        }
+
+        .slide-three {
+            background: url("/wp-content/themes/applovin/images/internship_card_three.svg"), #099AC6;
+            background-position: bottom center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 65%;
+                background: linear-gradient(180deg, rgb(16 95 251 / 0.00) 5.53%, #099AC6 58.3%);
+                z-index: 1; /* Ensure the pseudo-element is above the background but below other content */
+                border-radius: 0 0 15px 15px;
+            }
+        }
+
+        #slider-wrapper {
+            overflow-x: auto;
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            scrollbar-width: none;  /* Firefox */
+        }
+        
+        #slider-wrapper::-webkit-scrollbar {
+            display: none;  /* Safari and Chrome */
+        }
+
+        #slider-wrapper {
+            #slider::after {
+                content: '\00a0';
+            }
+        
+            @include mixins.mq('laptop') {
+                #slider::after {
+                    content: none;
+                }
+            }
+        }
+
+
+    }
+      
+      .testimonials-panel {
+        display: none; /* Hide all panels initially */
+      }
+
+      .testimonials-panel.active {
+        display: grid; /* Only show the active panel */
+      }
+
+      .cta-section{
+        background: url("/wp-content/themes/applovin/images/internship-cta.svg"), #F7F8FC;
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+      
+}

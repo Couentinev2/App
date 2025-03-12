@@ -1,0 +1,193 @@
+@use "../abstracts/mixins/mixins";
+
+#leadershipPage {
+    .hero-section {
+        background: url('/wp-content/themes/applovin/images/illo-leadership-header-background.svg') no-repeat center center,
+            linear-gradient(180deg, #E0E6F0 0%, #F7F8FC 100%);
+        background-size: cover;
+    }
+
+
+
+    .leaders-pods-inner-wrap {
+        display: block;
+
+        .leaders-pod-image {
+            margin-bottom: 24px;
+            position: relative; // Ensure that the overlay can be positioned absolutely within this container
+        }
+
+        @include mixins.mq('tablet') {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 24px;
+
+            .leaders-pod-image {
+                margin-bottom: 0;
+            }
+        }
+
+        @include mixins.mq('laptop') {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 24px;
+
+            .leaders-pod-image {
+                margin-bottom: 0;
+            }
+        }
+
+        .leaders-pod-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+        }
+
+        .leaders-pod-text {
+            position: absolute;
+            bottom: 0;
+            padding: 40px;
+            color: #fff;
+            text-align: left;
+
+            h3 {
+                margin-bottom: 0;
+            }
+
+            .title {
+                margin-bottom: 0;
+            }
+        }
+
+        .leaders-pod-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            background: linear-gradient(180deg, rgb(0 0 0 / 0.00) 50%, rgb(0 0 0 / 0.20) 100%);
+            z-index: 1;
+        }
+
+        .leaders-pod-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 40px;
+            color: #fff;
+            text-align: left;
+            z-index: 2; // Ensure the text appears above the overlay
+
+            h3 {
+                margin-bottom: 0;
+            }
+
+            .title {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .default-bio-text {
+        h4 {
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+
+    .popup {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        /* Ensure the popup takes the full height */
+        overflow: auto;
+        background-color: rgb(0 0 0 / 0.4);
+    }
+
+    .popup-content {
+        height: 90%;
+    overflow: scroll;
+        background-color: #fefefe;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 48px;
+        border: 1px solid #888;
+        width: 90%;
+        border-radius: 16px;
+        max-width: 636px;
+
+        @include mixins.mq('tablet') {
+            height: auto;
+            overflow: unset;
+
+
+        }
+        
+        @include mixins.mq('laptop') {
+            height: auto;
+            overflow: unset;
+
+
+        }
+    }
+
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 15px;
+        font-weight: bold;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .bio-copy {
+        p{
+            margin-bottom: 0;
+        }
+    }
+
+    .bio-content {
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .cta-section {
+        text-align: center;
+        background:
+            url('/wp-content/themes/applovin/images/illo-leadership-cta.png') no-repeat center center,
+            #F7F8FC;
+        background-size: cover;
+        background-position: bottom center;
+    }
+
+}

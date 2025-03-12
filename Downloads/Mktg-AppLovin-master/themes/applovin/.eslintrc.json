@@ -1,0 +1,66 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jquery": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": ["warn", 4, {
+            "SwitchCase": 1,
+            "VariableDeclarator": 1,
+            "outerIIFEBody": 1,
+            "MemberExpression": 1,
+            "FunctionDeclaration": { "parameters": 1, "body": 1 },
+            "FunctionExpression": { "parameters": 1, "body": 1 },
+            "CallExpression": { "arguments": 1 },
+            "ArrayExpression": 1,
+            "ObjectExpression": 1,
+            "ImportDeclaration": 1,
+            "flatTernaryExpressions": false,
+            "ignoreComments": false
+        }],
+        "no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
+        "no-trailing-spaces": "warn",
+        "quotes": ["warn", "double"],
+        "semi": ["warn", "always"],
+        "no-unused-vars": "warn",
+        "no-console": "off",
+        "no-undef": "warn",
+        "no-redeclare": "warn",
+        "no-prototype-builtins": "warn",
+        "no-empty": "warn",
+        "no-useless-escape": "warn",
+        "no-inner-declarations": "warn",
+        "no-self-assign": "warn",
+        "no-cond-assign": "warn",
+        "no-func-assign": "warn",
+        "no-global-assign": "warn"
+    },
+    "globals": {
+        "jQuery": "readonly",
+        "$": "readonly",
+        "wp": "readonly",
+        "gsap": "readonly",
+        "ScrollTrigger": "readonly",
+        "Wistia": "readonly",
+        "Hammer": "readonly",
+        "DocumentTouch": "readonly",
+        "dataLayer": "readonly",
+        "my_ajax_obj": "readonly",
+        "load_more_params": "readonly",
+        "define": "readonly",
+        "lib": "writable",
+        "token": "writable",
+        "allItems": "writable",
+        "fadeTime": "writable",
+        "myState": "writable",
+        "disableNextPaginationControls": "writable",
+        "fetchFilteredPosts": "writable"
+    }
+} 

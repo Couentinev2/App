@@ -1,0 +1,19 @@
+<!-- CTA Section Start -->
+<section class="cta-section" aria-labelledby="cta-section-title">
+    <div class="wrapper">
+        <div class="m-auto text-center max-w-[800px] grid gap-[40px]">
+            <div class="grid gap-[8px] md:gap-[12px] lg:gap-[15px]">
+                <h3 class="text-slate-950 m-auto avenir-black max-w-[500px]" id="cta-section-title"><?php pll_e('Get in touch.') ?></h3>
+            </div>
+
+            <!-- Button Start -->
+            <div class="primary-gradient-btn m-auto">
+                <a href="mailto:press@applovin.com">
+                    <span>press@applovin.com</span>
+                </a>
+            </div>
+            <!-- Button End -->
+        </div>
+    </div>
+</section>
+<!-- CTA Section End -->

@@ -1,0 +1,216 @@
+p {
+  margin-bottom: 0;
+}
+
+.cards-bullets-point h3{
+  font-family: var(--font-wt-Heavy);
+
+}
+.cards-section{
+  background-color:#181625!important;
+  color: #fff;
+  padding: 96px 120px;
+}
+
+.header-cards{
+  max-width: 800px;
+  margin-bottom: 80px;
+}
+
+.bullets-title::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-size: contain !important;
+  background: url("/wp-content/themes/applovin/images/greencheckmark.svg") no-repeat;
+  background-size: auto;
+  top: 5px;
+  left: -40px ;
+  transition: all 0.2s;
+}
+
+
+.card-grid {
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+  overflow: visible;
+
+}
+
+.div1-cards {  
+padding-left: 40px;
+margin-right:80px;}
+
+
+.bullets-text{
+  margin-bottom: 8px;
+}
+
+.sub-text{
+  color: #829BC4;
+}
+
+.letsee{
+  padding: 40px;
+}
+.cards-logo{
+display: flex;
+  align-self: flex-start;
+}
+
+.cards-point-one{
+  margin-bottom: 40px;
+}
+
+.upper-cards{
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 11%;
+  font-size: 14px;
+}
+
+.upper-cards a{
+  margin: auto 0;
+  margin-left: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.upper-cards a::after {
+    content: "";
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 0.75em;
+  background-size: contain !important;
+  background: url("/wp-content/themes/applovin/images/icon_arrow_links.svg") no-repeat;
+   fill: white;
+    background-size: auto;
+  top: 1px;
+  left: 0.35em;
+  transition: all 0.2s;
+}
+
+
+.cards-text{
+  padding: 40px;
+  padding-top: 24px;
+}
+.div1-cards{
+  max-width: 520px;
+}
+
+.fwdr3dcov-caption{
+  transform: initial!important;
+  overflow: visible!important;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+
+.card-grid {
+grid-template-columns: 1fr;
+grid-template-rows: repeat(2, 1fr); 
+}
+.cards-section{
+  padding:  80px 56px 48px 56px;
+
+}
+.div1-cards{
+  margin-bottom: 40px;
+  max-width: initial;
+  margin-right: 0;
+}
+
+.header-cards{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.bullets-title::before {
+  left: -40px;
+}
+
+.cards-bullets-point{
+  display: flex;
+justify-content: space-between;
+width: 100%;
+}
+
+.cards-point-one{
+  width: 100%;
+  margin:auto;
+    max-width: 301px;
+}
+.cards-point-two{
+  width: 100%;
+  margin:auto;
+margin-top: 0;
+  max-width: 301px;
+}
+
+}
+
+
+@media screen and (max-width: 760px) {
+  .cards-bullets-point{
+  display: block;
+
+}
+.cards-logo{
+  max-width: 60px;
+}
+
+.cards-point-one{
+   margin:auto;
+}
+.cards-point-two{
+   margin:auto;
+}
+
+
+.card-grid {
+grid-template-columns: 1fr;
+grid-template-rows: initial; 
+}
+.cards-section{
+  padding:  64px 32px;
+}
+
+.cards-text{
+  font-size: 10px!important;
+}
+
+.upper-cards a{
+  font-size: 12px;
+}
+
+.upper-cards{
+margin-left: 36px;
+margin-right: 36px;
+
+}
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+.upper-cards a{
+  font-size: 10px;
+}
+
+.upper-cards{
+margin-left: 30px;
+margin-right: 30px;
+
+}
+
+}

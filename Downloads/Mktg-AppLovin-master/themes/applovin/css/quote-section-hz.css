@@ -1,0 +1,234 @@
+.results-quote-hz-section{
+	padding: 0 120px;
+	background: linear-gradient(180deg, #252A3A 50%, #181625 100%);
+}
+
+ .results-quote-hz {
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 80px;
+  grid-row-gap: 0px;
+  height: 100%;
+  overflow: visible;
+}
+
+.div1-quote-hz  { grid-area: 1 / 1 / 2 / 2; }
+.div2-quote-hz { grid-area: 1 / 2 / 2 / 3; } 
+
+
+.div1-quote-hz {
+    width: 100%;
+    overflow: visible;
+    margin: 60px 0;
+    height: 25vw;
+    max-height: 360px;
+    align-self: center;
+
+}
+
+.div1-quote-hz .game-screen{
+    max-width: 594px;
+    width: 100%;
+    border-style: solid;
+    border-color: #384156;
+    border-width: 11px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+    position: absolute;
+    top: 0;
+    right: 142px;
+}
+
+.div2-quote-hz{
+    color: #fff;
+    padding: 96px 0;
+    max-width: 600px;
+}
+
+.footer-quote-hz{
+	display: inline-flex;
+	width: 100%;
+}
+
+.footer-quote-hz .game-screen{
+	max-width: 180px;
+}
+
+.game-logo{
+    border-radius: 24px;
+    max-width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-quote-hz-text{	
+	display: flex;
+	width: 100%;
+}
+
+.game-stats{
+margin: 10% 80px auto auto;
+color: #fff;
+text-align: center;
+background-color: #000;
+border-radius: 50%;
+height: 180px;
+width: 180px;
+align-items: center;
+display: flex;
+
+}
+
+.game-stats p{
+  text-align: center;
+  padding: 0.7em;
+  margin: auto;
+  font-size: 16px;
+font-family: var(--font-wt-Heavy);
+
+}
+
+.footer-quote-hz-speakerinfo{
+	width: 70%;
+}
+
+.footer-quote-hz-speakerinfo p{
+  margin-bottom: 8px;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+ .results-quote-hz {
+grid-template-columns: 1fr;
+grid-template-rows: initial;
+
+}
+.div1-quote-hz { 
+	height: 50vw;
+	grid-area: 2 / 1 / 3 / 2;
+	margin-top: 0;
+margin-bottom: 51px;
+margin-bottom: 80px;
+
+ }
+
+.div2-quote-hz{ 
+	grid-area: 1 / 1 / 2 / 2; 
+  margin-bottom: 80px;
+} 
+
+.game-stats{
+margin: 10% 150px auto auto;
+
+}
+
+.game-logo {
+  border-radius: 24px;
+  max-width: 100px;
+  position: absolute;
+  bottom: 0px;
+  top: 280px;
+ left: 150px;
+}
+
+.div1-quote-hz .game-screen{
+
+  top: 0px;
+  right: 275px;
+  bottom: 0;
+  padding-bottom: 0;
+
+}
+
+.results-quote-hz-section{
+	padding:  80px 56px 0 56px;
+}
+
+.div2-quote-hz{
+	padding: 0; 
+}
+
+}
+
+@media screen and (max-width: 760px) {
+	.results-quote-hz-section {
+		padding:  64px 32px 0 32px;
+		background-color: #F7F8FC;
+	}
+	.div1-quote-hz .game-screen{
+		max-width: 400px;
+	}
+	.footer-quote-hz-text{
+		display: block;
+	}
+	.game-stats{
+  width: 105px;
+  height: 105px;
+margin-left: 55%;
+font-size: 9.375px!important;
+padding: 10px;
+padding-top: 15px;
+}
+
+	.game-logo{
+		max-width: 59px;
+		border-radius: 10px;
+		top: 200px;
+	}
+	.div1-quote-hz {
+  margin-left: 0;
+}
+.div1-quote-hz .game-screen {
+  top: 0px;
+  right: 194px;
+  }
+.game-stats{
+    width: 105px;
+  height: 105px;
+margin-left: 60%;
+}
+
+.game-stats p{
+font-size: 9.375px!important;
+padding: 0;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+.game-stats {
+  width: 105px;
+  height: 105px;
+  margin-left: 65%;
+}
+.div1-quote-hz .game-screen {
+
+  right: 130px;
+}
+
+}
+
+
+  @media screen and (max-width: 450px){
+.game-stats {
+  max-width: 105px;
+margin-left: 57%;
+}
+.div1-quote-hz .game-screen {
+  top: 0px;
+  right: 80px;
+
+  }
+
+  .game-logo {
+
+  top: 175px;
+  left: 110px;
+}
+
+
+}

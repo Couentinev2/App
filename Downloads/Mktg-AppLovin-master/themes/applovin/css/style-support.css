@@ -1,0 +1,73 @@
+/* Support Gateway Page */
+#page-support .hero {
+  background-image: url('../images/hero-bg-support.jpg');
+  background-size: cover;
+  background-position: center top;
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+#page-support .hero h5 {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  margin: 2em auto 0.5em;
+}
+#page-support .hero h2 {
+  margin: 0.5em auto;
+}
+.support-buttons-row {
+  border-bottom: 2px solid #efefef;
+}
+.support-buttons {
+  display: flex;
+  padding: 0;
+}
+.support-buttons > a {
+  flex: 1 1 50%;
+  display: flex;
+  color: #000;
+}
+.support-pod {
+  flex: 1 1 100%;
+  background-color: #fff;
+  padding: 80px 5% 35px;
+  text-align: center;
+  border-bottom: 6px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+.support-buttons > a:nth-child(odd) {
+  border-right: solid 1px #efefef;
+}
+.support-buttons > a:nth-child(even) {
+  border-left: solid 1px #efefef;
+}
+.support-pod:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+  border-bottom-color: #00b6e0;
+  opacity: 1;
+}
+.support-buttons a:hover {
+  opacity: 1;
+}
+.support-pod h4 {
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  margin: 0.25em auto;
+}
+.support-pod img {
+  margin: auto;
+  max-width: 100px;
+  max-height: 120px;
+}
+.support-pod .icon-support-growth {
+  margin: 30px auto auto;
+}
+@media screen and (max-width: 640px) {
+  .support-buttons {
+    flex-direction: column;
+  }
+  .support-buttons > a:first-child {
+    border-bottom: 2px solid #efefef;
+  }
+}

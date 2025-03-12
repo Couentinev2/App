@@ -1,0 +1,143 @@
+.success-row{
+	background-color: #EEF0F6;
+}
+
+.secondmenu {
+  background-color: #fff;
+}
+.success-row-header{
+	max-width: 800px;
+	margin: auto;
+}
+
+.success-story-cards-wrap {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(336px, 2fr));
+  margin: auto;
+  margin-top: 48px;
+  row-gap: 48px;
+  column-gap: 24px;
+  max-width: 800px;
+}
+
+.success-story-card-link-wrap {
+  display: flex;
+  flex: 0 0 32%;
+  transition: all .2s ease-in-out;
+}
+
+.success-story-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  z-index: 10;
+  flex: 1;
+}
+
+.success-story-card-link-wrap::after {
+  box-shadow: 0px 4px 50px rgba(16,95,251,.25);
+  display: block;
+  content: '';
+  height: 45%;
+  width: 85%;
+  position: absolute;
+  bottom: 0;
+  left: 7.5%;
+  z-index: 0;
+}
+.success-card-pod {
+  background: #fff;
+}
+
+.success-card-art {
+  padding: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-self: stretch;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.logo-partners-overview {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  height: 40px;
+  width: auto;
+  z-index: 10;
+}
+
+.success-card-pod.success-card-art::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom,rgba(24,22,37,0) 0%,rgba(24,22,37,1) 100%);
+  mix-blend-mode: normal;
+  z-index: 5;
+}
+
+.success-story-card-link-wrap:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+.success-card-content {
+  text-align: left;
+  padding: 40px;
+  flex: 1;
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+}
+
+.success-card-content .sub-cat {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999;
+  margin: auto;
+    margin-bottom: auto;
+  margin-bottom: 14px;
+}
+
+
+.success-card-content h5 {
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  color: #000;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+.success-row{
+  padding: 80px 56px;
+}
+.success-row-header {
+  max-width: initial;
+}
+}
+
+@media screen and (max-width: 760px) {
+.success-row{
+	padding: 64px 32px;
+}
+.success-story-card-link-wrap{
+max-width: 311px;
+margin: auto;
+}
+
+}
+
+@media screen and (max-width: 380px) {
+
+.success-story-card-link-wrap{
+  left:  0;
+margin-left: 0;
+}
+
+}

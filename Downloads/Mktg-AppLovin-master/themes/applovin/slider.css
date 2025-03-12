@@ -1,0 +1,58 @@
+.cares button.slick-next, .cares button.slick-prev {
+    top: calc(50% + 56px);
+}
+.cares button.slick-prev {
+    left: 3%;
+}
+.cares button.slick-next {
+    right: 3%;
+}
+.cares button.slick-arrow {
+    opacity: 0.8;
+    transition: all .2s;
+}
+.cares button.slick-arrow:hover {
+    opacity: 1;
+}
+button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
+    background-size: contain!important;
+    height: 82px;
+    width: 55px;
+    display: block;
+}
+.cares button.slick-prev.slick-arrow {
+    background: url("/wp-content/uploads/2018/05/slider-arrow-left.png");
+}
+.cares button.slick-next.slick-arrow {
+    background: url("/wp-content/uploads/2018/05/slider-arrow-right.png");
+}
+/* disable default arrows from appearing; default code hooks into :before */
+.cares .slick-prev:before, .slick-next:before, .slick-prev::before, .slick-next::before {
+	display:none;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.slick-dots {
+    bottom: 5%;
+}
+.slick-dots li {
+    margin: 0 7px;
+}
+.slick-dots li button::before {
+    color: #fff;
+    opacity:0.45;
+    font-size:12px;
+    transition: all .1s;
+}
+.slick-dots li.slick-active button::before {
+	color: #fff;
+    opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+	.cares button.slick-prev.slick-arrow, .cares button.slick-next.slick-arrow {
+		height: 45px;
+		width: 30px;
+    }
+}

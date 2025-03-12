@@ -1,0 +1,178 @@
+.ads-section {
+	padding:  96px 120px 48px 120px;
+	background-color: #F7F8FC;
+}
+
+#page-increase-apdau .ads-section .div1-ads{
+  text-align: left;
+
+}
+
+.inner-wrap-1200{
+  margin:  auto;
+} 
+
+.ads-grid{
+	  display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr; 
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  height: 100%;
+}
+
+.repeter-ads{
+  margin-top:  80px;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(340px, 2fr) );
+  grid-template-rows: 1fr;
+  grid-column-gap: 80px;
+  grid-row-gap: 0px;
+  height: 100%;
+
+}
+.ads-new{
+  color: #617493;
+  background-color: #E0E6F0;
+font-size: 10px;
+border-radius: 4px;
+  padding: 2px 6px;
+  margin-left: 8px;
+}
+.ads-repeater{
+	width: 100% ;
+  padding-top: 20px; 
+  margin-bottom: 64px;
+  border-top: 2px solid #E6E6E6;
+
+}
+
+.ads-repeater p{
+  margin-bottom: 0;
+
+}
+
+.ads-repeater:nth-child(3n+1):nth-last-child(-n+3),
+  .ads-repeater:nth-child(3n+1):nth-last-child(-n+3) ~ .ads-repeater  {
+  display: none;
+
+}
+
+.ads-image img{
+  margin: auto;
+}
+
+.more{
+  cursor:pointer;
+  color: #099AC6;
+   font-family: var(--font-wt-Heavy);
+   text-align: center;
+}
+
+.repeter-ads::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, var(--color-modern-gray-100) 35%, transparent 100%);
+    z-index: 100;
+}
+
+.repeter-open::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    background: initial;
+    z-index: 100;
+}
+
+
+.more::after {
+  width: 1em;
+  height: .75em;
+  background-size: contain !important;
+  background: url(/wp-content/themes/applovin/images/loading.svg) no-repeat;
+    background-size: auto;
+  top: 1px;
+  left: .35em;
+  transition: all .2s;
+}
+.more::after, .more::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+.ads-grid{
+grid-template-columns: 1fr;
+grid-template-rows:initial; 
+}
+.sides-image img{
+  margin: auto ;
+}
+}
+  
+.ads-section {
+	padding:  80px 56px 40px 56px;
+	background-color: #F7F8FC;
+}
+.repeter-ads:after {
+
+    height: 20%;
+
+}
+.ads-repeater:nth-child(n+7)  {
+  display: none;
+
+}
+
+.ads-grid .div1-ads{
+  text-align: center;
+}
+
+ .grid-text p{
+  margin-bottom: 0;
+ }
+
+
+
+
+
+@media screen and (max-width: 760px) {
+
+
+  
+  .repeter-ads{
+    display: block;
+    grid-template-columns: initial; ;
+
+}
+
+.ads-section {
+	padding:  64px 32px 32px 32px;
+	background-color: #F7F8FC;
+}
+.ads-repeater {
+
+  margin-bottom: 40px;
+}
+.ads-repeater p{
+ max-width: 95%;
+  
+}
+.repeter-ads {
+    display: block;
+  }
+
+
+}

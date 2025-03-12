@@ -1,0 +1,91 @@
+@use "../../abstracts/mixins/mixins";
+@use "../../abstracts/variables/typography";
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	clear: both;
+	font-family: typography.$font__avenir-black;
+	font-weight: 700;
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+h6 {
+	font-family: typography.$font__avenir-light;
+	font-weight: 300;
+}
+
+h1 {
+	@include mixins.font-size(32, 40);
+
+	@include mixins.mq('tablet') {
+		@include mixins.font-size(50, 58);
+	}
+
+	@include mixins.mq('desktop') {
+		@include mixins.font-size(60, 69);
+	}
+}
+
+h2 {
+	@include mixins.font-size(28, 35);
+
+	@include mixins.mq('tablet') {
+		@include mixins.font-size(40, 46);
+	}
+
+	@include mixins.mq('desktop') {
+		@include mixins.font-size(50, 58);
+	}
+}
+
+h3 {
+	@include mixins.font-size(24, 32);
+
+	@include mixins.mq('tablet') {
+		@include mixins.font-size(30, 38);
+	}
+
+	@include mixins.mq('desktop') {
+		@include mixins.font-size(36, 45);
+	}
+}
+
+h4 {
+	@include mixins.font-size(21, 28);
+
+	@include mixins.mq('tablet') {
+		@include mixins.font-size(24, 32);
+	}
+
+	@include mixins.mq('desktop') {
+		@include mixins.font-size(32, 40);
+	}
+}
+
+h5 {
+	@include mixins.font-size(18, 32);
+
+	@include mixins.mq('tablet') {
+		@include mixins.font-size(21, 28);
+	}
+
+	@include mixins.mq('desktop') {
+		@include mixins.font-size(24, 32);
+	}
+}
+
+h6 {
+	@include mixins.font-size(18, 27);
+
+	@include mixins.mq('tablet') {
+		@include mixins.font-size(21, 32);
+	}
+
+	@include mixins.mq('desktop') {
+		@include mixins.font-size(21, 32);
+	}
+}

@@ -1,0 +1,854 @@
+.inner-wrap-1200{
+  margin: auto;
+}
+
+.inner-wrap-1200{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.single-grid-with-float{
+  padding: 96px 0;
+}
+
+.grid-four-title::before {
+  left: -1.9em;
+}
+
+
+.grid-four-title {
+  font-size:  21px!important;
+}
+
+.grid-four-title::before {
+  top: 4px}
+
+.hero{
+  background-color: #EEF0F6;
+  background-image: url(/wp-content/themes/applovin/images/alx_background_blue_shape.svg), url(/wp-content/themes/applovin/images/img-expandyourreach-header-backgroundv2.svg) ;
+  min-height: 693px;
+  padding: 120px 0;
+  background-position: bottom center, center;
+  background-size: 100% auto;
+}
+
+.hero.light-gray {
+  background-image: url(/wp-content/themes/applovin/images/alx_background_gray_shape.svg), url(/wp-content/themes/applovin/images/img-expandyourreach-header-backgroundv2.svg) ;
+}
+
+.hero .inner-wrap{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 87px;
+grid-row-gap: 0px;
+align-items: center;
+} 
+
+.alx-hero-img {
+	max-width:560px;
+}
+
+.div1{
+  text-align: left;
+  max-width: 560px;
+}
+
+
+.div1 h1{
+  margin-top: 42px;
+}
+
+.get-started-section{
+  background-color: #181625;
+  padding: 96px 0;
+}
+
+.get-started-section.light-gray {
+background-color: var(--modern-gray-100, #F7F8FC);
+color:#000000;
+}
+
+.get-started-section h2{
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.get-started-section.light-gray h2{
+color:#000000;
+}
+
+
+.perks-alx {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 24px;
+grid-row-gap: 0px;
+background-color: inherit;
+} 
+
+.perks{
+  background-color: #252A3A;
+  border-radius: 16px;
+  padding: 40px;
+  color: #fff;
+}
+
+.light-gray .perks{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.perks h4{
+margin-top: 32px;
+margin-bottom: 8px;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+
+.perks p {
+  margin-bottom: 0;
+}
+
+.context-target-section{
+  padding: 96px 0;
+  background-color: #F7F8FC;
+}
+
+.target-intro {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+} 
+
+.target-text{
+  margin-right: 80px;
+}
+
+.alx-benf-img{
+  margin: auto;
+}
+.target-benef{
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 80px;
+grid-row-gap: 0px;
+margin-top: 80px;
+
+}
+
+
+.benef{
+  border-top: 2px solid #E6E6E6 ;
+}
+
+.benef h2{
+  padding-top: 18px;
+}
+
+.benef p {
+  margin-bottom: 0;
+}
+
+.section-sort-tab{
+  padding: 96px 0;
+}
+
+.section-sort-tab h2{
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+
+
+.des{
+  background-color: rgba(130, 155, 196, 0.05);
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+
+}
+
+th {
+  cursor: pointer;
+  color: #829BC4;
+    font-family: var(--font-wt-Black);
+    letter-spacing:   1px;
+  font-weight: 750;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #fff!important;
+}
+
+th, td {
+  padding: 16px;
+}
+
+.firsttitle{
+  padding-left: 0;
+  text-align: left;
+}
+
+.crit{
+}
+
+
+tr.space {
+  border-bottom: 4px solid #fff;
+}
+
+
+.Highlight{
+    background-color: rgba(16, 95, 251, 0.1)!important;
+}
+
+tr .Highlight{
+    border: 4px solid rgba(16, 95, 251, 0.1)!important;
+}
+
+
+.crit{
+    font-family: var(--font-wt-Heavy);
+    font-weight: 700;
+    border-bottom: 4px solid #fff;
+    background-image: url(/wp-content/themes/applovin/images/greyline-left.svg);
+    background-repeat: no-repeat;
+    background-size: 4px 100%;
+}
+
+.Highlight .crit{
+       border-bottom: 4px solid #fff;
+    background-image: url(/wp-content/themes/applovin/images/blueline-left.svg);
+    background-repeat: no-repeat;
+    background-size: 4px 100%;
+
+}
+
+.wbd{
+    border-bottom: 4px solid #f9fafc;
+}
+.nwbd{
+      border-bottom: 4px solid #fff;
+
+}
+.space {
+
+}
+
+.data{
+
+    font-weight: 700;
+    color: #58649D;
+    text-align: center;
+}
+
+
+tr:nth-child(even) {
+    background-color: rgba(130, 155, 196, 0.1);
+}
+
+
+
+
+
+ tr:last-child td{  border-bottom: none!important}
+
+
+
+.footnote{
+  color: #999999;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 24px;
+}
+
+.main-title-four{
+  margin-top:0 ;
+  margin-bottom: 80px;
+}
+
+.text-bb-left-top{
+  background-color: #252A3A;
+}
+
+.text-bb-left-bottom{
+  background-color: #105FFB;
+}
+
+.grid-four-title::before {
+  background: url(../images/blueappfilled.svg) no-repeat;
+  }
+
+  .alx-cta-img{
+    margin: auto;
+    height:24px;
+  }
+
+  .cta h2, .cta p{
+    max-width: 800px;
+    margin: auto;
+  }
+
+.cta h2{
+  margin-top: 40px;
+  margin-bottom: 1.25em;
+}
+
+.cta a{
+      font-family: var(--font-wt-Black);
+      font-weight: 750;
+}
+
+.cta > [class^="inner-wrap"] {
+	margin:auto;
+}
+
+.mobilebtn{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-sort{
+  display: none;
+}
+
+.mobile-part{
+  display: none;
+}
+
+.mobilebtn:after {
+content: " ";
+display: inline-flex;
+width: 11px;
+height: 11px;
+background: url(/wp-content/themes/applovin/images/down.svg) no-repeat;
+background-size: contain;
+transition: all .2s;
+transform: rotate(3.142rad);
+margin-right: 14px;
+fill: #829BC4;
+margin-top: 7px;
+}
+
+.mobilebtn.active-qa:after {
+transform: rotate(0);
+}
+
+.benef h2 {
+  font-family: var(--font-wt-Heavy);
+  font-weight:  750;
+}
+
+.target-text{
+  margin-top: 94px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+.hero .inner-wrap{
+display: block;
+} 
+
+.div1, .div2 img, .div1 img{
+  margin: auto;
+  text-align: center;
+}
+
+.div1{
+  margin-bottom: 60px;
+}
+
+.hero .div1{
+  max-width: calc(100vw - 112px);
+}
+
+.div1 p{
+  margin-bottom: 0;
+}
+
+.get-started-section, .context-target-section, .section-sort-tab, .cta, .single-sub-grid-section{
+  padding: 80px 56px;
+}
+
+.perks-alx {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 40px;
+}
+
+.perks-alx .perks:last-child {
+    left: 50%;
+}
+
+.target-intro{
+  display: block;
+  margin: auto;
+}
+
+
+.target-text{
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.grid-image{
+  margin: auto;
+}
+
+.main-title-four {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.single-grid  {
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: auto;
+grid-column-gap: 0px;
+grid-row-gap: 40px;
+}
+
+.grid-image { grid-area: 1 / 1 / 2 / 2; }
+.grid-text { grid-area: 2 / 1 / 3 / 2; } 
+
+
+.target-benef{
+  grid-column-gap: 40px;
+}
+
+.hero {
+  background-size: 120% auto;
+}
+table {
+    max-width: 725px;
+}
+.single-grid-with-float {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    }
+
+.hero{
+
+  padding-top: 120px ;
+  padding-bottom: 64px;
+  }
+
+
+}
+
+  @media screen and (max-width: 1000px){
+.single-grid-with-float {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    }
+  }
+
+
+@media screen and (max-width: 800px) {
+.hero {
+  background-size: 165% auto;
+  padding: 160px 32px;
+}
+.desktop-sort{
+  display: none;
+}
+
+.mobile-sort{
+  display: block;
+}
+
+.get-started-section, .context-target-section, .section-sort-tab, .cta, .single-sub-grid-section{
+  padding: 64px 32px;
+}
+
+.div1{
+  margin-bottom: 30px;
+}
+
+.perks-alx {
+  display: block;
+ 
+}
+
+
+
+.perks{
+  margin-bottom: 24px;
+}
+
+.perks-alx .perks:last-child {
+    left: 0;
+    margin-bottom: 0;
+}
+
+.target-benef{
+  display: block;
+}
+
+.benef{
+  margin-bottom: 40px;
+}
+
+
+.target-benef .benef:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+}
+
+.crit{
+  border-left: none;
+  border-top: 3px solid #C8D6EC;
+  padding-left: 12px;
+}
+
+.Highlight .crit {
+border-left: none;
+ border-top: 3px solid #105FFB;
+}
+
+.mobile-row{
+  margin-bottom: 12px;
+}
+
+.mobile-line p {
+  margin-bottom: 0;
+}
+
+.mobile-row .crit{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 0; 
+}
+.single-grid-with-float{
+  padding-top: 64px;
+}
+
+.mobile-line:nth-child(2n) {
+  background-color: #F3F5F9;
+}
+
+
+.Highlight .mobile-line:nth-child(2n){
+  background-color: #D7E5FF;
+}
+
+.mini-t{
+    font-family: var(--font-wt-Heavy);
+  font-weight: 750;
+  color: #829BC4;
+}
+
+.grid-four-title {
+  font-size:  18px!important;
+}
+
+.crit{
+background-image: none;}
+
+
+.Highlight .crit{
+  background-image: none;
+}
+.mobile-row .crit{
+  border-bottom: none;
+}
+
+#footer{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.hero{
+
+  padding-top: 120px ;
+  padding-bottom: 64px;
+  }
+}
+
+/* ALX Holiday Inventory tables -- rev. 09/2023 */
+
+.deals-table {
+display: grid;
+grid-template-columns: 320px auto;
+grid-template-rows: repeat(3, auto);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+border-radius:16px;
+overflow:hidden;
+width:100%;
+max-width:1000px;
+margin:64px auto 0;
+}
+
+.deals-table-head {
+grid-area: 1 / 1 / 2 / 3; 
+display: flex;
+background: url('/wp-content/themes/applovin/images/bg_alx_deals_table_header.svg');
+background-position: left top;
+background-size:cover;
+background-repeat:no-repeat;
+color:#ffffff;
+grid-row-gap:24px;
+grid-column-gap:24px;
+padding:40px;
+}
+.deals-table-head > img {
+width:64px;
+}
+
+.deals-table-apps {
+grid-area: 2 / 1 / 4 / 2; 
+display: flex;
+flex-direction:column;
+background: var(--modern-gray-200, #EEF0F6);
+padding:40px;
+}
+.deals-table-specs {
+grid-area: 2 / 2 / 3 / 3; 
+display: flex;
+flex-direction:column;
+background: var(--modern-gray-100, #F7F8FC);
+padding:40px;
+}
+.deals-table-ids {
+grid-area: 3 / 2 / 4 / 3;
+background: var(--modern-gray-100, #F7F8FC);
+padding:0 40px 40px 40px;
+}
+
+.deals-table-ids > h3 {
+padding-top:40px;
+border-top:1px solid #E3E7F2;
+}
+
+.deals-app-row {
+display: flex;
+align-items:flex-start;
+grid-column-gap:16px;
+}
+
+.deals-app-row:nth-of-type(n+2) {
+	margin-top:16px;
+}
+
+.deals-app-row > img {
+	width:32px;
+	border-radius: 20%;
+}
+
+.deals-data {
+display: flex;
+grid-row-gap:24px;
+grid-column-gap:16px;
+}
+
+.deals-data-pod {
+flex: 1 1 50%;
+}
+.deals-data-pod > span {
+font-family: var(--font-wt-Medium);
+font-size: 21px;
+font-style: normal;
+font-weight: 550;
+line-height: 1.5em;
+}
+.deals-data-pod > span > em {
+color:var(--grayscale-gray-60, #666);
+font-family: var(--font-wt-Light);
+font-style: normal!important;
+font-weight: 300;
+}
+.deals-id-pods-wrap {
+display: flex;
+flex-wrap:wrap;
+grid-row-gap:16px;
+grid-column-gap:16px;
+justify-content: space-between;
+}
+
+.deals-id-pod {
+border-radius: 8px;
+background: var(--modern-gray-200, #EEF0F6);
+display: flex;
+align-items:center;
+justify-content: space-between;
+grid-column-gap:16px;
+padding:16px;
+flex:0 1 calc(50% - 8px);
+transition:all 0.2s linear;
+cursor:pointer;
+}
+
+.deals-id-pod:hover {
+background: var(--modern-gray-240, #E3E7F2);
+}
+
+.deals-id-pod > span {
+font-size: 14px;
+word-break: break-all;
+}
+
+.deals-id-pod > img {
+padding:12px;
+border-radius: 4px;
+background: var(--modern-gray-280, #AFB7CF);
+transition:all 0.2s linear;
+}
+.deals-id-pod:hover > img {
+background: var(--primary-tech-blue, #105FFB);
+}
+
+.deals-table h3 {
+color: var(--modern-gray-300, #929BBA);
+  font-family: var(--font-wt-Black);
+  font-weight:  750;
+font-size: 14px;
+font-style: normal;
+letter-spacing: 1px;
+text-transform: uppercase;
+margin:0 0 24px;
+}
+
+.deals-table-head h2 {
+  font-family: var(--font-wt-Black);
+  font-weight:  750;
+font-size: 24px;
+font-style: normal;
+line-height: 1.35em;
+margin:0;
+text-align: left;
+}
+.deals-table-head p {
+  font-family: var(--font-wt-Light);
+  font-weight:  300;
+font-size: 18px;
+font-style: normal;
+line-height: 1.5em;
+margin:0;
+text-align: left;
+}
+
+@media all and (max-width:1024px) {
+	.deals-table {
+		grid-template-columns: 280px auto;
+		margin:48px auto 0;
+	}
+	.deals-id-pod {
+		flex:0 1 100%;
+	}
+}
+@media all and (max-width:720px) {
+	.deals-table {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(4, auto);
+		margin:32px auto 0;
+	}
+	.deals-table-head { 
+		grid-area: 1 / 1 / 2 / 2;
+		padding:32px;
+	}
+	.deals-table-apps { 
+		grid-area: 3 / 1 / 4 / 2;
+		padding:32px;
+	}
+	.deals-table-specs { 
+		grid-area: 2 / 1 / 3 / 2;
+		padding:32px;
+	}
+	
+	.deals-table-head, .deals-data {
+		flex-direction:column;
+	}
+	.deals-table-ids {
+		grid-area: 4 / 1 / 5 / 2;
+		padding:32px;
+	}
+	.deals-table-ids > h3 {
+	padding-top:0;
+	border-top:none;
+	}
+}
+
+.clip-link::before {
+	content:'Copied!';
+	display:block;
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
+	background:#181625;
+	color:#fff;
+	border-radius: 40px;
+	padding:12px;
+	font-family: var(--font-wt-Medium);
+	font-style: normal;
+	font-weight: 550;
+	font-size:12px;
+	transition:all 0.15s ease-in-out;
+	opacity:0;
+	top:0;
+	white-space: nowrap;
+	z-index:50;
+}
+.clip-link.clicked::before {
+	-webkit-animation: click-alert-fade 2.5s ease-in-out;
+	animation: click-alert-fade 2.5s ease-in-out;	
+}
+
+@keyframes click-alert-fade {
+  0% {
+	opacity:0;
+	top:0;
+  }
+  5% {
+	opacity:1;
+	top:-2em;
+  }
+  95% {
+	opacity:1;
+	top:-2em;
+  }
+  100% {
+	opacity:0;
+	top:0;
+  }
+}
+
+@-webkit-keyframes click-alert-fade {
+  0% {
+	opacity:0;
+	top:0;
+  }
+  5% {
+	opacity:1;
+	top:-2em;
+  }
+  95% {
+	opacity:1;
+	top:-2em;
+  }
+  100% {
+	opacity:0;
+	top:0;
+  }
+}

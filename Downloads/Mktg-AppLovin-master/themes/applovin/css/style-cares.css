@@ -1,0 +1,525 @@
+/* AppLovin Cares Page */
+.cares .hero {
+  background-image: url("../images/hero-bg-photo-cares.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 90% top;
+  color: #fff;
+  padding: 0;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+}
+.cares .hero .cares-logo {
+  margin: auto;
+  width: 20%;
+  max-width: 300px;
+}
+.cares .intro {
+  text-align: center;
+  padding: 130px 0;
+  z-index: 10;
+}
+.cares .intro h2 {
+  line-height: 1.25em;
+  width: 50%;
+  max-width: 720px;
+  margin: auto;
+}
+.cares .intro h6 {
+  width: 60%;
+  max-width: 700px;
+  margin: 2em auto;
+}
+.cares .mission {
+  text-align: center;
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 0 80px;
+}
+.mission-pods-wrap {
+  display: flex;
+}
+.cares .mission h3 {
+  margin: 1em auto 2em;
+}
+.cares .mission h2 {
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 1.25em;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+}
+.cares .mission p {
+  font-size: 42px;
+  line-height: 1.25em;
+  margin: 1em auto 1.75em;
+}
+.cares .mission-pod {
+  flex: 0 1 27%;
+  margin: auto;
+}
+.cares .mission-pod > img {
+  width: 75%;
+  max-width: 250px;
+  margin: auto;
+}
+.cares .mission-pod h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.25em;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 42px;
+}
+.cares .mission-pod h6 {
+  line-height: 1.25em;
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  margin: 1.5em auto 1em;
+}
+.cares .mission-pod p {
+  font-size: 21px;
+  line-height: 1.25em;
+}
+.cares .slideshow {
+  z-index: 10;
+  padding: 0 0 180px 0;
+}
+.cares .slideshow-wrapper {
+  max-width: 830px;
+  margin: auto;
+  z-index: 10;
+}
+.cares .projects {
+  text-align: center;
+  padding: 110px 0 80px;
+  z-index: 10;
+}
+.cares .projects h2 {
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 1.25em;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+.cares .projects h5, .cares .testimonials h5 {
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  margin: 0.5em auto 1.5em;
+}
+.cares .projects .logos-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  max-width: 1180px;
+  margin: auto;
+}
+.cares .projects .logos-wrap > img {
+  max-width: 250px;
+  width: 27%;
+  margin: 5% 3%;
+}
+.cares .contact {
+  padding: 120px 0 80px;
+  z-index: 10;
+}
+.cares .contact h2 {
+  line-height: 1.25em;
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  text-align: center;
+  margin: auto auto 100px
+}
+.cares .contact h6 {
+  font-size: 1em;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1em auto 1.75em;
+}
+.cares .contact-left, .cares .contact-right {
+  text-align: center;
+  max-width: 850px;
+margin: auto;
+}
+.cares .contact-inner {
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+.cares .contact p {
+  font-size: 21px;
+  line-height: 1.5em;
+}
+.cares .contact p:last-child {
+  color: #a8a7a7;
+}
+.cares .bottom-banner {
+  display: block;
+  margin: 3em 0 0;
+}
+.cares .edge {
+  position: absolute;
+  height: auto;
+  z-index: 0;
+}
+.cares .edge-1-l {
+  left: 0px;
+  top: 165px;
+  width: 20%;
+  max-width: 210px;
+}
+.cares .edge-1-r {
+  right: 0px;
+  top: 305px;
+  width: 20%;
+  max-width: 160px;
+}
+.cares .edge-2-r {
+  right: 0px;
+  bottom: 0px;
+  width: 20%;
+  max-width: 130px;
+}
+.cares .edge-3-l {
+  left: 0px;
+  top: 0px;
+  width: 10%;
+  max-width: 125px;
+}
+.cares .edge-3-r {
+  right: 0px;
+  bottom: 0px;
+  width: 25%;
+  max-width: 280px;
+}
+.cares .edge-4-l {
+  left: 0px;
+  top: 0px;
+  width: 17.5%;
+  max-width: 245px;
+}
+.cares .edge-4-r {
+  right: 0px;
+  top: 0px;
+  width: 25%;
+  max-width: 280px;
+}
+.cares .edge-5-r {
+  right: 0px;
+  top: -80px;
+  width: 25%;
+  max-width: 170px;
+}
+.cares .form-confirmation {
+  color: #000;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+
+
+.success-quote-inner-panel.cares-quote-primary {
+  background-image: url('../images/photo-bg-cares-quote-primary.jpg');
+  background-position: left top;
+  background-size: cover;
+  color: #fff;
+  padding: 10% 20%;
+}
+.success-quote-outer-panel.cares-quote-primary {
+  margin: 140px auto 0px;
+}
+.success-quote-inner-panel.cares-quote-primary .quote-attrib, .success-quote-inner-panel.cares-quote-primary .quote-name {
+  color: #fff;
+}
+.success-quote-inner-panel.cares-quote-primary .partner-logo {
+  max-width: 235px;
+  height: auto;
+}
+.success-quote-inner-panel.cares-quote-primary .quote-text {
+  flex: 0 1 auto;
+}
+.success-quote-inner-panel.cares-quote-primary h5 {
+  font-family: var(--font-wt-Medium);
+  font-weight: 550;
+}
+.success-quote-inner-panel.cares-quote-primary h5 strong {
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+}
+.quote-secondary-wrap {
+  justify-content: space-around;
+}
+.cares-quote-secondary {
+  flex: 0 1 30%;
+  font-size: 18px;
+  line-height: 1.25em;
+  text-align: left;
+}
+.cares-quote-secondary .quote-secondary-logo {
+  width: auto;
+  height: auto;
+  max-height: 80px;
+  margin: 0 0 30px;
+}
+.cares-quote-secondary p:nth-child(2) {
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  position: relative;
+}
+.cares-quote-secondary p:nth-child(2)::before {
+  position: absolute;
+  display: block;
+  content: '“';
+  font-family: "ClarendonBT-Bold";
+  top: 0.15em;
+  left: -0.6em;
+  font-size: 4em;
+  color: #999;
+  opacity: 0.5;
+}
+.quote-mark-close {
+  font-family: "ClarendonBT-Bold";
+  font-size: 1.5em;
+  color: #999;
+  opacity: 0.5;
+  vertical-align: sub;
+}
+.cares-quote-secondary .quote-attrib {
+  font-size: 14px !important;
+}
+.cares-quote-secondary .quote-name {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+
+iframe.cares-signup-wrap {
+    width: 100%;
+    max-width: 540px;
+    min-height: 1520px;
+    margin: 0 2em;
+    border: none;
+    padding: 1.25% 1.75% 6%;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: -60px;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .cares .edge-1-l {
+    width: 12%;
+  }
+  .cares .edge-1-r {
+    width: 12%;
+  }
+  .cares .edge-2-r {
+    width: 12%;
+  }
+  .cares .edge-3-l {
+    width: 12%;
+  }
+  .cares .edge-3-r {
+    width: 18%;
+  }
+  .cares .edge-4-r {
+    width: 18%;
+  }
+  .cares .hero {
+	background-size: auto 100%;
+	background-position: center top;
+}
+}
+@media screen and (max-width: 768px) {
+  .quote-secondary-wrap {
+    flex-direction: column;
+  }
+  .cares-quote-secondary {
+    flex: 0 1 100%;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  .cares-quote-secondary:nth-child(n + 2) {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .cares .hero {
+	background-position: center top;
+	min-height: 60vw;
+  }
+  .cares .intro {
+    padding: 80px 0;
+  }
+  .mission-pods-wrap {
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+  }
+  .cares .mission h3 {
+    width: 80%;
+  }
+  .cares .contact {
+    padding: 120px 0 80px;
+    z-index: 10;
+  }
+  .cares .contact h2 {
+    margin: auto auto 1em;
+  }
+  .cares .contact-inner {
+    width: 85%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .cares .contact-right {
+    width: 100%;
+  }
+  .cares-quote-secondary {
+    text-align: center;
+  }
+  .cares-quote-secondary .quote-secondary-logo {
+    margin: 0 auto 30px;
+    max-height: 60px;
+  }
+  .success-quote-outer-panel.cares-quote-primary {
+    margin: 80px auto 0px;
+  }
+  .success-quote-outer-panel {
+    top: 0;
+    left: 0;
+}
+iframe.cares-signup-wrap{
+  min-height: 1620px;
+  margin: auto;
+}
+
+}
+
+.wave-mask-bottom {
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.success-quote-outer-panel {
+    border: solid 4px #12afa3;
+    top: 20px;
+    left: 20px;
+    margin: 100px auto 120px;
+    max-width: 95%;
+}
+
+.success-quote-inner-panel {
+    background-color: #fff;
+    top: -40px;
+    left: -40px;
+    padding: 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.1);
+}
+
+.success-quote-inner-panel .quote-name {
+    font-family: var(--font-wt-Heavy);
+    font-weight: 700;
+    color: #000;
+}
+
+.success-quote-inner-panel .quote-text {
+    flex: 0 1 calc(92.5% - 235px);
+    text-align: left;
+}
+
+
+@media screen and (max-width: 640px) {
+  .success-quote-inner-panel {
+    top: 0;
+    left: 0;
+    padding: 20% 12%;
+    flex-direction: column-reverse;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.success-quote-inner-panel p.quote-attrib {
+    font-size: 12px!important;
+}
+
+.success-quote-inner-panel h5 {
+    font-size: 16px;
+}
+
+  .success-quote-inner-panel .quote-text {
+    text-align: center;
+}
+
+
+}
+
+.success-quote-inner-panel::before, .success-quote-outer-panel::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 116px;
+    height: 85px;
+    background-image: url('../images/icon-quote-mark-lg-green.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.success-quote-outer-panel::after {
+    transform: rotate(180deg);
+    right: 5%;
+    bottom: -60px;
+}
+
+
+
+.success-quote-inner-panel::before {
+    left: 5%;
+    top: -55px;
+}
+
+.projects-list{
+  columns: 3;
+  margin: auto;
+  margin-top: 120px
+}
+
+@media screen and (max-width: 1024px) {
+.projects-list{
+  columns: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.projects-list{
+  columns: 1;
+  }
+}
+
+.contact-inner{
+  display: block;
+}

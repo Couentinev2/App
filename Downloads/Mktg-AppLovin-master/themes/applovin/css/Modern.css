@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /*
+    We recommend you change these values to match your brand.
+    The light color has an opacity of .1, do not modify that
+    */
+    --primary-brand-color: rgba(53, 116, 214, 1);
+    --light-primary-brand-color: rgba(53, 116, 214, .1);
+
+    /* We recommend not changing these colors */
+    --full-page-background-color: #FAFAFA;
+    --application-background-color: #FFF;
+    --footer-color: #F3F3F3;
+    --main-text-color: #222222;
+    --sub-header-color: #666;
+    --link-color: #3574D6;
+    --field-border-color: #E1E1E1;
+}
+
+body {
+font-family: Avenir, Helvetica, "Nunito Sans", 'sans-serif';
+}
+
+body #wrapper {
+    background-color: white;
+    min-height: 100vh;
+    max-width: 1050px;
+}
+
+/* Select Boxes */
+
+#main  {
+    padding: 96px 0;
+}
+
+
+
+
+#main .select2-choice {
+    height: 35px;
+}
+
+#main .select2-chosen {
+    line-height: 35px;
+}
+
+#main .select2-arrow {
+    padding-right: 4px;
+}
+
+#main .filter-label {
+    color: var(--sub-header-color);
+    font-size: 12px;
+    font-weight: 600;
+    display: none;
+}
+
+#main .location {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--sub-header-color);
+}
+
+/* Job Board Page */
+#main > h1:not(.app-title) {
+    /* Hide the company name in favor of a Logo that includes it */
+    display: none;
+}
+
+#board_title {
+    margin: 0 0 16px 0;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+section {
+    margin-top: 16px;
+}
+
+section > h3 {
+    margin-top: 32px;
+}
+
+#logo {
+    display: none;
+}
+
+#app_body #logo{
+    display: block;
+}
+
+body #content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#main section h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 0;
+
+}
+
+#main section .location {
+    display: inline-block;
+    color: #999999;
+    transition: all 0.2s;
+    flex: 0 0 45%;
+}
+
+#main section .opening {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    transition: all 0.2s;
+    position: relative;
+}
+
+section .opening a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--main-text-color);
+}
+
+section .opening a {
+    /* We want to increase the click area and background area of links to jobs,
+    so we combine padding and negative margin */
+    display: inline-block;
+    flex: 0 0 50%;
+    font-size: 1.125em;
+    color: #000;
+    transition: all 0.2s;
+}
+
+#main section .opening:hover {
+    background-color: var(--light-primary-brand-color);
+    border-radius: 3px;
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+#main section .opening a:hover {
+    text-decoration: none;
+
+}
+
+
+body #footer {
+    border: none;
+    background-color: var(--footer-color);
+    height: 60px;
+    margin-top: -80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body #footer .privacy-policy {
+    line-height: 19px;
+}
+
+body #footer img {
+    width: 90px;
+}
+
+h3#filter-count {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+/* Job Post Page */
+div#main div#app_body {
+    padding-left: 0 !important;
+    padding-right: 0;
+}
+
+div#app_body #header {
+    display: flex;
+    flex-direction: column;
+}
+
+div#app_body #header #apply_button {
+    order: 3;
+    margin-top: 37px
+}
+
+div#app_body #header .company-name {
+    display: none;
+}
+
+div#app_body #header > a {
+    order: 1;
+}
+
+div#app_body #header .app-title {
+    order: 2;
+}
+
+div#app_body #header .location {
+    order: 4;
+    margin-top: 2px;
+}
+
+div#main #application_form h2.heading {
+    color: var(--main-text-color);
+    font-weight: 400;
+}
+
+div#app_body .app-title {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+div#app_body div#header #apply_button {
+    top: auto;
+    background-color: var(--primary-brand-color);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+div#submit_buttons input#submit_app {
+    background-color: var(--primary-brand-color);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: "Nunito Sans", 'sans-serif', 'Avenir';
+    font-weight: 600;
+}
+
+div#app_body {
+    max-width: none;
+    padding-right: 20px;
+}
+
+div#content {
+    padding-bottom: 16px;
+}
+
+div#application hr:nth-last-of-type(1) {
+    display: none;
+}
+
+div#application {
+    background-color: var(--application-background-color);
+    border-top: 1px solid var(--field-border-color);
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+}
+
+div#main_fields, div#custom_fields {
+    font-weight: 400;
+    line-height: 26px;
+}
+
+div#application div.field label {
+    color: var(--sub-header-color);
+    display: block;
+    float: none;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+}
+
+div#application div.field label span.asterisk {
+    font-size: 12px;
+}
+
+div#application #main_fields div.field textarea {
+    margin-left: 0;
+}
+
+div#application div.field input[type=text] {
+    border: solid 1px var(--field-border-color);
+    height: 25px;
+    padding-left: 12px;
+    width: 455px;
+}
+
+@media (max-width: 640px) {
+    div#application div.field input[type=text] {
+        width: 100%;
+    }
+}
+
+div#application div.field input[placeholder="MM"] {
+    padding-left: 10px;
+}
+
+div#application div.field input[placeholder="YYYY"] {
+    padding-left: 7px;
+}
+
+div#application legend {
+    float: none;
+}
+
+div.link-container a {
+    color: var(--link-color);
+    font-size: 14px;
+}
+
+div#application a#add_education {
+    margin-left: 0;
+}
+
+div#field {
+    margin-bottom: 10px;
+}
+
+#main_fields div.field div.field-error-msg {
+    padding-left: 0;
+}
+
+div.field div.msg-container {
+    padding-top: 5px;
+}
+
+#application .field .select2-container {
+    margin-top: 0;
+}
+
+div#application div.field a.locate-me {
+    display: block;
+}
+
+div#application div.field textarea {
+    border-color: var(--field-border-color);
+    width: 455px;
+}
+
+@media (max-width: 640px) {
+    div#application div.field textarea {
+        width: 100%;
+    }
+}
+
+div#application div.field div.select2-container {
+    width: 455px !important;
+}
+
+@media (max-width: 640px) {
+    div#application div.field div.select2-container {
+        width: 100% !important;
+    }
+}
+
+div.s3-upload-form {
+    display: none;
+}
+
+/* Confirmation Page */
+#main #view-more {
+    text-align: left;
+    padding-top: 0;
+}
+
+#main strong > a {
+    color: var(--link-color);
+    font-weight: 400;
+}
+
+#embedded_job_board_wrapper h1, #board_title{
+  display: none;
+}
+#main section h3{
+  font-size: 2em;
+  margin: 2.5em auto 1.5em 24px;
+  text-align: left;
+  font-weight: normal;
+  line-height: 1.2em;
+  font-size: 32px;
+  color: #666666;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#opening a {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+#embedded_job_board_wrapper{
+    padding: 0!important;
+}
+
+#main section .opening::before {
+  display: block;
+  content: '';
+  border-top: 1px solid #e7e7e7;
+  position: absolute;
+  top: -1px;
+  left: 24px;
+  width: calc(100% - 48px);
+}
+
+#main section .opening:hover {
+  box-shadow: 0 0 9px rgb(0,0,0,0.2);
+  z-index: 10;
+  background: #fff;
+}
+
+#main section .opening:last-child a::after {
+  display: block;
+  content: '';
+  border-bottom: 1px solid #e7e7e7;
+  position: absolute;
+  bottom: -1px;
+  left: 24px;
+  width: calc(100% - 48px);
+}
+
+#embedded_job_board_wrapper #content{
+    display: none
+}
+
+.select2-container .select2-choice .select2-arrow b {
+  background: url(/wp-content/themes/applovin/images/jbdown.svg) no-repeat 0 1px!important;
+  background-position: center!important;
+}
+
+.select2-dropdown-open b{
+    transform: rotate(3.142rad);
+}
+
+.accessible .select2-container .select2-chosen{
+    color: #000;
+}
+
+.select2-container .select2-choice, .select2-drop-active, .accessible .select2-container-active .select2-choice, .accessible .select2-container-active .select2-choices{
+border: 2px solid #EFEFEF;
+  border-radius: 0;
+}
+
+.select2-container .select2-choice{
+    border: 2px solid #EFEFEF;
+  border-radius: 0;
+}
+.opening .location, section .opening a{
+    font-size: 21px!important;
+}
+
+@media screen and (max-width: 1024px) {
+#main  {
+    padding: 80px 0;
+}
+}
+
+@media screen and (max-width: 765px) {
+
+#main  {
+    padding: 64px 0;
+}
+
+.opening .location, section .opening a {
+  font-size: 18px!important;
+}
+
+}
+
+div#app_body div#header #apply_button, div#submit_buttons input#submit_app{
+    background: #00B6E0;
+    color: #fff;
+    padding: 18px 27px;
+}
+
+.postings-link {
+    color: #000;
+    text-decoration: underline;
+}
+
+.accessible .select2-container .select2-choice{
+    border-color: #EFEFEF;
+    border-width: 2px;
+
+}
+
+.select2-drop-active{
+    border-color: #EFEFEF;
+        border-width: 2px;
+}

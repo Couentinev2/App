@@ -1,0 +1,98 @@
+@use "../../abstracts/mixins/mixins";
+@use "../../abstracts/variables/colors";
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include mixins.padding(16, 12, 16, 12);
+  
+	span {
+		@include mixins.padding(4, 8, 0, 8);
+
+		z-index: 1; 
+	}
+
+}
+
+// Buttons
+.primary-gradient-btn {
+	@include mixins.button('primary-gradient', colors.$color__white, colors.$color__white);
+}
+
+.primary-slate-btn {
+	@include mixins.button('primary-slate', colors.$color__white, colors.$color__white);
+}
+
+.secondary-slate-gray-btn {
+	@include mixins.button('secondary-slate-gray', colors.$color__gray-500, colors.$color__gray-500);
+}
+
+.primary-white-btn {
+	@include mixins.button('primary-white', colors.$color__gray-500, colors.$color__gray-500);
+}
+
+.secondary-slate-btn {
+	@include mixins.button('secondary-slate', colors.$color__gray-500, colors.$color__gray-500);
+}
+
+.secondary-white-btn {
+	@include mixins.button('secondary-white', colors.$color__white, colors.$color__white);
+}
+
+// Links
+.slate-link-16 {
+	@include mixins.link(colors.$color__gray-500, 16, 16);
+}
+
+.blue-link-16 {
+	@include mixins.link(#099AC6, 16, 16);
+}
+
+.white-link-16 {
+	@include mixins.link(colors.$color__white, 16, 16);
+}
+
+.slate-link-14 {
+	@include mixins.link(colors.$color__gray-500, 14, 14);
+}
+
+.blue-link-14 {
+	@include mixins.link(#099AC6, 14, 14);
+}
+
+.white-link-14 {
+	@include mixins.link(colors.$color__white, 14, 14);
+}
+
+.slate-link-12 {
+	@include mixins.link(colors.$color__gray-500, 12, 12);
+}
+
+.blue-link-12 {
+	@include mixins.link(#099AC6, 12, 12);
+}
+
+.white-link-12 {
+	@include mixins.link(colors.$color__white, 12, 12);
+}
+
+// Disabled Button or Link
+.disabled {
+	pointer-events: none;
+	opacity: 0.3;
+}
+
+/* Language-specific overrides */
+html[lang="zh-CN"],
+html[lang="ja"],
+html[lang="ko"] {
+  .primary-gradient-btn span,
+  .primary-slate-btn span,
+  .secondary-slate-gray-btn span,
+  .primary-white-btn span,
+  .secondary-slate-btn span,
+  .secondary-white-btn span {
+    @include mixins.padding(0, 8, 0, 8);
+  }
+}

@@ -1,0 +1,709 @@
+.studioPage {
+	background-color:#fff;
+}
+.studio {
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.hero-main{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 450px;
+}
+
+.default-logo img{
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	max-width: 400px;
+}
+
+.studio-description img{
+    right: 0%;
+    max-height: 430px;
+    width: auto;
+    position:absolute; 
+    bottom:0;
+  }
+
+.studio-description{
+  background-color: #292d3d;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 80px 0 120px;
+  min-height: 450px;
+}
+
+.studio-data{
+  min-height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index:2;
+  top: -80px;
+  position: relative;
+  width:  85%;
+}
+
+.studio-data p{
+  opacity: 0.8;
+	letter-spacing: 0.5px;
+	}
+	
+	.studio-data .wrap {
+		max-width:100%;
+	}
+
+.bio-studio{
+  color: white;
+  width: 100%;
+}
+
+.nb-studio{
+  width: 100%;
+  color: white;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding:4em 0;
+}
+
+.nb-studio p{
+  text-align: center;
+font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+font-size: 21px!important;
+margin:0;
+}
+
+.nb-studio h2{
+text-align: center;
+font-family: var(--font-wt-Black);
+font-weight:750;
+font-size: 60px;
+margin: 0 0 0.2em;
+}
+
+.nb-studio h3{
+text-align: center;
+font-family: var(--font-wt-Black);
+font-weight:750;
+font-size: 36px;
+margin: 0 0 0.4em;
+}
+
+.nb-studio span{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.bio-studio h3{
+    font-family: var(--font-wt-Black);
+    font-weight:750;
+  text-align: center;
+  width:75%;
+}
+
+.bio-studio h6{
+  padding-top: 15px;
+    text-align: center;
+    width: 65%;
+    margin: 0.5em auto;
+}
+
+
+.default-city-description{
+    left: 60%;
+    width: 40%;
+	margin: 100px 0;
+}
+
+.default-city-description p {
+	margin-bottom:0;
+	font-size:21px!important;
+}
+
+.hero-map{
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -80px;
+  margin-bottom: -80px;
+}
+
+  #container{
+    top: -20px;
+    position: relative;
+  }
+  div.studio-description{
+    display: block;
+  }
+
+  div.desktop{
+    display: flex;
+  }
+
+  div.iphone{
+    display: none
+  }
+
+  div.desktop-data{
+    display: block;
+  }
+
+  div.iphone-data{
+    display: none
+  }
+
+  .desktop-studio-photo{
+    display: block;
+    max-width:1230px;
+  }
+
+  .iphone-studio-photo{
+    display: none;
+  }
+
+#container-bis{
+  position: relative;
+  padding:0 0 80px;
+}
+div.studio-description-bis{
+  display: block;
+  min-height: 450px;
+}
+
+
+.studio-description-bis{
+  background-position: center
+}
+
+div.hero-photo{
+  display: block;
+min-height: unset;
+  padding: 0;
+}
+
+div.studio-short{
+	top: -120px;
+	width: 85%;
+	max-width: 920px;
+	margin:0 auto -120px;
+	padding: 60px 80px;
+	min-height: unset;
+	}
+
+.studio-games{
+  background-color: #1e1c2a;
+  align-items: normal;
+}
+
+.hero-photo img{
+  width: 100%;
+	margin: 80px auto 40px;
+}
+
+.hero-photo a{
+  text-decoration: none;
+  color: #00b6e0;
+  font-family: var(--font-wt-Heavy);
+  font-weight:700;
+  display: block;
+  text-align: center
+}
+
+.hero-photo.minimal a{
+	margin:2em auto 2.5em;
+}
+
+
+.hero-photo a::after{
+    width: 1em;
+    height: 0.75em;
+    content: "";
+    display: inline-block;
+    background: url(../images/link-icon-arrow-blue-2019.svg) no-repeat;
+    position: relative;
+    top: 1px;
+    left: 0.5em;
+  }
+
+.history-studio {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.history-studio h3 {
+font-family: var(--font-wt-Black);
+font-weight:750;
+font-size: 26px;
+	margin: 0 auto 1em;
+}
+
+.history-studio p {
+font-size: 21px!important;
+}
+
+.history-studio p:last-child {
+margin-bottom:0;
+}
+
+.games-outer-wrapper {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	border:none;
+}
+.games-outer-wrapper > div {
+	max-width: 240px;
+    padding: 0;
+}
+
+.game-pod {
+ display:block;
+   margin: 1%;
+   overflow: hidden;
+}
+
+
+.game-icon {
+  width: 100%;
+  height: auto;
+  transition:all 0.5s;
+  opacity:1;
+
+}
+
+.game-pod:hover .game-icon {
+  opacity:0.75;
+}
+
+.game-shader {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  text-align:left;
+  padding:0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.1) 60%);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.game-details-wrap {
+  padding:0 0 0.5vw;
+}
+
+.game-shader h6 {
+  margin: 7% 10% 0.5%;
+  font-size:16px;
+  line-height:1.2em;
+    font-family: var(--font-wt-Heavy);
+    font-weight:700;
+}
+
+.game-shader a.studio-link {
+  font-size:0.57vw;
+    font-family: var(--font-wt-Light);
+    font-weight:400;
+    color:#fff;
+    display:inline-block;
+}
+
+.game-shader a.studio-link:hover {
+  text-decoration:underline;
+}
+
+#page-games .featured-pod-wrap {
+  margin: 75px auto 0;
+}
+
+.game-pod .app-button-wrap {
+  transition-property: all, opacity, height;
+  transition-duration: 0.2s, 0.2s, 0.5s;
+  opacity: 0;
+  width: 80%;
+  justify-content: center;
+  height: 0;
+}
+
+.game-pod:hover .app-button-wrap {
+  opacity: 1;
+  height: 40px;
+}
+
+.game-pod .app-button-wrap a img {
+  height: 38px;
+}
+
+.game-pod .highlight-caption {
+  width:80%;
+  margin:0 auto 0.5em;
+  transition: all 0.2s;
+  opacity:0;
+  font-family: var(--font-wt-Heavy);
+  font-weight:700;
+  font-size:0.95vw;
+  line-height:1.2em;
+  text-shadow: 0px 0px 8px rgba(0,0,0,0.65);
+}
+
+.game-pod:hover .highlight-caption {
+  opacity:1;
+}
+
+.game-list{
+  color: white;
+  width: 100%;    
+}
+
+.game-list h3 {
+margin:1em auto 0.75em;
+}
+
+.game-list p{
+margin:1em auto 1.5em;
+}
+
+.see-more{
+  background-color: transparent;
+  color: #00b6df;
+  border-style: solid;
+  margin-top: 2em;
+
+}
+
+.default-studio-game{
+  margin:1em auto;
+  letter-spacing: 1px;
+  font-family: var(--font-wt-Heavy);
+  font-weight:700;
+}
+
+hr.line1 {
+    border: 4px solid;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.default-studio-game a{
+    font-size: 12px;
+}
+
+.link-small-studio{
+	margin: 2em auto 0;
+}
+
+@media screen and (max-width:2000px) {
+  .game-shader a.studio-link {
+    font-size:0.85vw;
+  }
+
+}
+
+@media screen and (max-width:1440px) {
+
+  .hq-title {
+    margin-top: -15px;
+}
+
+.hero-map{
+	background-size: cover;
+	background-position: 30%;
+}
+
+.studio-description img {
+    max-height: 350px;
+}
+
+}
+
+@media screen and (min-width:1440px) {
+
+  .nb-studio span{
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+
+}
+@media screen and (max-width:1024px) {
+
+.studio.hero-photo {
+	min-height:unset;
+}
+
+
+  .game-shader a.studio-link {
+    font-size:1.7vw;
+  }
+
+  .default-logo img {
+    width: 40%;
+  }
+
+.studio-short .inner-wrap-600 {
+	width: 100%;
+	padding: 0;
+}
+.default-city-description {
+	left: 55%;
+	width: 45%;
+}
+.default-city-description p {
+	font-size: 16px!important;
+}
+}
+
+@media screen and (max-width:940px) {
+  .studio-data{
+  left: 0%;
+  right: 0%;
+  width: 100%
+  }
+  
+  .studio-description {
+	padding: 60px 0 80px;
+	}
+  .studio-description.no-stats {
+	padding: 60px 0 0;
+	}
+
+    .studio-description img{
+	right: unset;
+	max-height: 250px;
+	width: auto;
+	position: relative;
+	bottom: 0;
+	margin: 2em auto 0;
+  }
+
+
+    div.desktop-data{
+    display: none;
+  }
+
+  div.iphone-data {
+    display: block;
+  }
+
+  div.studio-data {
+    position: relative;
+      }
+
+  .bio-studio h3{
+     width: 95%;
+  }
+  .bio-studio h6{
+    width: 85%;
+  }
+
+.hero-map {
+        margin-top: 0;
+    }
+
+}
+
+
+@media screen and (max-width:835px) {
+    .history-studio h3 {
+    font-size: 21px;
+}
+
+}
+@media screen and (max-width:768px) {
+.hero-main {
+	min-height: 350px;
+}
+
+  .game-pod .game-details-wrap {
+    opacity:1;
+  }
+  .game-pod .app-button-wrap {
+    opacity: 1;
+    height: 40px;
+  }
+  .nb-studio {
+	justify-content: space-between;
+}
+.nb-studio h3 {
+	font-size: 32px;
+}
+.nb-studio h2 {
+	font-size: 50px;
+}
+.nb-studio p {
+	font-size: 16px!important;
+}
+.history-studio p {
+	font-size: 16px!important;
+}
+}
+
+@media screen and (max-width:750px) {
+  .studio-data .mobile-studio{
+    display: none
+  }
+
+        .default-city-description p {
+        font-size: 1em;
+    }
+  }
+
+@media screen and (max-width:640px) {
+.games-outer-wrapper {
+	flex-direction:column;
+	align-items: center;
+}
+.studio-inner-wrap {
+	width: 100%;
+}
+  .game-shader a.studio-link {
+    font-size:2.6vw;
+  }
+  #games-filters {
+    flex-direction:column;
+  } 
+  #games-filters > div {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 320px;
+    margin: 2.5% auto;
+    text-align: center;
+  }
+    div.studio-short{
+    width: 100%;
+    margin-bottom: 0;
+    	padding: 40px;
+  }
+
+
+  .studio-description{
+    min-height: 350px;
+  }
+
+  .default-city-description {
+    padding-top: 230px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+	margin:0;
+}
+.history-studio p {
+	font-size: 16px!important;
+}
+
+  .default-city-description  p{
+font-size: 14px!important;
+
+}
+#container-bis {
+	padding: 0 0 40px;
+}
+  div.desktop{
+    display: none;
+  }
+
+  div.iphone{
+    display: block;
+  }
+.hero-photo img {
+	margin: 40px auto 20px;
+}
+  .desktop-studio-photo{
+    display: none;
+  }
+
+  .iphone-studio-photo{
+    display: block;
+  }
+
+  .default-logo img {
+    width: 55%;
+  }
+
+  div.studio-description-bis {
+    min-height: 450px; 
+  }
+
+  div.studio-short {
+    top: 0;
+  }
+
+  .hero-map {
+    background-position: initial; 
+}
+
+div.studio-description-bis {
+	min-height: 180px;
+}
+
+}
+
+@media screen and (max-width:640px) {
+
+.game-pod {
+	margin: 2.5%;
+}
+
+.hero-main {
+	min-height: 300px;
+}
+.studio-data {
+	min-height: unset;
+	}
+.nb-studio {
+padding:2em 0;
+	justify-content: space-around;
+}
+	.nb-studio h2 {
+	margin-bottom: 0;
+	font-size: 36px;
+}
+.studio-data p {
+	font-size: 14px!important;
+}
+      .bio-studio h3{
+    font-size: 20px;
+  }
+  .bio-studio h6{
+    font-size: 15px;
+  }
+
+}
+@media screen and (max-width:480px) {
+
+  .game-shader a.studio-link {
+    font-size:5.1vw;
+  }
+
+.history-studio h3 {
+    font-size: 18px;
+}
+
+  .hero-photo a {
+      font-size: 13px;
+}
+	.default-city-description {
+	    padding-top: 180px;
+	}
+
+
+}
+

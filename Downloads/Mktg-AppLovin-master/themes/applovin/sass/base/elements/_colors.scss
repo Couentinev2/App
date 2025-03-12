@@ -1,0 +1,350 @@
+@use "../../abstracts/variables/colors";
+
+.blue {
+    color: colors.$color__blue;
+}
+
+.blue-a80 {
+    color: colors.$color__blue-a80;
+}
+
+.blue-a60 {
+    color: colors.$color__blue-a60;
+}
+
+.blue-a40 {
+    color: colors.$color__blue-a40;
+}
+
+.blue-a20 {
+    color: colors.$color__blue-a20;
+}
+
+.blue-a10 {
+    color: colors.$color__blue-a10;
+}
+
+.blue-a05 {
+    color: colors.$color__blue-a05;
+}
+
+.blue-a02 {
+    color: colors.$color__blue-a02;
+}
+
+.dark-blue {
+    color: colors.$color__dark-blue;
+}
+
+.dark-blue-a80 {
+    color: colors.$color__dark-blue-a80;
+}
+
+.dark-blue-a60 {
+    color: colors.$color__dark-blue-a60;
+}
+
+.dark-blue-a40 {
+    color: colors.$color__dark-blue-a40;
+}
+
+.dark-blue-a20 {
+    color: colors.$color__dark-blue-a20;
+}
+
+.dark-blue-a10 {
+    color: colors.$color__dark-blue-a10;
+}
+
+.dark-blue-a05 {
+    color: colors.$color__dark-blue-a05;
+}
+
+.dark-blue-a02 {
+    color: colors.$color__dark-blue-a02;
+}
+
+.royal-purple {
+    color: colors.$color__royal-purple;
+}
+
+.royal-purple-a80 {
+    color: colors.$color__royal-purple-a80;
+}
+
+.royal-purple-a60 {
+    color: colors.$color__royal-purple-a60;
+}
+
+.royal-purple-a40 {
+    color: colors.$color__royal-purple-a40;
+}
+
+.royal-purple-a20 {
+    color: colors.$color__royal-purple-a20;
+}
+
+.royal-purple-a10 {
+    color: colors.$color__royal-purple-a10;
+}
+
+.royal-purple-a05 {
+    color: colors.$color__royal-purple-a05;
+}
+
+.royal-purple-a02 {
+    color: colors.$color__royal-purple-a02;
+}
+
+.dark-royal-purple {
+    color: colors.$color__dark-royal-purple;
+}
+
+.dark-royal-purple-a80 {
+    color: colors.$color__dark-royal-purple-a80;
+}
+
+.dark-royal-purple-a60 {
+    color: colors.$color__dark-royal-purple-a60;
+}
+
+.dark-royal-purple-a40 {
+    color: colors.$color__dark-royal-purple-a40;
+}
+
+.dark-royal-purple-a20 {
+    color: colors.$color__dark-royal-purple-a20;
+}
+
+.dark-royal-purple-a10 {
+    color: colors.$color__dark-royal-purple-a10;
+}
+
+.dark-royal-purple-a05 {
+    color: colors.$color__dark-royal-purple-a05;
+}
+
+.dark-royal-purple-a02 {
+    color: colors.$color__dark-royal-purple-a02;
+}
+
+.sea-green {
+    color: colors.$color__sea-green;
+}
+
+.sea-green-a80 {
+    color: colors.$color__sea-green-a80;
+}
+
+.sea-green-a60 {
+    color: colors.$color__sea-green-a60;
+}
+
+.sea-green-a40 {
+    color: colors.$color__sea-green-a40;
+}
+
+.sea-green-a20 {
+    color: colors.$color__sea-green-a20;
+}
+
+.sea-green-a10 {
+    color: colors.$color__sea-green-a10;
+}
+
+.sea-green-a05 {
+    color: colors.$color__sea-green-a05;
+}
+
+.sea-green-a02 {
+    color: colors.$color__sea-green-a02;
+}
+
+.dark-sea-green {
+    color: colors.$color__dark-sea-green;
+}
+
+.dark-sea-green-a80 {
+    color: colors.$color__dark-sea-green-a80;
+}
+
+.dark-sea-green-a60 {
+    color: colors.$color__dark-sea-green-a60;
+}
+
+.dark-sea-green-a40 {
+    color: colors.$color__dark-sea-green-a40;
+}
+
+.dark-sea-green-a20 {
+    color: colors.$color__dark-sea-green-a20;
+}
+
+.dark-sea-green-a10 {
+    color: colors.$color__dark-sea-green-a10;
+}
+
+.dark-sea-green-a05 {
+    color: colors.$color__dark-sea-green-a05;
+}
+
+.dark-sea-green-a02 {
+    color: colors.$color__dark-sea-green-a02;
+}
+
+.tech-blue {
+    color: colors.$color__tech-blue;
+}
+
+.tech-blue-a80 {
+    color: colors.$color__tech-blue-a80;
+}
+
+.tech-blue-a60 {
+    color: colors.$color__tech-blue-a60;
+}
+
+.tech-blue-a40 {
+    color: colors.$color__tech-blue-a40;
+}
+
+.tech-blue-a20 {
+    color: colors.$color__tech-blue-a20;
+}
+
+.tech-blue-a10 {
+    color: colors.$color__tech-blue-a10;
+}
+
+.tech-blue-a05 {
+    color: colors.$color__tech-blue-a05;
+}
+
+.dark-tech-blue {
+    color: colors.$color__dark-tech-blue;
+}
+
+.dark-tech-blue-a80 {
+    color: colors.$color__dark-tech-blue-a80;
+}
+
+.dark-tech-blue-a60 {
+    color: colors.$color__dark-tech-blue-a60;
+}
+
+.dark-tech-blue-a40 {
+    color: colors.$color__dark-tech-blue-a40;
+}
+
+.dark-tech-blue-a20 {
+    color: colors.$color__dark-tech-blue-a20;
+}
+
+.dark-tech-blue-a10 {
+    color: colors.$color__dark-tech-blue-a10;
+}
+
+.dark-tech-blue-a05 {
+    color: colors.$color__dark-tech-blue-a05;
+}
+
+.dark-tech-blue-a02 {
+    color: colors.$color__dark-tech-blue-a02;
+}
+
+.magenta {
+    color: colors.$color__magenta;
+}
+
+.magenta-a80 {
+    color: colors.$color__magenta-a80;
+}
+
+.magenta-a60 {
+    color: colors.$color__magenta-a60;
+}
+
+.magenta-a40 {
+    color: colors.$color__magenta-a40;
+}
+
+.magenta-a20 {
+    color: colors.$color__magenta-a20;
+}
+
+.magenta-a10 {
+    color: colors.$color__magenta-a10;
+}
+
+.magenta-a05 {
+    color: colors.$color__magenta-a05;
+}
+
+.magenta-a02 {
+    color: colors.$color__magenta-a02;
+}
+
+.black {
+    color: colors.$color__black;
+}
+
+.black-a80 {
+    color: colors.$color__black-a80;
+}
+
+.black-a60 {
+    color: colors.$color__black-a60;
+}
+
+.black-a40 {
+    color: colors.$color__black-a40;
+}
+
+.black-a20 {
+    color: colors.$color__black-a20;
+}
+
+.black-a10 {
+    color: colors.$color__black-a10;
+}
+
+.black-a05 {
+    color: colors.$color__black-a05;
+}
+
+.black-a02 {
+    color: colors.$color__black-a02;
+}
+
+.white {
+    color: colors.$color__white;
+}
+
+
+.gray-500 {
+    color: colors.$color__gray-500;
+}
+
+.gray-400 {
+    color: colors.$color__gray-400;
+}
+
+.gray-300 {
+    color: colors.$color__gray-300;
+}
+
+.gray-200 {
+    color: colors.$color__gray-200;
+}
+
+.gray-100 {
+    color: colors.$color__gray-100;
+}
+
+.sun-orange-dark {
+    color: colors.$color__sun-orange-dark;
+}
+
+.sun-orange-bright {
+    color: colors.$color__sun-orange-bright;
+}

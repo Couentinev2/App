@@ -1,0 +1,33 @@
+@use "../../abstracts/mixins/mixins";
+
+@import url("https://cdn.fonts.net/t/1.css?apiType=css&projectid=8d68d7d1-1cef-4e68-a87a-f377afc8b375");
+// @include font-face('Avenir Light', './fonts/Avenir/Avenir35Light_normal_normal', 300, 'normal');
+// @include font-face('Avenir Light Oblique', './fonts/Avenir/Avenir35LightOblique_oblique_normal', 300, 'oblique');
+// @include font-face('Avenir Medium', './fonts/Avenir/Avenir65Medium_normal_normal', 550, 'normal');
+// @include font-face('Avenir Medium Oblique', './fonts/Avenir/Avenir65MediumOblique_oblique_normal', 550, 'oblique');
+// @include font-face('Avenir Heavy', './fonts/Avenir/Avenir85Heavy_normal_normal', 700, 'normal');
+// @include font-face('Avenir Heavy Oblique', './fonts/Avenir/Avenir85HeavyOblique_oblique_normal', 700, 'oblique');
+// @include font-face('Avenir Black', './fonts/Avenir/Avenir95Black_normal_normal', 750, 'normal');
+// @include font-face('Avenir Black Oblique', './fonts/Avenir/Avenir95BlackOblique_oblique_normal', 0, 'oblique');
+// @include font-face('ClarendonBT-Bold', './fonts/ClarendonBT/ClarendonBTBold_normal_normal_subset1', 700, 'normal');
+@include mixins.font-face('TTBackwardsSansBold', './fonts/TTBackwards/TTBackwardsSansBold_normal_normal_subset1', 700, 'normal', 'U+0000,U+000D,U+0020-007E');
+@include mixins.font-face('TTBackwardsSansBlack', './fonts/TTBackwards/TTBackwardsSansBlack_normal_normal_subset1', 900, 'normal' 'U+0020-0024,U+0026-003b,U+003d,U+003f-005b,U+005d-005e,U+0060-007a,U+007e,U+00a5,U+00a7,U+00ab,U+00b4,U+00b7,U+00bb,U+00c0-00cf,U+00d1-00d4,U+00d6,U+00d8-00dc,U+00e0-00ef,U+00f1-00f4,U+00f6,U+00f8-00fc,U+00ff-0103,U+0112-0115,U+012a-012d,U+014c-014f,U+0152-0153,U+016a-016d,U+0178,U+1e9e,U+2010-2011,U+2013-2014,U+2018-201a,U+201c-201e,U+2020-2021,U+2026,U+2032-2033,U+2039-203a');
+
+
+// // Applovin JP Tazugane
+// @include font-face('Tazugane Light', './fonts/AppLovinJP/TazuganeLight', 300, 'normal');
+// @include font-face('Tazugane Medium', './fonts/AppLovinJP/TazuganeMedium', 500, 'normal');
+// @include font-face('Tazugane Heavy', './fonts/AppLovinJP/TazuganeHeavy', 750, 'normal');
+// @include font-face('Tazugane Black', './fonts/AppLovinJP/TazuganeBlack', 800, 'normal');
+
+// // AppLovin CN M XiangHe Hei
+// @include font-face('MXiangHe Light', './fonts/AppLovinCN/MXiangHe Light', 300, 'normal');
+// @include font-face('MXiangHe Medium', './fonts/AppLovinCN/MXiangHe Medium', 500, 'normal');
+// @include font-face('MXiangHe Heavy', './fonts/AppLovinCN/MXiangHe Heavy', 750, 'normal');
+// @include font-face('MXiangHe Black', './fonts/AppLovinCN/MXiangHe Black', 800, 'normal');
+
+// // AppLovin KR Seol Sans
+// @include font-face('SeolSans Light', './fonts/AppLovinKR/SeolSans Light', 300, 'normal');
+// @include font-face('SeolSans Medium', './fonts/AppLovinKR/SeolSans Medium', 500, 'normal');
+// @include font-face('SeolSans Heavy', './fonts/AppLovinKR/SeolSans Heavy', 750, 'normal');
+// @include font-face('SeolSans Black', './fonts/AppLovinKR/SeolSans Black', 800, 'normal');

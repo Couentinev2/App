@@ -1,0 +1,435 @@
+@use "../abstracts/mixins/mixins";
+@use "../abstracts/variables/colors";
+@use "../abstracts/variables/typography";
+
+#careers {
+    .hero-section {
+        position: relative;
+        background: url("/wp-content/themes/applovin/images/illo-jobs-header-background.svg"), linear-gradient(to bottom, #E0E6F0, #F7F8FC);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 15%;
+    }
+
+    .quote-section {
+        background: radial-gradient(100.16% 141.42% at 0% 0%, #105FFB 0%, #A15AF0 100%);
+    }
+
+    .internship-section {
+        .overlay {
+            background: linear-gradient(180deg, rgb(24 22 37 / 0.6) 0.5%, rgb(24 22 37 / 0) 11%, rgb(24 22 37 / 0.6) 24%, #181625 43%);
+            
+            @include mixins.mq('tablet') {
+                background: linear-gradient(180deg, rgb(24 22 37 / 0.6) 7.5%, rgb(24 22 37 / 0) 30%, rgb(24 22 37 / 0.6) 46%, #181625 57%);
+            }
+
+            @include mixins.mq('laptop') {
+                background: linear-gradient(180deg, rgb(24 22 37 / 0.60) 9.55%, rgb(24 22 37 / 0.00) 34.87%, rgb(24 22 37 / 0.60) 55.21%, #181625 77.21%);
+            }
+        }
+    }
+
+    .video-section {
+        .overlay {
+            background: linear-gradient(180deg, rgb(24 22 37 / 0.6) 0.5%, rgb(24 22 37 / 0) 11%, rgb(24 22 37 / 0.6) 24%, #181625 43%);
+            
+            @include mixins.mq('tablet') {
+                background: linear-gradient(180deg, rgb(24 22 37 / 0.6) 7.5%, rgb(24 22 37 / 0) 30%, rgb(24 22 37 / 0.6) 46%, #181625 57%);
+            }
+
+            @include mixins.mq('laptop') {
+                background: linear-gradient(180deg, rgb(24 22 37 / 0.60) 9.55%, rgb(24 22 37 / 0.00) 34.87%, rgb(24 22 37 / 0.60) 55.21%, #181625 77.21%);
+            }
+        }
+
+        .no-scroll {
+            overflow: hidden;
+    
+        }
+    }
+
+    #job-board {
+        .alert-warning p {
+            color: #000;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    
+        .no-job {
+            text-align: center;
+        }
+    
+        .job-listing {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 20px 0;
+            transition: all 0.2s;
+            cursor: pointer;
+
+            @include mixins.mq('tablet') {
+                gap: 16px;
+            }
+
+        }
+
+    
+        .job-listing p {
+            display: inline-block;
+            color: #999;
+            flex: 0 0 45%;
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 18px;
+            margin: 0;
+        }
+    
+        .job-title {
+            display: inline-block;
+            flex: 0 0 50%;
+            color: #000;
+            transition: all 0.2s;
+            font-size: 18px;
+            font-weight: 600;
+
+            @include mixins.mq('tablet') {
+                font-size: 21px;
+            }
+        }
+    
+        .job-listing-item::before {
+            display: block;
+            content: '';
+            border-top: 1px solid #e7e7e7;
+            position: absolute;
+            top: -1px;
+            width: calc(100% - 48px);
+        }
+
+        .job-listing-item:last-child::after {
+            display: block;
+            content: '';
+            border-top: 1px solid #e7e7e7;
+            position: absolute;
+            bottom: 1px;
+            width: calc(100% - 48px);
+        }
+            
+        h3 {
+            margin: 64px 0 32px;
+            text-align: left;
+            font-weight: normal;
+            line-height: 1.2em;
+            color: #666;
+            font-family: typography.$font__avenir-light;
+            font-size: 21px;
+
+            @include mixins.mq('tablet') {
+                margin: 80px 0 32px;
+                font-size: 24px;
+            }
+
+            @include mixins.mq('laptop') {
+                margin: 96px 0 32px;
+                font-size: 36px;
+            }   
+        }
+
+        .awards-pod h3 {
+            font-size: 18px;
+            font-family: typography.$font__avenir-heavy;
+            font-weight: 700;
+            margin: 1.5em 0 0;
+        }
+    
+        #job-counter {
+            font: 18px / 1.5 typography.$font__avenir-black, medium, "Helvetica Neue", Helvetica, sans-serif;
+            color: colors.$color__black;
+    
+            span {
+                font-family: typography.$font__avenir-light;
+            }
+        }
+    
+        select {
+            padding: 8px;
+            font-size: 16px;
+            border-color: #EFEFEF;
+            border-width: 2px;
+        }
+
+        #filter-form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 16px;
+
+            select {
+                margin-right: 16px;
+            }
+        }
+    
+        .scrollable-menu {
+            height: auto;
+            max-height: 200px;
+            overflow-x: hidden;
+        }
+    
+        .arrow {
+            float: right;
+            rotate: 180deg;
+        }
+
+        svg {
+            transition: all 0.3s;
+        }
+
+        .dropdown {
+            padding: 0.5rem !important;
+        }
+    
+        /* the code below is for the dropdown menu */
+        .wrapper-dropdown {
+            background: colors.$color__white;
+            border: 1px solid #eef0f6;
+            border-radius: 8px;
+            box-shadow: 0 2px 2px 0 rgb(16 95 251 / .15);
+            color: colors.$color__black;
+            cursor: pointer;
+            font-family: typography.$font__avenir-light;
+            font-weight: 300;
+            justify-content: space-between;
+            line-height: 16px;
+            padding: 14px 16px;
+            text-align: left;
+            user-select: none;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .selected-display {
+                align-items: center;
+                display: flex;
+                font-family: typography.$font__avenir-heavy;
+                font-weight: 750;
+                font-size: 16px;
+                margin: 0;
+                padding-top: 5px;
+            }
+        }
+    
+        .wrapper-dropdown::before {
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            margin-top: -2px;
+            border-width: 6px 6px 0;
+            border-style: solid;
+            border-color: colors.$color__white transparent;
+        }
+    
+        .rotated {
+            transform: rotate(-180deg);
+        }
+    
+        .wrapper-dropdown .dropdown {
+            background: inherit;
+            border-radius: 15px;
+            box-shadow: inherit;
+            box-shadow: 0 4px 20px 0 rgb(16 95 251 / .15);
+            left: 0;
+            list-style: none;
+            margin: 0;
+            opacity: 0;
+            padding: 20px !important;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            top: 125%;
+            transform-origin: top;
+            transition: .3s;
+            user-select: none;
+            visibility: hidden;
+            z-index: 99;
+        }
+    
+        .wrapper-dropdown .dropdown li {
+            padding: 0 15px;
+            line-height: 25px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+    
+        .wrapper-dropdown .dropdown li:first-child {
+            margin-top: 10px;
+        }
+    
+        .wrapper-dropdown .dropdown li:last-child {
+            margin-bottom: 10px;
+            border-bottom: none;
+        }
+    
+        .wrapper-dropdown.active .dropdown {
+            border-radius: 15px;
+            opacity: 1;
+            visibility: visible;
+        }
+    
+        .job-controls-con {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        #reset-filters {
+            color: colors.$color__blue;
+            font-family: typography.$font__avenir-heavy;
+            font-weight: 700;
+            cursor: pointer;
+            padding-right: 35px;
+        }
+    
+        .loading-jobs {
+            text-align: center;
+        }
+    
+        #fetching-jobs p {
+            text-align: center;
+        }
+    
+    
+        @media screen and (width <= 1040px) {
+            #filter-form {
+                flex-direction: column;
+            }
+    
+            .wrapper-dropdown {
+                width: 100%;
+            }
+    
+            .job-listing  {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    
+        .disabled {
+            pointer-events: none;
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    
+        #intern-message {
+            text-align: center;
+        }
+
+        .awards-pod a {
+            color: colors.$color__black !important;
+        }
+
+        .disclaimer a {
+            color: colors.$color__blue;
+            font-family: typography.$font__avenir-heavy;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        section .opening a {
+            font-family: typography.$font__avenir-heavy;
+        }
+    }
+
+    .awards-grid-wrap {
+        display: grid;
+        gap: 40px;
+    }
+    
+    .awards-pod {
+        margin: 0 auto 40px;
+        width: 20%;
+        max-width: 215px;
+    }
+    
+    .awards .awards-container {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    @media screen and (width <= 640px){
+        .awards .awards-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+    }
+    
+    .awards-pod img {
+        max-height: 120px;
+        display: inline-block;
+    }
+    
+    .awards button {
+        padding: 1rem 0.75rem;
+    }
+    
+    @media screen and (width <= 768px){
+        .awards-pod {
+            width: 45%;
+            max-width: 400px;
+            text-align: center;
+        }
+    }
+    
+    @media screen and (width <= 640px){
+        .awards-pod h3 {
+            font-size: 14px;
+        }
+    }
+    
+    #awards-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        display: grid;
+        gap: 40px;
+    }
+
+    @include mixins.mq('mobile') {
+        #awards-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* Target the last item */
+        #awards-container > div:last-child {
+            grid-column: 1 / -1;
+            max-width: 50%;
+            margin: auto;
+        }
+    }
+
+    @include mixins.mq('laptop') {
+        #awards-container {
+            gap: 48px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        #awards-container > div:last-child {
+            grid-column: span 1;
+            max-width: none;
+            margin: 0 auto;
+        }
+    }
+
+}

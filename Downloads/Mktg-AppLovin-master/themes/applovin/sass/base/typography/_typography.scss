@@ -1,0 +1,60 @@
+@use "sass:meta";
+@use "../../abstracts/variables/colors";
+@use "../../abstracts/variables/typography";
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: colors.$color__text-main;
+	font-family: typography.$font__main;
+	font-size: 1rem;
+	line-height: typography.$font__line-height-body;
+}
+
+@include meta.load-css("headings");
+@include meta.load-css("copy");
+
+
+.avenir-light {
+	font-family: typography.$font__avenir-light;
+}
+
+.avenir-light-oblique {
+	font-family: typography.$font__avenir-light-oblique;
+}
+
+.avenir-medium {
+	font-family: typography.$font__avenir-medium;
+}
+
+.avenir-medium-oblique {
+	font-family: typography.$font__avenir-medium-oblique;
+}
+
+.avenir-heavy {
+	font-family: typography.$font__avenir-heavy;
+}
+
+.avenir-heavy-oblique {
+	font-family: typography.$font__avenir-heavy-oblique;
+}
+
+.avenir-black {
+	font-family: typography.$font__avenir-black;
+}
+
+.avenir-black-oblique {
+	font-family: typography.$font__avenir-black-oblique;
+}
+
+
+.backwards-bold {
+	font-family: typography.$font__backwards-bold;
+}
+
+.backwards-black {
+	font-family: typography.$font__backwards-black;
+}

@@ -1,0 +1,648 @@
+@use "../abstracts/mixins/mixins";
+@use "../abstracts/variables/colors";
+@use "../abstracts/variables/typography";
+
+#audience-plus {
+    .hero-section {
+        background-color: colors.$color__gray-200;
+        z-index: auto;
+        position: relative;
+
+        .hero-portrait-one {
+            img {
+                margin: 0 auto;
+                width: 185px;
+                padding-top: 100px;
+                z-index: 99;
+
+                @include mixins.mq('mobile') {
+                    padding-top: 200px;
+                    width: 277px;
+                }
+
+                @include mixins.mq('laptop') {
+                    padding-top: 100px;
+                    width: 370px;
+                }
+            }
+        }
+
+        .hero-portrait-two {
+            display: none;
+
+            @include mixins.mq('mobile') {
+                display: block;
+                position: absolute;
+                top: 64%;
+                left: 3%;
+                transform: translate(-50%, -50%);
+                width: 104px;
+            }
+
+            @include mixins.mq('laptop') {
+                display: block;
+                position: absolute;
+                top: 58%;
+                left: 8%;
+                width: 139px;
+            }
+        }
+
+        .hero-portrait-three {
+            display: none;
+
+            @include mixins.mq('mobile') {
+                display: block;
+                position: absolute;
+                top: 84%;
+                left: 90%;
+                transform: translate(-50%, -50%);
+                width: 126px;
+            }
+
+            @include mixins.mq('laptop') {
+                display: block;
+                position: absolute;
+                top: 80%;
+                left: 88%;
+                width: 168px;
+            }
+        }
+
+        .hero-portrait-four {
+            position: absolute;
+            top: 80%;
+            left: 2%;
+            transform: translate(-50%, -50%);
+            width: 71px;
+
+
+            @include mixins.mq('mobile') {
+                top: 80%;
+                left: 17%;
+                width: 107px;
+            }
+
+            @include mixins.mq('laptop') {
+                top: 85%;
+                left: 23%;
+                width: 143px;
+            }
+        }
+
+        .hero-portrait-five {
+            position: absolute;
+            top: 70%;
+            left: 96%;
+            transform: translate(-50%, -50%);
+            width: 59px;
+
+            @include mixins.mq('mobile') {
+                top: 66%;
+                left: 80%;
+                width: 87px;
+            }
+
+            @include mixins.mq('laptop') {
+                top: 57%;
+                left: 78%;
+                width: 117px;
+            }
+        }
+
+        .square-one {
+            display: none;
+
+            @include mixins.mq('mobile') {
+                display: block;
+                position: absolute;
+                top: 85%;
+                left: -1%;
+
+                img {
+                    max-width: 33px;
+                }
+            }
+
+            @include mixins.mq('laptop') {
+                display: block;
+                position: absolute;
+                top: 81%;
+                left: 4%;
+
+                img {
+                    max-width: 44px;
+                }
+            }
+        }
+
+        .square-two {
+            display: none;
+
+            @include mixins.mq('laptop') {
+                display: block;
+                position: absolute;
+                top: 59%;
+                right: 0;
+                transform: translate(-50%, -50%);
+
+                img {
+                    max-width: 44px;
+                }
+            }
+        }
+
+        .square-three {
+            position: absolute;
+            top: 80%;
+            left: 86%;
+            transform: translate(-50%, -50%);
+
+            img {
+                max-width: 19px;
+                z-index: 99;
+            }
+
+            @include mixins.mq('mobile') {
+                top: 80%;
+                left: 75%;
+
+                img {
+                    max-width: 30px;
+                }
+            }
+
+            @include mixins.mq('laptop') {
+                top: 75%;
+                left: 72%;
+
+                img {
+                    max-width: 38px;
+                }
+            }
+        }
+
+        .square-four {
+            position: absolute;
+            top: 68%;
+            left: 5%;
+            transform: translate(-50%, -50%);
+
+            img {
+                max-width: 19px;
+                z-index: 99;
+            }
+
+            @include mixins.mq('mobile') {
+                top: 68%;
+                left: 22%;
+
+                img {
+                    max-width: 30px;
+                }
+            }
+
+            @include mixins.mq('laptop') {
+                top: 59%;
+                left: 27%;
+
+                img {
+                    max-width: 38px;
+                }
+            }
+        }
+    }
+
+
+    .brand-shopping-section {
+        background-color: colors.$color__gray-500;
+        color: colors.$color__white;
+        position: relative;
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at top, rgb(118 174 177 / 0.40) 25%, colors.$color__gray-500 80%);
+            pointer-events: none;
+            z-index: 3;
+            opacity: 75%;
+        }
+
+        .gradient-pill-one {
+            display: none;
+
+            @include mixins.mq('tablet') {
+                display: block;
+                position: absolute;
+                top: 60%;
+                left: -3%;
+
+                img {
+                    max-height: 97px;
+                    z-index: 1;
+                }
+            }
+
+            @include mixins.mq('laptop') {
+                top: 60%;
+                left: -5%;
+
+                img {
+                    max-height: 287px;
+                }
+            }
+
+        }
+
+        .gradient-pill-two {
+            display: none;
+
+            @include mixins.mq('tablet') {
+                display: block;
+                position: absolute;
+                top: -25%;
+                right: -15%;
+
+                img {
+                    max-height: 207px;
+                    z-index: 1;
+                }
+            }
+
+            @include mixins.mq('laptop') {
+                top: -13%;
+                right: -7%;
+
+                img {
+                    max-height: 287px;
+                }
+            }
+        }
+
+        .app-one {
+            display: none;
+
+            @include mixins.mq('tablet') {
+                display: block;
+                position: absolute;
+                top: -4%;
+                left: 4%;
+
+                img {
+                    max-width: 91px;
+                    z-index: 1;
+                }
+            }
+
+            @include mixins.mq('laptop') {
+                top: -4%;
+                left: 4%;
+
+                img {
+                    max-width: 144px;
+                    z-index: 1;
+                }
+            }
+        }
+
+
+        .app-two {
+            display: none;
+
+            @include mixins.mq('tablet') {
+                display: block;
+                position: absolute;
+                top: 35%;
+                left: 15%;
+                opacity: 35%;
+
+                img {
+                    max-width: 58px;
+                    z-index: 1;
+                }
+            }
+
+            @include mixins.mq('laptop') {
+                top: 35%;
+                left: 15%;
+
+                img {
+                    max-width: 100px;
+                }
+            }
+        }
+
+        .app-three {
+            display: none;
+
+            @include mixins.mq('tablet') {
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 5%;
+
+                img {
+                    max-width: 103px;
+                    z-index: 1;
+                    opacity: 40%;
+                }
+            }
+
+            @include mixins.mq('laptop') {
+                top: 50%;
+                right: 5%;
+
+                img {
+                    max-width: 176px;
+                }
+            }
+
+        }
+
+        .app-four {
+            position: absolute;
+            top: -20%;
+            right: 55%;
+            opacity: 30%;
+
+            img {
+                max-width: 102px;
+                z-index: 1;
+            }
+
+            @include mixins.mq('tablet') {
+                top: -18%;
+                right: 55%;
+            }
+
+            @include mixins.mq('laptop') {
+                top: -22%;
+                right: 55%;
+
+                img {
+                    max-width: 175px;
+                }
+            }
+        }
+
+        .stats-gradient {
+            background: linear-gradient(180deg, rgb(255 255 255 / 0.08) 0%, rgb(255 255 255 / 0.03) 100%),
+                        linear-gradient(180deg, rgb(37 42 58 / 0.60) 0%, rgb(37 42 58 / 0.00) 100%);
+        }
+
+
+    }
+
+    .targeting-section {
+        background-color: colors.$color__gray-100;
+
+        .section-title {
+            color: colors.$color__sun-orange-bright;
+            font-weight: 750;
+            font-family: typography.$font__avenir-black;
+        }
+    }
+
+    .creatives-section {
+        .section-title {
+            color: colors.$color__sun-orange-bright;
+            font-weight: 750;
+            font-family: typography.$font__avenir-black;
+        }
+
+    }
+
+    .inventory-section {
+        .section-title {
+            color: colors.$color__sun-orange-bright;
+            font-weight: 750;
+            font-family: typography.$font__avenir-black;
+        }
+
+        svg {
+            &:hover {
+                background: colors.$color__black;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .reporting-section {
+        .section-title {
+            color: colors.$color__sun-orange-bright;
+            font-weight: 750;
+            font-family: typography.$font__avenir-black;
+        }
+
+        ul li {
+            background: url("/wp-content/themes/applovin/images/light-yellowfilled.svg") no-repeat left top;
+            background-size: 24px;
+            padding: 0 10px 0 40px;
+            margin-bottom: 16px;
+            list-style: none;
+            vertical-align: middle;
+            display: inline-block;
+            width: 100%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .footer-cta-section {
+        .section-title {
+            color: colors.$color__sun-orange-bright;
+            font-weight: 750;
+            font-family: typography.$font__avenir-black;
+        }
+
+    }
+
+
+    #dynamic-h2 {
+        opacity: 0;
+        transition: opacity 1s ease-in-out !important;
+    }
+
+    #dynamic-h2.fade-in {
+        opacity: 1;
+    }
+
+    #dynamic-h2.fade-out {
+        opacity: 0;
+    }
+
+    .slick-slide {
+        margin-right: 40px;
+        height: auto;
+    }
+
+    .slick-list {
+        overflow: visible !important;
+    }
+
+    .slick-arrow {
+        position: relative;
+        margin-top: 0;
+        cursor: pointer;
+        width: auto;
+        height: auto;
+    }
+
+
+    #getting-started {
+        .text-block {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          
+          .slide-content {
+            position: relative;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          .image-block {
+            position: sticky;
+            top: 0;
+            height: 560px;
+          }
+          
+          .StickyAnimation {
+            position: relative;
+            align-self: flex-start;
+          }
+          
+          @media (width <= 1024px) {
+            .StickyAnimation {
+              display: none;
+            }
+          }
+          
+          .StickyAnimation__container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+          }
+          
+          .StickyAnimation__content {
+            position: sticky;
+            top: 0;
+          }
+          
+          .StickyAnimation__contentSection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+            position: relative;
+          }
+          
+          .svg-item {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0; 
+            transition: opacity 1s ease-in-out;
+          }
+          
+          .svg-item.show {
+            z-index: 2; 
+            opacity: 1; 
+          }
+          
+          .svg-item.hide {
+            opacity: 0; 
+          }
+          
+          .svg-animation-trigger {
+            opacity: 0;
+            transition: opacity 1s ease-in; 
+          }
+          
+          .svg-animation-trigger.fade-in {
+            opacity: 1;
+          }
+          
+          .text-container {
+            opacity: 0; 
+            transition: opacity 0.8s ease-in-out;
+          }
+          
+          .text-container.fade-in {
+            opacity: 1; 
+          }
+          
+          .text-container.fade-out {
+            opacity: 0; 
+          }
+          
+          .responsive-svg {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+          }
+          
+          .responsive-svg.fade-in {
+            opacity: 1; 
+          }
+          
+          .responsive-svg.fade-out {
+            opacity: 0;
+          }
+          
+    }
+
+}
+
+.end-card-hero {
+    background: 
+        url('/wp-content/themes/applovin/images/hero-gradients.png'),
+        linear-gradient(180deg, colors.$color__gray-100 0%, colors.$color__gray-200 100%);
+        background-position-y: 15%!important;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.orange-header-gradient {
+    background: linear-gradient(90deg, #E59325 13.56%, #CF2556 88.31%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sunset-gradient {
+    background: linear-gradient(97deg, rgb(255 158 29 / 0.10) 0%, rgb(255 158 29 / 0.60) 100%), 
+                url('/wp-content/themes/applovin/images/illo-cta-minicard-background.png');
+    background-size: cover; 
+    background-blend-mode: overlay; 
+    box-shadow: 0 36px 48px -32px rgb(207 133 33 / 0.25);
+}
+
+
+.pink-gradient {
+    background: linear-gradient(97deg, rgb(252 50 108 / 0.10) 0%, rgb(252 50 108 / 0.60) 100%),
+                url('/wp-content/themes/applovin/images/illo-cta-minicard-background-pink.svg');
+                background-size: cover; 
+                background-blend-mode: overlay; 
+    box-shadow: 0 36px 48px -32px rgb(169 30 70 / 0.25);
+}
+
+.end-card-bg {
+    background-image: url('/wp-content/themes/applovin/images/endcard-cta-background.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

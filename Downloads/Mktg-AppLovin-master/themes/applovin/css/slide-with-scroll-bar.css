@@ -1,0 +1,67 @@
+ .slide-quote {
+    display: flex;
+    align-items: stretch;
+    overflow-y: hidden;
+    gap: 40px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin: 0;
+    padding: 40px 0;
+    position: relative;
+    padding-left: calc((100% - 1264px)/2 + 32px);
+}
+.change-hand {
+    cursor: pointer;
+}
+
+
+.slide-quote-solo {
+    flex: 0 0 35vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    max-width: 352px;
+    width: 352px;
+    min-height: 520px;
+    background-size: contain!important;
+    background-position: bottom!important;
+    background-repeat: no-repeat!important;
+}
+
+.slide-quote-solo-not-hover {
+    opacity: 1;
+}
+
+.slide-quote-solo-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.quote-text {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 40px;
+    padding-bottom: 0;
+    z-index: 2;
+}
+
+.quote-text p {
+    margin-bottom: 0;
+    padding-top: 24px;
+    border-top: 1px solid #e6e6e6;
+    color: #000!important;
+}
+
+.slide-quote-image {
+    max-height: 24px;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+.slide-with-scroll {
+  background-color: #fff;
+}

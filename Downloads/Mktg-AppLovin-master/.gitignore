@@ -1,0 +1,120 @@
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+# Local History for Visual Studio Code
+.history/
+ 
+# Common credential files
+**/credentials.json
+**/client_secrets.json
+**/client_secret.json
+*creds*
+*.dat
+*password*
+*.httr-oauth*
+ 
+# Private Node Modules
+node_modules/
+# vendor/
+creds.js
+ 
+# Private Files
+composer.lock
+
+*.csv
+*.csv.gz
+*.tsv
+*.tsv.gz
+*.xlsx
+ 
+ 
+# Mac/OSX
+.DS_Store
+
+
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+
+/index.php
+/languages
+/plugins/index.php
+/themes/index.php
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+
+# Configuration
+wp-config.php
+
+# Uploads
+/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
+
+# Ignore all plugins
+/plugins/*
+
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes
+/themes/applovin/assets
+
+# Exclude specific folders
+aiowps_backups/*
+cache/*
+gallery/*
+mg-styles/*
+mu-plugins/*
+plugins-inactive/*
+
+# Exclude specific files
+advanced-cache.php
+autoptimize_404_handler.php
+object-cache.php
+
+# Exclude minified and built files
+/themes/applovin/style.min.css
+/themes/applovin/legacy-style.min.css
+
+# Exclude all files in the images/util/ directory
+/images/util/*
+
+# Ignore all files in the dist/ directory
+themes/applovin/dist/css/*
+themes/applovin/dist/js/*
+
+# Allow specific files in dist/
+!themes/applovin/dist/css/legacy-style.css
+!themes/applovin/dist/js/brand-hub.js
+
+# Optionally, keep the dist/ folder itself
+!themes/applovin/dist/.gitkeep
+
+# Exclude lighthouse reports
+themes/applovin/report-desktop.html
+themes/applovin/report-mobile.html
+
+# Exclude cursor rules
+.cursor/

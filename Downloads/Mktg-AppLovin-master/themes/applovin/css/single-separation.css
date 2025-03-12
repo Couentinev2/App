@@ -1,0 +1,78 @@
+.angle-bg-break {
+	background-size:2120px 100%;
+	background-position:center top;
+	background-repeat:no-repeat;
+	padding:96px 120px;
+	text-align:left;
+}
+
+
+.angle-bg-break .inner-wrap{
+	padding: 0;
+}
+.angle-bg-break h2 {
+	margin-top:0;
+}
+
+.angle-bg-break p {
+	max-width:440px;
+	margin-bottom:0;
+	 border-left: 4px solid rgba(0, 113, 206, 0.25);
+	 padding-left: 40px;
+}
+
+.angle-bg-break.light-purple p {
+
+	 border-left: 4px solid rgba(100, 65, 226, 0.25);
+
+}
+
+.dark-green p{
+	border-left: 4px solid  rgba(18, 227, 163, 0.25);
+}
+
+.dark-green p{
+		 border-left: 4px solid rgba(0, 182, 224, 0.25);;
+
+}
+
+.angle-bg-break.dark-blue {
+	background-color:var(--color-modern-gray-500);
+	background-image:url('../images/maxv2/sectionbreak_brandsafety.svg');
+	color:#fff;
+}
+
+.angle-bg-break.dark-green {
+	background-color:var(--color-modern-gray-500);
+	background-image:url('../images/maxv2/sectionbreak_optimizestrategy.svg');
+	color:#fff;
+}
+
+.angle-bg-break.light-blue {
+	background-color:var(--color-modern-gray-100);
+	background-image:url('../images/maxv2/sectionbreak_maximizerevenue.svg');
+}
+
+.angle-bg-break.light-purple {
+	background-color:var(--color-modern-gray-100);
+	background-image:url('../images/maxv2/sectionbreak_savetime.svg');
+}
+
+  @media screen and (max-width: 1000px) {
+.angle-bg-break {
+	padding:80px 56px
+}
+}
+
+  @media screen and (max-width: 760px) {
+
+.angle-bg-break {
+	padding:64px 32px
+}
+
+.angle-bg-break p {
+
+	 padding-left: 20px;
+}
+
+}

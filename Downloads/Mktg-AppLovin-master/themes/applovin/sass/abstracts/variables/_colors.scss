@@ -1,0 +1,143 @@
+// Primary Colors
+$color__blue: #00B6E0;
+$color__blue-a80: rgb(0 182 224 / 0.80);
+$color__blue-a60: rgb(0 182 224 / 0.60);
+$color__blue-a40: rgb(0 182 224 / 0.40);
+$color__blue-a20: rgb(0 182 224 / 0.20);
+$color__blue-a10: rgb(0 182 224 / 0.10);
+$color__blue-a05: rgb(0 182 224 / 0.05);
+$color__blue-a02: rgb(0 182 224 / 0.02);
+
+$color__dark-blue: #099AC6;
+$color__dark-blue-a80: rgb(9 154 198 / 0.80);
+$color__dark-blue-a60: rgb(9 154 198 / 0.60);
+$color__dark-blue-a40: rgb(9 154 198 / 0.40);
+$color__dark-blue-a20: rgb(9 154 198 / 0.20);
+$color__dark-blue-a10: rgb(9 154 198 / 0.10);
+$color__dark-blue-a05: rgb(9 154 198 / 0.05);
+$color__dark-blue-a02: rgb(9 154 198 / 0.02);
+
+$color__royal-purple: #6441E2;
+$color__royal-purple-a80: rgb(100 65 226 / 0.80);
+$color__royal-purple-a60: rgb(100 65 226 / 0.60);
+$color__royal-purple-a40: rgb(100 65 226 / 0.40);
+$color__royal-purple-a20: rgb(100 65 226 / 0.20);
+$color__royal-purple-a10: rgb(100 65 226 / 0.10);
+$color__royal-purple-a05: rgb(100 65 226 / 0.05);
+$color__royal-purple-a02: rgb(100 65 226 / 0.02);
+
+$color__dark-royal-purple: #6628AD;
+$color__dark-royal-purple-a80: rgb(102 40 173 / 0.80);
+$color__dark-royal-purple-a60: rgb(102 40 173 / 0.60);
+$color__dark-royal-purple-a40: rgb(102 40 173 / 0.40);
+$color__dark-royal-purple-a20: rgb(102 40 173 / 0.20);
+$color__dark-royal-purple-a10: rgb(102 40 173 / 0.10);
+$color__dark-royal-purple-a05: rgb(102 40 173 / 0.05);
+$color__dark-royal-purple-a02: rgb(102 40 173 / 0.02);
+
+$color__sea-green: #12E3A3;
+$color__sea-green-a80: rgb(18 227 163 / 0.80);
+$color__sea-green-a60: rgb(18 227 163 / 0.60);
+$color__sea-green-a40: rgb(18 227 163 / 0.40);
+$color__sea-green-a20: rgb(18 227 163 / 0.20);
+$color__sea-green-a10: rgb(18 227 163 / 0.10);
+$color__sea-green-a05: rgb(18 227 163 / 0.05);
+$color__sea-green-a02: rgb(18 227 163 / 0.02);
+
+$color__dark-sea-green: #12AFA3;
+$color__dark-sea-green-a80: rgb(18 175 163 / 0.80);
+$color__dark-sea-green-a60: rgb(18 175 163 / 0.60);
+$color__dark-sea-green-a40: rgb(18 175 163 / 0.40);
+$color__dark-sea-green-a20: rgb(18 175 163 / 0.20);
+$color__dark-sea-green-a10: rgb(18 175 163 / 0.10);
+$color__dark-sea-green-a05: rgb(18 175 163 / 0.05);
+$color__dark-sea-green-a02: rgb(18 175 163 / 0.02);
+
+$color__tech-blue: #105FFB;
+$color__tech-blue-a80: rgb(16 95 251 / 0.80);
+$color__tech-blue-a60: rgb(16 95 251 / 0.60);
+$color__tech-blue-a40: rgb(16 95 251 / 0.40);
+$color__tech-blue-a20: rgb(16 95 251 / 0.20);
+$color__tech-blue-a10: rgb(16 95 251 / 0.10);
+$color__tech-blue-a05: rgb(16 95 251 / 0.05);
+$color__tech-blue-a02: rgb(16 95 251 / 0.02);
+
+$color__dark-tech-blue: #0071CE;
+$color__dark-tech-blue-a80: rgb(0 113 206 / 0.80);
+$color__dark-tech-blue-a60: rgb(0 113 206 / 0.60);
+$color__dark-tech-blue-a40: rgb(0 113 206 / 0.40);
+$color__dark-tech-blue-a20: rgb(0 113 206 / 0.20);
+$color__dark-tech-blue-a10: rgb(0 113 206 / 0.10);
+$color__dark-tech-blue-a05: rgb(0 113 206 / 0.05);
+$color__dark-tech-blue-a02: rgb(0 113 206 / 0.02);
+
+$color__magenta: #FC326C;
+$color__magenta-a80: rgb(252 50 108 / 0.80);
+$color__magenta-a60: rgb(252 50 108 / 0.60);
+$color__magenta-a40: rgb(252 50 108 / 0.40);
+$color__magenta-a20: rgb(252 50 108 / 0.20);
+$color__magenta-a10: rgb(252 50 108 / 0.10);
+$color__magenta-a05: rgb(252 50 108 / 0.05);
+$color__magenta-a02: rgb(252 50 108 / 0.02);
+
+$color__black: #000;
+$color__black-a80: #333;
+$color__black-a60: #666;
+$color__black-a50: #808080;
+$color__black-a40: #999;
+$color__black-a20: #CCC;
+$color__black-a10: #E6E6E6;
+$color__black-a05: #F2F2F2;
+$color__black-a02: #fAFAFA;
+
+$color__white: #fff;
+
+$color__gray-500: #181625;
+$color__gray-400: #252A3A;
+$color__gray-300: #AFB7CF;
+$color__gray-280: #E3E7F2;
+$color__gray-240: #E3E7F2;
+$color__gray-200: #EEF0F6;
+$color__gray-100: #F7F8FC;
+
+// Custom Colors
+$color__sun-orange-dark: #FF5B3B;
+$color__sun-orange-bright: #FF9E1D;
+
+
+// Gradient Colors
+$color__gradient-tech-blue: linear-gradient(180deg, #105FFB 0%, #00B6E0 100%);
+$color__gradient-purple-blue: linear-gradient(180deg, #6441E2 0%, #00B6E0 100%);
+$color__gradient-purple-magenta: linear-gradient(180deg, #6441E2 0%, #FC326C 100%);
+$color__gradient-blue-green: linear-gradient(180deg, #00B6E0 0%, #12E3A3 100%);
+$color__gradient-blue: linear-gradient(180deg, #00B6E0 0%, rgb(0 182 224 / 0.00) 100%);
+$color__gradient-royal-purple: linear-gradient(180deg, #6441E2 0%, rgb(100 65 226 / 0.00) 100%);
+$color__gradient-sea-green: linear-gradient(180deg, #12E3A3 0%, rgb(18 227 163 / 0.00) 100%);
+$color__gradient-magenta: linear-gradient(180deg, #FC326C 0%, rgb(252 50 108 / 0.00) 100%);
+$color__gradient-blue-purple: linear-gradient(90deg, #105FFB 0%, #A15AF0 100.1%);
+
+$color__button-shadow: 0px 12px 40px -12px rgb(16 95 251 / 0.50);
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: #181625; 
+$color__link-visited: #099AC6;
+$color__link-hover: #00B6E0; 
+$color__text-main: #000;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+$color__tech-blue-drop-shadow-large: 0px 36px 48px -32px rgb(16 95 251 / 0.20);
+$color__tech-blue-drop-shadow-medium: 0px 4px 12px 0px rgb(16 95 251 / 0.20);

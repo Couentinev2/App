@@ -1,0 +1,69 @@
+/*!
+Theme Name: AppLovin
+Author: AppLovin
+Author URI: http://applovin.com/
+Description: A modern, responsive WordPress theme designed for AppLovin's corporate website. Built to showcase AppLovin's brand, products, and services with a clean, professional aesthetic. Features include custom post types for case studies and products, integrated blog functionality, and optimized performance for global enterprise needs.
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: applovin
+Tags: custom-header, custom-menu, custom-logo, editor-style, full-width-template, block-styles, pll-language-support, translation-ready, responsive-layout, accessibility-ready
+*/
+
+// Import variables and mixins.
+@use "abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@use "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+@use "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@use "base/base";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
+// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+
+/* Pages
+--------------------------------------------- */
+@use "pages/pages";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@use "components/components";
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+@use "plugins/jetpack/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+@use "utilities/accessibility";
+
+/* Alignments
+--------------------------------------------- */
+@use "utilities/alignments";

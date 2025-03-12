@@ -1,0 +1,46 @@
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: none;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+
+ul {
+    margin: 1em 0;
+    padding-left: 40px;
+    list-style-type: disc;
+  }
+  
+  li {
+    display: list-item;
+    list-style-position: outside;
+  }
+  
+
+ul>li>ul {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+

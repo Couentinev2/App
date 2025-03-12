@@ -1,0 +1,93 @@
+.simple-display{
+	padding: 96px 120px;
+	background-color: #181625;
+	color: #fff;
+}
+.simple-display h2{
+	max-width: 	800px;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.simple-display img{
+	margin: auto;
+	width: 100%;
+	}
+
+.mobile-section-simple{
+	display: none;
+}	
+
+.titles-graph {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 80px;
+grid-row-gap: 0px;
+margin-left: 60px;
+} 
+
+.titles-graph p {
+	max-width: 280px;
+	text-align: center;
+}
+
+.titles-graph-one{
+	margin-bottom: 32px;
+}
+
+
+.titles-graph-one p, .small-titles-simple{
+		font-family: var(--font-wt-Heavy);
+
+}
+.titles-graph-two{
+	margin-top: 32px;
+}
+
+@media screen and (max-width: 1000px) {
+	.simple-display{
+	padding: 80px 56px;
+}
+
+.simple-display h2{
+	margin-bottom: 40px;
+}
+
+}
+@media screen and (max-width: 760px) {
+
+.simple-display{
+	padding: 64px 32px;
+}
+.quote-logo-mobile{
+	max-height: 550px;
+}
+    .simple-content-desktops {
+       display: none;
+    }
+.mobile-section-simple{
+	display: block;
+}	
+.text-mobiles-simple{
+	display: block;
+	text-align: center;
+	margin-top: 40px;
+
+}
+
+.text-mobiles-simple p{
+	margin-bottom: 0;
+}
+
+.small-titles-simple{
+	margin-top: 40px;
+	margin-bottom: 16px!important;
+}
+
+.titles-graph-two {
+  margin-top: 0;
+}
+
+}

@@ -1,0 +1,20 @@
+@use "../abstracts/variables/typography";
+
+#page-404 {
+    position: relative;
+    background: url("/wp-content/uploads/2024/07/404-background.png"), linear-gradient(to bottom, #E0E6F0, #F7F8FC);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1 {
+        font-family: typography.$font__avenir-black;
+        font-weight: 750;
+    }
+
+    h3 {
+        font-family: typography.$font__avenir-heavy;
+        font-weight: 700;
+    }
+}
+

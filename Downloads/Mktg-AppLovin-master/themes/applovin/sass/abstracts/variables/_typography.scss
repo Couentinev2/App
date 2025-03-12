@@ -1,0 +1,38 @@
+// stylelint-disable value-keyword-case
+
+/* Font Vars
+   ========================================================================== */
+  :root {
+    --font-wt-Light: 'Avenir Light';
+    --font-wt-Medium: 'Avenir Medium';
+    --font-wt-Black: 'Avenir Black'; 
+    --font-wt-Heavy: 'Avenir Heavy';
+    --font-wt-LightOblique: 'Avenir LightOblique';
+    --font-wt-HeavyOblique: 'Avenir HeavyOblique';
+    --font-wt-BlackOblique: 'Avenir BlackOblique';
+  }
+
+$font__main: var(--font-wt-Medium), "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+$font__btn:  var(--font-wt-Heavy), "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+
+// main font family value-keyword-case
+$font__avenir-light: var(--font-wt-Light), "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+$font__avenir-light-oblique: var(--font-wt-LightOblique), "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+$font__avenir-medium: var(--font-wt-Medium), "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+$font__avenir-medium-oblique: var(--font-wt-MediumOblique), "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+$font__avenir-heavy: var(--font-wt-Heavy), "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+$font__avenir-heavy-oblique: var(--font-wt-HeavyOblique), "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+$font__avenir-black: var(--font-wt-Black), "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+$font__avenir-black-oblique: var(--font-wt-BlackOblique), "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+
+$font__backwards-bold: 'TTBackwardsSansBold', "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+$font__backwards-black: 'TTBackwardsSansBlack', "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+
+$font_footer-menu: "Avenir Medium", "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+$font_footer-links: "Avenir Light", "Avenir", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+
+// stylelint-enable value-keyword-case
+$font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;

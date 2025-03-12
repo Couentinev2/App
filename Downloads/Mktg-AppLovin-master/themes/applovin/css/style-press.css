@@ -1,0 +1,686 @@
+/* Press and related pages */
+#pressPage .wrap {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 65px;
+}
+#pressPage .hero {
+  background-image: url("/wp-content/themes/applovin/images/bg-hero-press.svg");
+  min-height: 580px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+#pressPage .hero .inner-wrap {
+  max-width: 85% !important;
+  margin: auto !important;
+}
+#pressPage .hero a {
+  color: #fff;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+#pressPage .featured-news, .awards, #pressPage .about, #pressPage .resources, #pressPage .news-list {
+  text-align: center;
+  margin: 100px 0;
+}
+.awards.hr-row {
+  margin-top: 0;
+}
+.awards-grid-wrap {
+	margin-top:40px; 
+}
+#pressPage .resources {
+  margin: 0;
+  padding: 100px 0 60px;
+}
+#pressPage .hero h2 {
+  margin: 0 auto 0.5em;
+}
+#pressPage .hero h5 {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  margin: 0 auto 0.75em;
+}
+#pressPage .hero h6 {
+  margin: 0 auto 0.5em;
+}
+#pressPage .news-list {
+  margin: 0;
+  padding: 100px 0;
+}
+#pressPage .about .inner-wrap {
+  width: 85%;
+  margin: 0 auto 50px;
+}
+#pressPage .about p {
+  font-size: 21px;
+  margin: 0 auto 2.5em;
+}
+#pressPage .about .promo-link {
+  font-size: 18px;
+}
+#pressPage .resources h2 {
+  font-size: 21px;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#pressPage .resources .inner-wrap {
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  row-gap: 40px;
+}
+#pressPage .resources-pod {
+  text-align: left;
+  flex: 0 1 21%;
+}
+#pressPage .resources-pod h6 {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  margin: 0.5em auto;
+}
+#pressPage .resources-pod p {
+  color: #666;
+}
+#pressPage .resources-pod a {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+#pressPage .featured-pod .news-source {
+  font-size: 12px !important;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+#pressPage .photo-divider-resources {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 490px;
+  background-image: url('/wp-content/themes/applovin/images/photo-bg-press-resources.jpg');
+  background-size: cover;
+  background-position: 90% top;
+  color: #fff;
+}
+#pressPage .photo-divider-resources h2 {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+#pressPage .about h2 {
+  margin: auto auto 24px;
+}
+#pressPage .news-list .inner-wrap {
+  width: 85%;
+  max-width: 1150px;
+  margin: 0 auto 50px;
+}
+.awards .awards-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.awards-pod {
+  margin: 0 auto 3.5em;
+  width: 20%;
+  max-width: 215px;
+}
+.awards-pod a {
+  color: #000 !important;
+}
+.awards-pod a:hover {
+  opacity: 0.8;
+}
+.awards-pod h3 {
+  font-size: 18px;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  margin: 1.5em 0 0
+}
+.awards-pod p {
+  font-size: 16px;
+  font-family: var(--font-wt-Medium);
+  font-weight: 550;
+  color: #666;
+}
+.awards-pod img {
+  max-height: 120px;
+  display: inline-block;
+}
+#pressPage .news-filter-mobile-wrap {
+  display: none;
+}
+.filesize-stamp {
+  font-size: 14px;
+  font-family: var(--font-wt-Light);
+  font-weight: 400;
+  color: #999;
+}
+.hero .filesize-stamp {
+  font-family: var(--font-wt-Medium);
+  font-weight: 550;
+  color: #fff;
+}
+.news-links-container:nth-last-child(1) {
+	margin-bottom:3em;
+}
+#pressPage .news-line-item {
+  font-size: 18px;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  color: #232323;
+  padding: 1em 0 0;
+  margin: 1em auto;
+  text-align: left;
+}
+#pressPage .news-links-container:nth-child(n+2) .news-line-item:nth-child(1) {
+  border-top: 1px solid #e7e7e7;
+}
+#pressPage .news-line-item:nth-child(n+2) {
+    border-top: 1px solid #e7e7e7;
+}
+#pressPage .news-line-item a {
+  display: block;
+  color: #232323;
+  margin: 0.5em auto;
+}
+#pressPage .news-line-item a:hover {
+  color: #00b6e0;
+  opcaity: 1;
+}
+#pressPage .news-line-item .date-stamp {
+  font-size: 15px;
+  font-family: var(--font-wt-Light);
+  font-weight: 400;
+  color: #999;
+}
+#pressPage .news-line-item .news-source {
+  font-size: 15px;
+  font-family: var(--font-wt-Light);
+  font-weight: 400;
+  color: #999;
+}
+#pressPage .news-line-item .news-source strong {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+.qrc_image {
+	max-width:105px;
+	height:auto;
+	border:8px solid #fff;
+	border-radius:8px;
+	box-sizing:content-box;
+}
+
+/* Press Releases */
+#pressPage.releasesPage .hero {
+  background-image: url("/wp-content/themes/applovin/images/bg-hero-releases.svg");
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+#pressPage.releasesPage .hero h1 {
+  margin-top: 1em;
+}
+#pressPage.releasesPage .news-list {
+  padding: 50px 0;
+}
+.press-releases-container:nth-last-child(1) {
+	margin-bottom:3em;
+}
+#pressPage .press-releases-container:nth-child(n+2) .news-line-item:nth-child(1) {
+  border-top: 1px solid #e7e7e7;
+}
+/* Leadership Pages - Individual Bios */
+.default-bio-text {
+  display: block;
+}
+.mobile-bio-text {
+  display: none;
+}
+#pressPage.bioPage > .row:first-child {
+  background-image: url('/wp-content/themes/applovin/images/illo-bg-corner-lava-2021_v2.svg');
+  background-position: calc(50% - 680px) top;
+  background-size: 750px;
+  background-repeat: no-repeat;
+}
+#pressPage.bioPage .wrap {
+  max-width: 1280px;
+  margin-bottom: 60px;
+  border-bottom: none;
+}
+.leader-bio-inner-wrap {
+  padding: 200px 0 40px;
+  margin: 0 5%;
+  text-align: left;
+}
+.bio-content {
+  display: flex;
+  justify-content: space-between;
+}
+.bio-copy {
+  flex: 0 2 57%;
+}
+.bio-copy h1 {
+  margin: 0.5em auto 0.75em;
+}
+.bio-copy h5 {
+  margin: 0.5em auto 1em;
+}
+.bio-title {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  color: #999;
+}
+.bioPage .back-link {
+  margin-top: 2em;
+  font-size: 18px;
+}
+.bio-image {
+  flex: 0 1 37%;
+  text-align: right;
+  max-width: 355px;
+}
+#pressPage.bioPage a.download {
+  font-size: 12px;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1em auto;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+/* Leadership page - main */
+#pressPage.leadershipPage .hero {
+  background-image: url('/wp-content/themes/applovin/images/bg-hero-leadership.svg');
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+#pressPage .leaders-intro {
+  margin: 60px 0 0;
+}
+#pressPage .leaders-intro .inner-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto auto 120px;
+}
+#pressPage .leaders-intro .inner-wrap > div {
+  width: 50%;
+}
+#pressPage .leaders-intro-copy {
+  padding: 0 5%;
+  text-align: left;
+}
+#pressPage .leaders-intro-copy p {
+  font-size: 21px;
+}
+#pressPage .leaders-intro-copy h2 {
+  margin-bottom: 30px;
+}
+#pressPage .leaders-intro-image > img {
+  width: 100%;
+  height: auto;
+  max-width: 630px;
+}
+#pressPage .leaders-pods-wrap {
+  margin: auto;
+  padding: 80px 0;
+}
+#pressPage .leaders-pods-wrap h3 {
+  margin: 0.5em auto 80px;
+}
+#pressPage .leaders-pods-wrap h2 {
+  text-align: center;
+  font-size: 21px;
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 80px;
+}
+.leaders-pods-inner-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 38px;
+  grid-row-gap: 38px;
+  max-width: 1195px;
+  margin-bottom: 2em;
+}
+#pressPage .leaders-pod {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+#pressPage .leaders-pod:hover {
+  opacity: 1;
+  box-shadow: #ccc 0px 0px 20px;
+}
+#pressPage .leaders-pod, #pressPage .leaders-pod * {
+  transition: all 0.2s ease-in-out;
+}
+#pressPage .leaders-pod-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  z-index: 1;
+}
+#pressPage .leaders-pod-image img {
+  transition: all 0.2s ease-in-out;
+  z-index: 5;
+}
+#pressPage .leaders-pod-text {
+  color: #fff;
+  padding: 2em;
+  font-size: 14px;
+  font-family: var(--font-wt-Light);
+  font-weight: 400;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 80%;
+}
+#pressPage .leaders-pod-text h3 {
+  font-size: 21px;
+  line-height: 1.2em;
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  margin: 0 auto 0.25em;
+}
+#pressPage .leaders-pod-text .title {
+  font-size: 16px;
+  line-height: 1.25em;
+  margin: 0px;
+}
+/* Brand Assets Page */
+#pressPage.brandPage .wrap {
+  max-width: 1120px;
+}
+#pressPage.brandPage .brand-leadership.wrap {
+  border-bottom: none;
+}
+#pressPage.brandPage .inner-wrap {
+  margin: 0 auto;
+}
+#pressPage.brandPage .hero {
+  background-image: url('/wp-content/themes/applovin/images/bg-hero-brand-assets.svg');
+}
+#pressPage.brandPage .hero h1 {
+  margin-top: 1em;
+}
+#pressPage.brandPage .hero h2 {
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+}
+#pressPage.brandPage .hero h6 {
+  margin-bottom: 1em;
+}
+#pressPage.brandPage .brand-logos, #pressPage.brandPage .brand-photos, #pressPage.brandPage .brand-leadership, #pressPage.brandPage .brand-language .inner-wrap {
+  display: flex;
+  padding: 100px 0;
+}
+.brand-logos > div, .brand-photos > div, .brand-leadership > div, .brand-language .inner-wrap > div {
+  width: 50%;
+}
+#pressPage.brandPage .copy-pod {
+  padding: 0 12% 0 5%;
+  text-align: left;
+}
+#pressPage.brandPage .copy-pod-secondary {
+  padding: 1em 5% 0 0;
+}
+#pressPage.brandPage .copy-pod h6 {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  margin: 1em auto;
+}
+#pressPage.brandPage .copy-pod p {
+  font-size: 21px;
+}
+#pressPage.brandPage .copy-pod-secondary p {
+  font-family: var(--font-wt-Medium);
+  font-weight: 550;
+  color: #666;
+  margin-bottom: 2em;
+  font-size: 18px;
+}
+#pressPage.brandPage .copy-pod-secondary p:last-child {
+  margin-bottom: 0;
+}
+#pressPage.brandPage .copy-pod a.download {
+  font-size: 21px;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+#pressPage.brandPage .image-pod {
+  padding: 0 5% 0 0;
+}
+#pressPage.brandPage .image-pod img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+#pressPage.brandPage .brand-logos .image-pod img:nth-child(n+2) {
+  margin-top: 2em;
+}
+
+.wrap {
+    width: 95%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1440px) {
+  #pressPage.bioPage > .row:first-child {
+    background-position: -350px top;
+  }
+}
+
+@media screen and (max-width: 1250px){
+.awards-pod img {
+    max-height: 100px;
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .leaders-pods-inner-wrap {
+    grid-column-gap: 3.33%;
+    grid-row-gap: 1.66%;
+    margin-bottom: 15%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #pressPage.brandPage .copy-pod a.download {
+    font-size: 16px;
+  }
+  #pressPage .featured-news, .awards.hr-row {
+    margin-top: 100px;
+  }
+  #pressPage .leaders-intro .inner-wrap {
+    flex-direction: column;
+  }
+  #pressPage .leaders-intro .inner-wrap > div {
+    width: 100%;
+    max-width: 80%;
+  }
+  #pressPage .leaders-intro-image > img {
+    margin: auto;
+  }
+#pressPage .resources-pod {
+  flex: 0 1 44%;
+}
+
+}
+@media screen and (max-width: 768px) {
+ #pressPage .resources-pod {
+    text-align: center;
+    width: 85%;
+    max-width: 300px;
+    margin: 0 auto 3em;
+}
+ .awards-pod {
+    width: 45%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+#pressPage .featured-news .inner-wrap {
+    flex-direction: column;
+}
+#pressPage .resources .inner-wrap {
+    flex-direction: column;
+    margin-bottom:0;
+    row-gap:0;
+}
+#pressPage .resources-pod {
+    text-align: center;
+    width: 85%;
+    max-width: 300px;
+    margin: 0 auto 3em;
+}
+.qrc_image {
+	margin:auto;
+}
+#pressPage .news-line-item {
+    font-size: 14px;
+    padding: 1.5em 0 0;
+    margin: 1.5em auto;
+}
+#pressPage .news-line-item .news-source, #pressPage .news-line-item .date-stamp {
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width: 640px) {
+  #pressPage.bioPage > .row:first-child {
+	background-size: 580px;
+	background-position: -230px top;
+  }
+  .awards-pod img {
+    max-height: 95px;
+	}
+	.awards-pod h3 {
+		font-size: 14px;
+	}
+
+.office-photo-montage {
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+/* Success Stories */
+
+.game-stats {
+	max-width:80%;
+    margin: auto;
+}
+
+/* Press Page */
+
+.featured-pod {
+    flex-direction: column;
+    width:85%;
+	max-width: 400px;
+	margin:0 auto 2em;
+}
+
+.featured-pod .featured-pod-img {
+	width:100%;
+}
+
+.featured-pod .featured-pod-text {
+	width:100%;
+}
+
+.awards-pod h3 {
+    font-size: 14px;
+}
+.awards-pod p {
+	display:none;
+}
+.awards-pod img {
+    max-height: 95px;
+}
+
+.news-filter-mobile-wrap {
+	display:none;
+}
+
+/* Leadership Pages */
+.leader-bio-inner-wrap {
+    margin: 0 7%;
+}
+.bio-content {
+	flex-direction:column-reverse;
+}
+
+.bio-copy {
+    width: 100%;
+}
+
+.bio-image {
+    width: 100%;
+    margin-bottom: 8%;
+    text-align:center;
+}
+.default-bio-text {
+	display:none;
+}
+.mobile-bio-text {
+	display:block;
+    text-align: left;
+}
+
+/* Brand Assets page */
+
+#pressPage.brandPage .brand-logos, #pressPage.brandPage .brand-photos, #pressPage.brandPage .brand-leadership, #pressPage.brandPage .brand-language .inner-wrap {
+	flex-direction:column;
+	padding:60px 0;
+}
+.brand-logos > div , .brand-photos > div , .brand-leadership > div , .brand-language .inner-wrap > div  {
+	width:100%;
+}
+#pressPage.brandPage .copy-pod, #pressPage.brandPage .image-pod {
+    padding: 0 7.5% ;
+    text-align:center;
+}
+#pressPage.brandPage .copy-pod-secondary {
+    text-align:left;
+}
+#pressPage.brandPage .copy-pod {
+	margin-bottom:2em;
+}
+#pressPage.brandPage .copy-pod h2 {
+    font-size: 24px;
+}
+#pressPage.brandPage .copy-pod p {
+    font-size: 18px;
+}
+#pressPage.brandPage .copy-pod-secondary p {
+    font-size: 14px;
+}
+
+/* Leadership Pages */
+
+.leaders-pods-inner-wrap {
+	grid-template-columns: 1fr;
+	grid-row-gap: 30px;
+}
+
+}

@@ -1,0 +1,381 @@
+.single-grid-with-float {
+    padding:  96px 120px 96px 120px;
+    background-color: #F7F8FC;
+}
+
+.single-grid-with-float p {
+  margin-bottom: 0;
+}
+
+
+.single-grid{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr; 
+  grid-column-gap: 80px!important;
+  grid-row-gap: 0px;
+  align-items: center;
+  height: 100%;
+}
+
+.single-grid-with-float .inner-wrap-1200{
+  margin: auto ;
+}
+
+
+.single-one .grid-text{
+  margin-left: 40px;
+}
+
+.grid-four-title {
+font-family: var(--font-wt-Heavy);
+margin-bottom: 10px!important;
+
+}
+
+
+.single-grid  ul{
+  columns: 2;
+  padding-left: 0;
+}
+
+.single-grid ul li{
+    background: url(/wp-content/themes/applovin/images/light-bluefilled.svg) no-repeat left top;
+    padding: 0 10px 0 40px;
+    margin-bottom: 16px;
+    list-style: none;
+    vertical-align: middle;
+    white-space: nowrap;
+
+}
+
+.single-grid ul{
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.footnote{
+  font-size: 14px;
+  color: #808080;
+  text-align: left;
+}
+.bottom-text-simple{
+  text-align: left;
+  margin-bottom: 0;
+}
+
+
+.single-video{
+  width: 100%;
+}
+
+.single-with-local-video ul li {
+  background: url(/wp-content/themes/applovin/images/blue-check.svg) no-repeat left top!important;}
+
+.small-inside-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+margin-top: 40px;
+} 
+
+.small-inside-one ul{
+columns: 1;
+  margin: 0!important;
+margin-left: 15px!important;
+margin-top: 8px!important;
+}
+
+
+.small-inside-one ul li {
+  background: initial;
+  padding: initial;
+  margin-bottom: initial;
+  list-style: initial;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 16px;
+
+}
+
+.small-inside-grid h2{
+font-family: var(--font-wt-Heavy);
+}
+
+.mini-title-section{
+
+text-transform: uppercase;
+}
+
+.two-clmn-grid .single-grid ul{
+  columns: initial;
+}
+.two-clmn-grid .single-grid ul li{
+  background: initial;
+padding:initial;
+margin-bottom: initial;
+list-style: initial;
+vertical-align: initial;
+}
+
+.single-grid-with-float .single-image{
+  max-width: 388px;
+}
+
+.image-left-bb {
+  position: absolute;
+transform: translate(70%, -130%);
+  z-index: 99;
+
+}
+.image-right-bb{
+    position: absolute;
+  transform: translate(275%, -175%);
+  z-index: 99;
+}
+.text-bb-right{
+    position: absolute;
+    width: 160px ;
+    height: 160px;
+transform: translate(190%, -220%);
+  background-color: #00B6E0;
+  border-radius: 50%;
+      color: #fff;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.text-bb-left-top{
+      position: absolute;
+    width: 126px ;
+    height: 126px;
+transform: translate(-25%, -270%);
+  background-color: #FC326C;
+  border-radius: 50%;
+    color: #fff;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.text-bb-left-bottom{
+        position: absolute;
+    width: 160px ;
+    height: 160px;
+transform: translate(-48%, -110%);
+  background-color: #FF9E1D;
+    color: #fff;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50%;
+}
+
+.text-bb-left-top p, .text-bb-left-bottom p, .text-bb-right p{
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+}
+
+.text-bb-left-top p{
+  font-size: 13px;
+}
+
+.text-bb-left-top strong{
+  font-size: 30px;
+}
+
+.grid-four-title::before {
+    content: "";
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height:  24px;
+  background-size: contain !important;
+  background: url(../images/icon-check-light-magenta.svg) no-repeat;
+  left: -2.15em;
+  transition: all .2s;
+}
+
+
+.single-image{
+  margin: auto;
+}
+
+.four-1, .four-2{
+  margin-bottom: 40px;
+}
+
+.main-text-four {
+  margin-bottom: 80px!important;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 1000px) {
+
+.single-grid{
+  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: initial;
+grid-column-gap: 0px;
+grid-row-gap: 40px; 
+}
+
+.single-grid-with-float {
+    padding:  80px 56px;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    background-color: #F7F8FC;
+}
+
+.grid-text ul li{
+ text-align: left;
+}
+
+
+.small-inside-two{
+  text-align: left;
+}
+
+.text-bb-left-top p, .text-bb-left-bottom p, .text-bb-right p{
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+}
+
+.text-bb-left-top p{
+  font-size: 13px;
+}
+
+.text-bb-left-top strong{
+  font-size: 30px;
+}
+.text-bb-right {
+  transform: translate(185%, -220%);
+}
+.text-bb-left-top {
+transform: translate(-45%, -270%);
+}
+.text-bb-left-bottom {
+transform: translate(-45%, -110%);
+}
+
+.mini-title-section, .main-text-four , .main-title-four{
+  text-align: center;
+}
+.main-text-four {
+  margin-bottom: 40px !important;
+}
+}
+
+
+@media screen and (max-width: 760px) {
+.small-inside-two{
+  text-align: left;
+  margin-top: 24px;
+}
+
+.single-grid-with-float {
+    padding:  64px 32px;
+        padding-top: 120px;
+
+    background-color: #F7F8FC;
+}
+
+.grid-text ul li{
+ text-align: left;
+ columns: 1;
+}
+
+.single-one {
+  margin-bottom: 0;
+}
+
+.footnote{
+  margin-bottom: 0;
+}
+.bottom-text-simple{
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.small-inside-grid {
+display: block;
+} 
+
+.two-clmn-grid .small-inside-grid{
+  display: block;
+}
+
+.text-bb-right {
+    width: 83px;
+height: 83px;
+}
+
+.text-bb-right p{
+  font-size: 9px!important;
+}
+
+.text-bb-right strong{
+font-size: 20px!important;
+}
+
+
+.text-bb-left-top {
+    width: 66px;
+height: 66px;
+}
+
+
+
+
+
+.text-bb-left-bottom {
+  width: 83px;
+height: 83px;
+font-size: 9px;
+}
+
+.text-bb-left-bottom p{
+  font-size: 9px!important;
+}
+
+
+.text-bb-left-bottom strong{
+font-size: 20px!important;
+}
+
+
+.text-bb-left-top p, .text-bb-left-bottom p, .text-bb-right p{
+  color: #fff;
+  width: 100%;
+  font-size: 9px;
+}
+
+.text-bb-left-top p{
+  font-size: 7px!important;
+  top: -3px;
+}
+
+.text-bb-left-top strong{
+  font-size: 15px!important;
+}
+
+.image-left-bb {
+  transform: translate(40%, -130%);
+  max-width: 45px;
+}
+.image-main-bb {
+  max-width: 201px;
+}
+.image-right-bb {
+  position: absolute;
+  transform: translate(270%, -175%);
+  z-index: 99;
+  max-width: 50px;
+}
+
+}

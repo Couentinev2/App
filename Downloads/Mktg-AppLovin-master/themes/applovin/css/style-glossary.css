@@ -1,0 +1,434 @@
+/* Glossary Pages */
+#page-glossary .hero h2 {
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  font-size: 40px;
+}
+#page-glossary .hero h5 {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+#page-glossary .glossary-text h1 {
+  font-size: 36px;
+}
+#page-glossary .glossary-text h2 {
+  font-size: 21px;
+  margin-top: 1.5em;
+}
+#page-glossary .glossary-text h3 {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  font-size: 18px;
+}
+#page-glossary .glossary-text h4 {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#page-glossary .glossary-text h5 {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#page-glossary h6 {
+  font-size: 18px;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 1em auto 0;
+}
+#page-glossary.glossary-index .hero {
+  background-image: url('/wp-content/themes/applovin/images/bg-hero-glossary-main.jpg');
+  min-height: 550px;
+  color: #fff;
+  padding: 140px 0 2em;
+}
+#page-glossary.glossary-index .hero .inner-wrap {
+  margin-top: 2em;
+}
+#page-glossary.glossary-index .hero .btn-standard {
+  margin-top: 1em;
+  font-size: 1.15em;
+  border-width: 2px;
+}
+.glossary-alphabet-wrap {
+  background-color: #252a3a;
+  padding: 20px;
+  position: relative;
+  z-index: 100;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 145px;
+}
+.glossary-list-letters .flex-inner-wrap {
+  align-items: flex-start;
+}
+.glossary-list-letters:nth-child(even) {
+  background-color: #f9f9f9;
+  display: flex;
+}
+.glossary-list-letters:nth-child(odd) {
+  background-color: #fff;
+  display: flex;
+}
+.glossary-alphabet {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.glossary-alphabet ul {
+  text-align: center;
+  margin: 0;
+  padding-left: 0;
+}
+.glossary-alphabet li {
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  margin: 4px 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  opacity: 0.3;
+}
+.glossary-alphabet li.active {
+  opacity: 1;
+}
+.alphabet-link {
+  color: transparent;
+}
+.alphabet-link > a {
+  color: transparent;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: 0 0 0.65em;
+}
+.glossary-alphabet-wrap.scrolled .glossary-alphabet li {
+  width: 20px;
+  height: 20px;
+}
+.glossary-alphabet-wrap.scrolled .alphabet-link > a {
+  line-height: 1em;
+  padding: 0;
+  top: -0.2em;
+}
+.glossary-alphabet-wrap.scrolled br {
+  display: none;
+}
+.link-a {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-a.svg');
+}
+.link-b {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-b.svg');
+}
+.link-c {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-c.svg');
+}
+.link-d {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-d.svg');
+}
+.link-e {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-e.svg');
+}
+.link-f {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-f.svg');
+}
+.link-g {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-g.svg');
+}
+.link-h {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-h.svg');
+}
+.link-i {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-i.svg');
+}
+.link-j {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-j.svg');
+}
+.link-k {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-k.svg');
+}
+.link-l {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-l.svg');
+}
+.link-m {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-m.svg');
+}
+.link-n {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-n.svg');
+}
+.link-o {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-o.svg');
+}
+.link-p {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-p.svg');
+}
+.link-q {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-q.svg');
+}
+.link-r {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-r.svg');
+}
+.link-s {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-s.svg');
+}
+.link-t {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-t.svg');
+}
+.link-u {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-u.svg');
+}
+.link-v {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-v.svg');
+}
+.link-w {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-w.svg');
+}
+.link-x {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-x.svg');
+}
+.link-y {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-y.svg');
+}
+.link-z {
+  background-image: url('/wp-content/themes/applovin/images/icon-alpha-sprite-z.svg');
+}
+.glossary-alphabet li.active:hover {
+  background-position: center bottom;
+}
+.glossary-list-letters {
+  padding-left: 70px;
+}
+.glossary-letters-left h2 {
+  font-size: 100px;
+  margin: 0;
+  padding-bottom: 0px;
+  font-weight: 100;
+  line-height: 1.15em;
+}
+.glossary-letters-left {
+  color: #bbbbbb;
+  flex: 0 1 35%;
+}
+.glossary-words {
+  flex: 1 1 65%;
+}
+.glossary-words .glossary-column {
+  padding-top: 0px;
+  color: #00b6e0;
+  margin: 0px;
+  margin-right: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.glossary-column a {
+  padding: 10px;
+  text-align: left;
+  flex: 0 1 50%;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  display: block;
+}
+#empty {
+  color: #4dcce9;
+  background-color: #00b6e0;
+  pointer-events: none;
+  cursor: default;
+}
+/* Individual glossary entries */
+.content-row.glossary-text-row {
+  padding: 50px 0;
+}
+.content-row.related-box {
+  padding: 80px 0;
+}
+#page-glossary.glossary-individual .hero {
+  background-image: url('/wp-content/themes/applovin/images/bg-hero-glossary-entry.jpg');
+  min-height: 450px;
+  color: #fff;
+  padding: 140px 0 96px;
+}
+#page-glossary.glossary-individual .hero h2 {
+  font-size: 60px;
+}
+.glossary-return-wrap ul {
+  padding: 0;
+}
+.glossary-return-wrap li {
+  display: inline-block;
+}
+.glossary-return-wrap .glossary-letter-back {
+  font-size: 12px !important;
+  margin-left: 5px;
+  border-left: 0.2px solid #acacac;
+  border-right: 0.2px solid #acacac;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+.glossary-return-wrap .glossary-return-link {
+  text-decoration: none;
+  display: block;
+  margin-top: 0.75em;
+  font-size: 12px;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+.glossary-return-wrap .glossary-return-link::before {
+  width: 1em;
+  height: 1em;
+  content: "";
+  display: inline-block;
+  background: url('/wp-content/themes/applovin/images/link-icon-arrow-black.svg') no-repeat;
+  background-size: 80%;
+  background-position: left center;
+  position: relative;
+  top: 2px;
+  margin: 0 0.5em 0 0;
+}
+.glossary-text {
+  text-align: left;
+  padding-top: 0;
+  margin-top: 0;
+}
+.glossary-related {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.glossary-rel-terms {
+  font-size: 15px;
+  color: #0683aa;
+  background-color: #ccf0f9;
+  border-radius: 40px;
+  margin-top: 20px;
+  font-weight: none;
+  font-family: var(--font-wt-Medium);
+  font-weight: 550;
+}
+.glossary-term-list a:nth-child(3n):after {
+  content: "\A";
+  white-space: pre;
+}
+@media screen and (max-width: 1024px) {
+  .glossary-alphabet-wrap {
+    display: none
+  }
+  .glossary-letters-left {
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+  .glossary-list-letters {
+    text-align: left;
+  }
+  .glossary-column {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .glossary-words {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .glossary-letters-left {
+    margin-right: 0px;
+    padding-left: 0px;
+    flex: 0 1 50%;
+  }
+  .glossary-list-letters {
+    text-align: left;
+  }
+  .glossary-column {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .glossary-list-letters .flex-inner-wrap {
+    display: block;
+  }
+  .glossary-column a {
+    flex: 0 1 100%;
+  }
+  .glossary-text {
+    width: 90%;
+  }
+  .glossary-return-wrap {
+    padding-left: 10px;
+  }
+  .glossary-related-box {
+    text-align: left;
+    margin-left: 20px;
+  }
+  .glossary-rel-terms {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .glossary-alphabet-wrap {
+    display: none
+  }
+  .glossary-letters-left {
+    margin-right: 0px;
+    padding-left: 0px;
+    float: none;
+  }
+  .glossary-list-letters {
+    text-align: left;
+  }
+  .glossary-column {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  #page-glossary.glossary-index .hero .inner-wrap {
+    margin-top: 4em;
+  }
+  #page-glossary.glossary-index .hero h2 {
+    font-size: 35px;
+  }
+  #page-glossary.glossary-index .hero h5 {
+    font-size: 20px;
+  }
+  #page-glossary.glossary-individual .hero {
+    background-image: url('/wp-content/themes/applovin/images/bg-hero-glossary-entry-mobile.jpg');
+    min-height: 450px;
+    color: #fff;
+  }
+  .glossary-return-wrap {
+    margin-left: 10px;
+  }
+  .glossary-related-box {
+    margin-left: 20px;
+    text-align: left;
+  }
+  .glossary-rel-terms {
+    margin-left: 0;
+  }
+  #page-glossary .glossary-text h1 {
+    font-size: 21px;
+  }
+  #page-glossary .glossary-text h2 {
+    font-size: 18px;
+  }
+  #page-glossary.glossary-individual .hero h2 {
+    font-size: 42px;
+  }
+}
+
+/* Module/Feature Styles */
+
+/* YouTube embed iframe controls */
+.wp-block-embed-youtube {
+	margin-left:0;
+	margin-right:0;
+}
+@media screen and (max-width: 1200px) {
+  .wp-block-embed-youtube iframe {
+	width: 75vw;
+	height: 42vw;
+  }
+}

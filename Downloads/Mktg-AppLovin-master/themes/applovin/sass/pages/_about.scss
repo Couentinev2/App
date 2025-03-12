@@ -1,0 +1,132 @@
+@use "../abstracts/mixins/mixins";
+@use "../abstracts/variables/colors";
+@use "../abstracts/variables/typography";
+
+#about {
+    overflow: hidden;
+
+    .hero-section {
+        background: url('/wp-content/themes/applovin/images/illo-about-header-background.svg') no-repeat center center, linear-gradient(180deg, #E0E6F0 0%, #F7F8FC 100%);
+        background-size: cover;
+
+
+    }
+
+    .office-section {
+        background: url('/wp-content/themes/applovin/images/img_about-us_parallax-gradient-mobile.jpg') no-repeat, colors.$color__gray-500;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        display: flex;
+		align-items: center;
+		min-height: 600px;
+
+        .gap-\[640px\] {
+            gap: 340px;
+          }
+
+          @include mixins.mq('tablet') {
+            background: url('/wp-content/themes/applovin/images/img_about-us_parallax-gradient.jpg') no-repeat, colors.$color__gray-500;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+
+            .gap-\[640px\] {
+                gap: 400px;
+              }
+          }
+
+        @include mixins.mq('laptop') {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            .gap-\[640px\] {
+                gap: 640px;
+              }
+        }
+
+        .stats-office-section {
+            overflow: visible;
+            mask-image: unset;
+
+            @include mixins.mq('tablet') {
+            overflow: hidden;
+            mask-image: linear-gradient(to right, transparent, colors.$color__black 25%, colors.$color__black 75%, transparent);
+            }
+            
+        }
+
+        .growth-pods-wrap {
+            width: max-content;
+            position: relative;
+            animation: scroll 30s linear infinite;
+
+            .growth-pod {
+                flex: 0 1 auto;
+                text-align: center;
+                padding: 16px 24px;
+                box-sizing: border-box;
+                background: linear-gradient(90deg, rgb(255 255 255 / 0.30) 0%, rgb(255 255 255 / 0.00) 100%);
+                border-radius: 24px;
+                margin: 0 10px;
+                display: inline-flex;
+                align-items: center;
+
+                @include mixins.mq('tablet') {
+                    padding: 24px 32px;
+                    }
+
+                h5 {
+                    font-family: typography.$font__backwards-black;
+                    font-size: 2em;
+                    margin: 0;
+                    width: max-content;
+                }
+
+                h6 {
+                    font-size: 1em;
+                    margin: 0;
+                    padding-left: 16px;
+                    width: max-content;
+                    text-align: left;
+                }
+            }
+
+        }
+        
+    }
+
+
+    .about-section {
+        background: linear-gradient(180deg, colors.$color__gray-100 0%, colors.$color__gray-200 100%);
+    }
+
+    .values-header-title {
+        font-family: typography.$font__avenir-medium;
+        font-weight: 400;
+    }
+
+    .cta-section {
+        background: url("/wp-content/themes/applovin/images/illo-about-cta.png") no-repeat, colors.$color__gray-100;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .purple-gradient {
+        background: linear-gradient(90deg, #6441e2 0%, #00b6e0 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }    
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+}

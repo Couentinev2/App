@@ -1,0 +1,308 @@
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 32px 80px 32px;
+}
+
+.title {
+    font-family: var(--font-wt-Black);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: var(--font-wt-Medium);
+    margin: 36px 0 8px 0;
+    line-height: 40px;
+}
+
+.title-con {
+    text-align: center;
+    padding-bottom: 48px;
+    margin: auto;
+}
+
+.sub-header {
+    font-size: 18px;
+    margin-bottom: 0;
+    line-height: 27px;
+}
+
+.cards-con {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+}
+
+.card {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px;
+}
+
+.logo {
+    padding-bottom: 32px;
+}
+
+.content p {
+    padding-bottom: 32px;
+    margin-bottom: 0;
+    line-height: 24px;
+}
+
+.applovin {
+    background: url("/wp-content/uploads/2024/04/brand_applovin_background.png") no-repeat left top / 656px auto;
+}
+
+.adjust {
+    background: url("/wp-content/uploads/2024/04/brand_adjust_background.png") no-repeat left top / 656px auto;
+}
+
+.wurl {
+   background: url("/wp-content/uploads/2024/04/brand_wurl_background.png")  no-repeat left top / 656px auto;
+}
+
+.btn-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #181625;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden; 
+    text-decoration: none; 
+    transition: box-shadow 0.7s ease;
+    box-shadow: none; 
+    width: auto;
+    cursor: pointer;
+}
+
+.btn-con::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: right -100px top 130px, 
+                linear-gradient(to bottom, #181625 0%, transparent 70%), 
+                radial-gradient(ellipse at top, #181625 60%, transparent 100%),
+                radial-gradient(at right, #181625 0%, transparent 90%), 
+                linear-gradient(to right, #A15AF0 50%, #105FFB 50%);
+    opacity: 0;
+    transition: opacity 1s ease; 
+    border-radius: 8px; 
+    z-index: 0; 
+}
+
+.btn-con:hover::after {
+    opacity: 1; 
+}
+
+.btn-con:hover {
+    box-shadow: 0px 12px 40px -12px rgba(16, 95, 251, 0.50);
+}
+
+.btn-con a {
+    position: relative; 
+    z-index: 1; 
+    padding: 14px 21px;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-wt-Heavy);
+    display: flex;
+    align-items: center;
+}
+
+.btn-con a span {
+    padding: 4px 8px 0 8px;
+}
+
+.btn-con a:hover {
+    opacity: 1;
+}
+
+
+@media only screen and (min-width : 481px) {
+    .wrapper {
+        padding: 120px 56px 96px 56px;
+    }
+
+    .btn-con {
+        width: fit-content;
+    }
+
+    h1 {
+        margin: 42px 0 12px 0;
+        line-height: 58px;
+    }
+
+    .title-con {
+        text-align: center;
+        padding-bottom: 64px;
+        margin: auto;
+    }
+
+    .sub-header {
+        font-size: 21px;
+        line-height: 32px;
+    }
+
+    .cards-con {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+    }
+
+    .card {
+        height: 360px;
+        padding: 40px;
+    }
+
+    .content {
+        max-width: 280px;
+    }
+
+    .logo {
+        padding-bottom: 32px;
+    }
+
+    .content p {
+        padding-bottom: 32px;
+        line-height: 27px;
+    }
+
+    .applovin {
+    background: url("/wp-content/uploads/2024/04/brand_applovin_background.png") no-repeat center/ 722px auto;
+    }
+
+    .adjust {
+        background: url("/wp-content/uploads/2024/04/brand_adjust_background.png") no-repeat center / 722px auto;
+    }
+
+    .wurl {
+    background: url("/wp-content/uploads/2024/04/brand_wurl_background.png")  no-repeat center / 722px auto;
+    }
+}
+
+@media only screen and (min-width : 769px) {
+
+    .wrapper {
+        max-width: 800px;
+        margin: auto;
+        padding: 120px 56px;
+    }
+
+    .title-con {
+        text-align: center;
+        padding-bottom: 80px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    h1 {
+        margin: 42px 0 15px 0;
+
+    }
+
+    .applovin {
+        background: url("/wp-content/uploads/2024/04/brand_applovin_background.png") no-repeat center right -5px / 912px auto;
+    }
+
+    .adjust {
+        background: url("/wp-content/uploads/2024/04/brand_adjust_background.png") no-repeat center right -5px / 912px auto;
+    }
+
+    .wurl {
+        background: url("/wp-content/uploads/2024/04/brand_wurl_background.png")  no-repeat center right -5px / 912px auto;
+    }
+}
+
+
+
+@media only screen and (min-width : 1265px) {
+    .wrapper {
+        max-width: 1200px;
+        margin: auto;
+        padding-top: 160px;
+        padding-bottom: 120px;
+    }
+
+    .title-con {
+        text-align: center;
+        padding-bottom: 80px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    h1 {
+    line-height: 69px;
+    }
+
+
+    .cards-con {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+
+    }
+
+    .card.active {
+        width: 656px;
+    }
+
+    .card.active .content {
+        /* width: 656px; */
+        left: 0px;
+    }
+
+    .card .content {
+        left: -320px;
+        max-width: 280px;
+        width: max-content;
+        transition: left 0.5s ease-in-out, width 0.5s ease-in-out;
+    }
+
+    .card {
+        height: 480px;
+        padding: 40px;
+        transition: width 0.5s ease-in-out, padding 0.5s ease-in-out; 
+        width: 240px; 
+        overflow: hidden; 
+    }
+
+    .card:hover, .card.active {
+    width: calc(100% + 30px); /* Example to slightly increase size, adjust as needed */
+    /* You might want to use a different strategy if cards are supposed to expand more significantly */
+    }
+
+    .card:hover, .card.active {
+        width: 656px;
+    }
+
+    .applovin {
+        background: url("/wp-content/uploads/2024/04/brand_applovin_background.png") no-repeat right -36px top -65px / 756px auto;
+        
+    }
+
+    .adjust {
+        background: url("/wp-content/uploads/2024/04/brand_adjust_background.png") no-repeat right -36px top -65px / 756px auto;
+        
+    }
+
+    .wurl {
+        background: url("/wp-content/uploads/2024/04/brand_wurl_background.png") no-repeat right -36px top -65px / 756px auto;
+        
+    }
+}

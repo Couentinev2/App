@@ -1,0 +1,64 @@
+{
+  "name": "applovin",
+  "version": "1.0.0",
+  "description": "",
+  "author": "AppLovin",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "homepage": "https://github.com/AppLovin/Mktg-AppLovin/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AppLovin/Mktg-AppLovin"
+  },
+  "bugs": {
+    "url": "https://github.com/AppLovin/Mktg-AppLovin/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "critical": "^7.2.1",
+    "css-minify": "^2.0.0",
+    "eslint": "^9.17.0",
+    "glob": "^11.0.0",
+    "gulp": "^5.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^6.0.0",
+    "pa11y": "^8.0.0",
+    "postcss": "^8.4.35",
+    "sass": "^1.81.0",
+    "sharp": "^0.33.5",
+    "stylelint": "^16.10.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-tailwindcss": "^0.0.7",
+    "stylelint-scss": "^6.10.0",
+    "tailwindcss": "^3.4.4"
+  },
+  "scripts": {
+    "css:watch:tailwind": "npx tailwindcss -i ./tailwind.css -o ./tailwind_output.css --watch",
+    "css:watch:scss": "sass --watch sass:./ --source-map --style expanded",
+    "lint:scss": "stylelint 'sass/**/*.scss' --fix",
+    "css:prefix": "gulp autoprefixer",
+    "css:minify": "css-minify --file ./dist/css/style.pre.css -o ./dist/css/ && mv ./dist/css/style.pre.min.css ./style.min.css",
+    "css:minify-legacy": "css-minify --file ./dist/css/legacy-style.pre.css -o ./dist/css/ && mv ./dist/css/legacy-style.pre.min.css ./legacy-style.min.css",
+    "css:minify:tailwind": "css-minify --file ./dist/css/tailwind_output.pre.css -o ./dist/css/ && mv ./dist/css/tailwind_output.pre.min.css ./dist/css/tailwind_output.min.css",
+    "css:build": "npm run css:prefix && npm run css:minify && npm run css:minify-legacy && npm run css:minify:tailwind",
+    "js:lint": "gulp lint:js",
+    "js:babel": "gulp babel",
+    "js:minify": "node ./node_modules/gulp/bin/gulp.js minifyIndividualJs",
+    "js:build": "npm run js:lint && npm run js:babel && npm run js:minify",
+    "build:prod": "npm run css:build && npm run js:build",
+    "accessibility:check": "npx gulp accessibility",
+    "lighthouse-mobile:check": "lighthouse https://applovin.com --output html --output-path ./report-mobile.html",
+    "lighthouse-desktop:check": "lighthouse https://applovin.com --output html --output-path ./report-desktop.html --preset=desktop"
+  },
+  "dependencies": {
+    "lazysizes": "^5.3.2"
+  }
+}

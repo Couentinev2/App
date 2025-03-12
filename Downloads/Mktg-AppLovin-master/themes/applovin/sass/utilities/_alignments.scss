@@ -1,0 +1,39 @@
+@use "../abstracts/mixins/mixins";
+
+.alignleft {
+	/*rtl:ignore*/
+	float: left;
+
+	/*rtl:ignore*/
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.alignright {
+	/*rtl:ignore*/
+	float: right;
+
+	/*rtl:ignore*/
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+
+	@include mixins.center-block;
+
+	margin-bottom: 1.5em;
+}
+
+.wrapper {
+    @include mixins.wrapper(1264px, 64px 32px);
+
+    @include mixins.mq('mobile') {
+      @include mixins.wrapper(1312px, 80px 56px);
+    }
+
+    @include mixins.mq('laptop') {
+      @include mixins.wrapper(1312px, 96px 56px);
+    }
+  }

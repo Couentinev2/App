@@ -1,0 +1,106 @@
+name: Test Build Process
+
+on:
+  workflow_dispatch:  # Manual trigger only for local testing
+
+jobs:
+  test:
+    name: Test Production Build
+    runs-on: ubuntu-latest
+    environment: test
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Cache Node.js Modules
+      uses: actions/cache@v3
+      with:
+        path: themes/applovin/node_modules
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('themes/applovin/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-modules-
+
+    - name: Set Up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install Dependencies
+      working-directory: themes/applovin
+      run: npm install
+
+    - name: Build CSS Files
+      working-directory: themes/applovin
+      run: |
+        echo "Building CSS files..."
+        npm run css:build > /dev/null 2>&1 || { echo "CSS build failed"; exit 1; }
+        echo "CSS build completed successfully"
+
+    - name: List Files After Build
+      run: ls -l themes/applovin/dist/css/
+
+    - name: Cleanup All Sourcemap and Prefixed Files
+      run: rm -f themes/applovin/dist/css/*.pre.css themes/applovin/dist/css/*.pre.map themes/applovin/dist/css/*.map
+
+    - name: List Files After Cleanup
+      run: ls -l themes/applovin/dist/css/
+
+    - name: Check Theme Root style.min.css File
+      working-directory: themes/applovin
+      run: |
+        echo "Checking style.min.css in theme root folder..."
+        if [ -f style.min.css ]; then
+          echo "File exists. Details:"
+          ls -l style.min.css
+        else
+          echo "style.min.css does not exist in the theme root folder!"
+          exit 1
+        fi
+
+    - name: GZip CSS Files
+      run: |
+        echo "Compressing CSS files in theme root..."
+        gzip -9 -k themes/applovin/*.css
+        echo "Compressing CSS files in dist folder..."
+        gzip -9 -k themes/applovin/dist/css/*.css
+
+    - name: Build JS Files
+      working-directory: themes/applovin
+      run: npm run js:build
+
+    - name: List JS Files After Build
+      run: ls -l themes/applovin/dist/js/
+
+    - name: GZip JS Files
+      run: |
+        echo "Compressing JS files in theme root..."
+        gzip -9 -k themes/applovin/*.js
+        echo "Compressing JS files in dist folder..."
+        gzip -9 -k themes/applovin/dist/js/*.js
+        echo "Compressing JS files in lib folder..."
+        gzip -9 -k themes/applovin/dist/js/lib/*.js
+
+    - name: Verify Gzipped Files
+      run: |
+        echo "Theme root gzipped files:"
+        ls -l themes/applovin/*.gz
+        echo "Dist folder gzipped files:"
+        ls -l themes/applovin/dist/css/*.gz
+        ls -l themes/applovin/dist/js/*.gz
+        ls -l themes/applovin/dist/js/lib/*.gz
+
+    - name: Gzip Compression Stats
+      run: |
+        echo "Theme root compression stats:"
+        gzip -l themes/applovin/*.gz
+        echo "Dist folder compression stats:"
+        gzip -l themes/applovin/dist/css/*.gz
+        gzip -l themes/applovin/dist/js/*.gz
+        gzip -l themes/applovin/dist/js/lib/*.gz
+    - name: Generate Version File
+      working-directory: themes/applovin
+      run: |
+        echo "Generating version file..."
+        GIT_COMMIT=$(git rev-parse --short HEAD)
+        echo $GIT_COMMIT > version.txt
+        echo "Version generated: $GIT_COMMIT" 

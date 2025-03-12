@@ -1,0 +1,1045 @@
+/* Studios Page styles (Main and Individual) */
+
+#page-studios {
+  color: #fff;
+}
+.gradient-bg-ink {
+  background: linear-gradient(180deg, rgba(30, 28, 42, 1) 0%, rgba(41, 45, 61, 1) 100%);
+}
+#page-studios .hero {
+  background-image: url('/wp-content/themes/applovin/images/hero-bg-studios-gradient.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 875px;
+}
+#page-studios .hero .inner-wrap {
+  z-index: 100;
+}
+.studios-illo-bg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.illo-bg-word-tiles {
+  top: 130px;
+  right: 35px;
+  width: 25%;
+  max-width: 235px;
+}
+.illo-bg-jewels {
+  top: 80px;
+  right: 300px;
+  width: 15%;
+  max-width: 150px;
+}
+.illo-bg-gow-soldier {
+  top: 20px;
+  left: 0;
+  width: 25%;
+  max-width: 320px;
+}
+.illo-bg-multi-characters {
+  width: 90%;
+  max-width: 830px;
+  margin: 0 auto;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.studios-illo-bg.wave-mask-bottom {
+  left: 0;
+  bottom: -1px;
+  transform: none;
+}
+#page-studios .hero p {
+  max-width: 85%;
+  margin: 1em auto;
+  font-size: 21px !important;
+}
+.studios-outer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 6%;
+  grid-row-gap: 85px;
+  margin: auto;
+  width: 95%;
+}
+.studios-pod {
+  padding: 0;
+}
+.studios-logo-header {
+  padding: 15%;
+  background-color: #313340;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  z-index: 50;
+}
+.studios-logo-header img {
+  z-index: 50;
+}
+.studio-bg-thumb {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(1);
+  transition: transform 1s, opacity 1s;
+  z-index: 10;
+}
+.studios-logo-header:hover .studio-bg-thumb {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.studios-pod p {
+  margin: 1.5em auto 0;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.35em;
+}
+#page-studios {
+  overflow: hidden;
+}
+#page-studios .hero {
+  color: #fff;
+  min-height: 800px;
+}
+#page-studios .hero h1, #page-studios .hero h5 {
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+#page-studios .hero h1 {
+  margin: 0.25em auto 0.5em;
+}
+
+.studios-hero-bg {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  width: 950px;
+  -webkit-animation: studios-hero-blob 45s linear infinite both;
+  animation: studios-hero-blob 45s linear infinite both;
+}
+@-webkit-keyframes studios-hero-blob {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes studios-hero-blob {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.filler-row {
+  height: 300px;
+}
+.trigger-visible {
+  opacity: 1;
+}
+.trigger-invisible {
+  opacity: 0;
+}
+/* Individual Studios Pages */
+.studioPage {
+  background-color: #fff;
+}
+.studio {
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+.hero-main {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 450px;
+  background-color: #1e1c2a;
+}
+.default-logo img {
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+}
+.studio-description img {
+  right: 0%;
+  max-height: 430px;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+}
+.studio-description {
+  background-color: #292d3d;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 80px 0 120px;
+  min-height: 450px;
+}
+.studio-data {
+  min-height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: 2;
+  top: -80px;
+  position: relative;
+  width: 85%;
+}
+.studio-data p {
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+}
+.studio-data .wrap {
+  max-width: 100%;
+}
+.bio-studio {
+  color: white;
+  width: 100%;
+}
+.nb-studio {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 4em 0;
+}
+.nb-studio p {
+  text-align: center;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  font-size: 21px !important;
+  margin: 0;
+}
+.nb-studio h2 {
+  text-align: center;
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  font-size: 60px;
+  margin: 0 0 0.2em;
+}
+.nb-studio h3 {
+  text-align: center;
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  font-size: 36px;
+  margin: 0 0 0.4em;
+}
+.nb-studio span {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.bio-studio h3 {
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  text-align: center;
+  width: 75%;
+}
+.bio-studio h6 {
+  padding-top: 15px;
+  text-align: center;
+  width: 65%;
+  margin: 0.5em auto;
+}
+.default-city-description {
+  left: 60%;
+  width: 40%;
+  margin: 100px 0;
+}
+.default-city-description p {
+  margin-bottom: 0;
+  font-size: 21px !important;
+}
+.hero-map {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -80px;
+  margin-bottom: -80px;
+}
+#container {
+  top: -20px;
+  position: relative;
+}
+div.studio-description {
+  display: block;
+}
+div.desktop {
+  display: flex;
+}
+div.iphone {
+  display: none
+}
+div.desktop-data {
+  display: block;
+}
+div.iphone-data {
+  display: none
+}
+.desktop-studio-photo {
+  display: block;
+  max-width: 1230px;
+}
+.iphone-studio-photo {
+  display: none;
+}
+#container-bis {
+  position: relative;
+  padding: 0 0 80px;
+}
+div.studio-description-bis {
+  display: block;
+  min-height: 450px;
+}
+.studio-description-bis {
+  background-position: center
+}
+div.hero-photo {
+  display: block;
+  min-height: unset;
+  padding: 0;
+}
+div.studio-short {
+  top: -120px;
+  width: 85%;
+  max-width: 920px;
+  margin: 0 auto -120px;
+  padding: 60px 80px;
+  min-height: unset;
+}
+.studio-games {
+  background-color: #1e1c2a;
+  align-items: normal;
+}
+.hero-photo img {
+  width: 100%;
+  margin: 80px auto 40px;
+}
+.hero-photo a {
+  text-decoration: none;
+  color: #00b6e0;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  display: block;
+  text-align: center
+}
+.hero-photo.minimal a {
+  margin: 2em auto 2.5em;
+  display: inline-block;
+}
+.hero-photo a::after {
+  width: 1em;
+  height: 0.75em;
+  content: "";
+  display: inline-block;
+  background: url('/wp-content/themes/applovin/images/link-icon-arrow-blue-2019.svg') no-repeat;
+  position: relative;
+  top: 1px;
+  left: 0.5em;
+}
+.history-studio {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.history-studio h3 {
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  font-size: 26px;
+  margin: 0 auto 1em;
+}
+.history-studio p {
+  font-size: 21px !important;
+}
+.history-studio p:last-child {
+  margin-bottom: 0;
+}
+.games-outer-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: none;
+}
+.games-outer-wrapper > div {
+  max-width: 240px;
+  padding: 0;
+}
+.game-pod {
+  display: block;
+  margin: 1%;
+  overflow: hidden;
+}
+.game-icon {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s;
+  opacity: 1;
+}
+.game-pod:hover .game-icon {
+  opacity: 0.75;
+}
+.game-shader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.1) 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.game-details-wrap {
+  padding: 0 0 0.5vw;
+}
+.game-shader h6 {
+  margin: 7% 10% 0.5%;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+.game-shader a.studio-link {
+  font-size: 0.57vw;
+  font-family: var(--font-wt-Light);
+  font-weight: 400;
+  color: #fff;
+  display: inline-block;
+}
+.game-shader a.studio-link:hover {
+  text-decoration: underline;
+}
+#page-games .featured-pod-wrap {
+  margin: 75px auto 0;
+}
+.game-pod .app-button-wrap {
+  transition-property: all, opacity, height;
+  transition-duration: 0.2s, 0.2s, 0.5s;
+  opacity: 0;
+  width: 80%;
+  justify-content: center;
+  height: 0;
+display: flex;
+  margin: 0.5em auto;
+  }
+.game-pod:hover .app-button-wrap {
+  opacity: 1;
+  height: 40px;
+}
+.game-pod .app-button-wrap a img {
+  height: 38px;
+}
+.app-button-wrap a:nth-child(n+2) {
+  margin-left: 5%;
+}
+
+
+.game-pod .highlight-caption {
+  width: 80%;
+  margin: 0 auto 0.5em;
+  transition: all 0.2s;
+  opacity: 0;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  font-size: 0.95vw;
+  line-height: 1.2em;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.65);
+}
+.game-pod:hover .highlight-caption {
+  opacity: 1;
+}
+.game-list {
+  color: white;
+  width: 100%;
+}
+.game-list h3 {
+  margin: 1em auto 0.75em;
+}
+.game-list p {
+  margin: 1em auto 1.5em;
+}
+.see-more {
+  background-color: transparent;
+  color: #00b6df;
+  border-style: solid;
+  margin-top: 2em;
+}
+.default-studio-game {
+  margin: 1em auto;
+  letter-spacing: 1px;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+hr.line1 {
+  border: 4px solid;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.default-studio-game a {
+  font-size: 12px;
+}
+.link-small-studio {
+  margin: 2em auto 0;
+}
+
+.wrap {
+    width: 95%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:2000px) {
+  #page-studios .hero {
+    min-height: 1000px;
+  }
+  .studios-illo-bg.wave-mask-bottom {
+    max-height: 350px;
+  }
+}
+@media screen and (max-width:2000px) {
+  .game-shader a.studio-link {
+    font-size: 0.85vw;
+  }
+}
+@media screen and (max-width:1440px) {
+  .hq-title {
+    margin-top: -15px;
+  }
+  .hero-map {
+    background-size: cover;
+    background-position: 30%;
+  }
+  .studio-description img {
+    max-height: 350px;
+  }
+  .nb-studio span {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+@media screen and (max-width:1024px) {
+  .studios-outer-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 6%;
+    grid-row-gap: 60px;
+    padding-top: 40px;
+  }
+  .studio.hero-photo {
+    min-height: unset;
+  }
+  .game-shader a.studio-link {
+    font-size: 1.7vw;
+  }
+  .default-logo img {
+    width: 40%;
+  }
+  .studio-short .inner-wrap-600 {
+    width: 100%;
+    padding: 0;
+  }
+  .default-city-description {
+    left: 55%;
+    width: 45%;
+  }
+  .default-city-description p {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width:940px) {
+  .studio-data {
+    left: 0%;
+    right: 0%;
+    width: 100%
+  }
+  .studio-description {
+    padding: 60px 0 80px;
+  }
+  .studio-description.no-stats {
+    padding: 60px 0 0;
+  }
+  .studio-description img {
+    right: unset;
+    max-height: 250px;
+    width: auto;
+    position: relative;
+    bottom: 0;
+    margin: 2em auto 0;
+  }
+  div.desktop-data {
+    display: none;
+  }
+  div.iphone-data {
+    display: block;
+  }
+  div.studio-data {
+    position: relative;
+  }
+  .bio-studio h3 {
+    width: 95%;
+  }
+  .bio-studio h6 {
+    width: 85%;
+  }
+  .hero-map {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width:835px) {
+  .history-studio h3 {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width:768px) {
+  .illo-bg-word-tiles, .illo-bg-jewels, .illo-bg-gow-soldier {
+    display: none;
+  }
+  .studios-illo-bg.wave-mask-bottom {
+    width: 150%;
+    max-width: 200%;
+    left: -30%;
+  }
+  .studios-outer-wrapper {
+    grid-row-gap: 40px;
+  }
+  #page-studios .hero {
+    height: 70vh;
+    min-height: 700px;
+  }
+  .illo-bg-multi-characters {
+    width: 80%;
+  }
+  #page-studios .hero > .inner-wrap {
+    width: 100%;
+  }
+  .studios-pod p {
+    font-size: 14px !important;
+  }
+  #page-studios .hero p {
+    font-size: 18px !important;
+  }
+  .hero-main {
+    min-height: 350px;
+  }
+  .game-pod .game-details-wrap {
+    opacity: 1;
+  }
+  .game-pod .app-button-wrap {
+    opacity: 1;
+    height: 40px;
+  }
+  .nb-studio {
+    justify-content: space-between;
+  }
+  .nb-studio h3 {
+    font-size: 32px;
+  }
+  .nb-studio h2 {
+    font-size: 50px;
+  }
+  .nb-studio p {
+    font-size: 16px !important;
+  }
+  .history-studio p {
+    font-size: 16px !important;
+  }
+  .studio-data .mobile-studio {
+    display: none
+  }
+  .default-city-description p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width:640px) {
+  #page-studios .hero {
+    min-height: 580px;
+  }
+  .studios-outer-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 6%;
+    grid-row-gap: 40px;
+    width: 100%;
+  }
+  .studios-illo-bg.wave-mask-bottom {
+    width: 200%;
+    left: -10%;
+  }
+  .illo-bg-multi-characters {
+    bottom: -40px;
+  }
+  .gradient-bg-ink {
+    padding: 60px 0;
+  }
+  #page-studios .hero p {
+    max-width: unset;
+    font-size: 16px !important;
+  }
+  .studios-pod p {
+    margin: 1em auto 0;
+    font-size: 15px !important;
+    text-align: center;
+  }
+  .games-outer-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .studio-inner-wrap {
+    width: 100%;
+  }
+  .game-shader a.studio-link {
+    font-size: 2.6vw;
+  }
+  #games-filters {
+    flex-direction: column;
+  }
+  #games-filters > div {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 320px;
+    margin: 2.5% auto;
+    text-align: center;
+  }
+  div.studio-short {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 40px;
+  }
+  .studio-description {
+    min-height: 350px;
+  }
+  .default-city-description {
+    padding-top: 230px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .history-studio p {
+    font-size: 16px !important;
+  }
+  .default-city-description p {
+    font-size: 14px !important;
+  }
+  #container-bis {
+    padding: 0 0 40px;
+  }
+  div.desktop {
+    display: none;
+  }
+  div.iphone {
+    display: block;
+  }
+  .hero-photo img {
+    margin: 40px auto 20px;
+  }
+  .desktop-studio-photo {
+    display: none;
+  }
+  .iphone-studio-photo {
+    display: block;
+  }
+  .default-logo img {
+    width: 55%;
+  }
+  div.studio-description-bis {
+    min-height: 450px;
+  }
+  div.studio-short {
+    top: 0;
+  }
+  .hero-map {
+    background-position: initial;
+  }
+  div.studio-description-bis {
+    min-height: 180px;
+  }
+  #page-studios .hero h1 {
+    margin: 0.25em auto 0.75em;
+  }
+  .game-pod {
+    margin: 2.5%;
+  }
+  .hero-main {
+    min-height: 300px;
+  }
+  .studio-data {
+    min-height: unset;
+  }
+  .nb-studio {
+    padding: 2em 0;
+    justify-content: space-around;
+  }
+  .nb-studio h2 {
+    margin-bottom: 0;
+    font-size: 36px;
+  }
+  .studio-data p {
+    font-size: 14px !important;
+  }
+  .bio-studio h3 {
+    font-size: 20px;
+  }
+  .bio-studio h6 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:480px) {
+  .studios-pod p {
+    font-size: 12px !important;
+  }
+  .game-shader a.studio-link {
+    font-size: 5.1vw;
+  }
+  .history-studio h3 {
+    font-size: 18px;
+  }
+  .hero-photo a {
+    font-size: 13px;
+  }
+  .default-city-description {
+    padding-top: 180px;
+  }
+}
+@media screen and (max-width:320px) {
+  .studios-outer-wrapper {
+    grid-template-columns: 1fr;
+    width: 75%;
+  }
+}
+
+
+.games-filter-outer-wrap {
+  background-color: #000;
+}
+
+.page-games.hero-intro h1 {
+  color: #eb3945;
+}
+
+.hit-games-row {
+    background-image: url('/wp-content/themes/applovin/images/game-wave-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    padding-bottom: 0;
+}
+
+.home-wave-top {
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+}
+
+.phone-mask {
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    right: auto;
+    bottom: auto;
+    z-index: 100;
+    width: 235px;
+    height: 470px;
+    border: 10px solid #fff;
+    border-radius: 36px;
+    box-shadow: 0 0 50px 10px rgba(0,0,0,0.4);
+    -webkit-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    z-index: 200;
+}
+
+.phone-notch {
+    width: 110px;
+    height: 17px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: #fff;
+    z-index: 200;
+}
+
+.slider-img{
+  border-radius: 36px;
+  max-width:227px;
+  margin: 0 auto;
+}
+.sprite-home-bingo {
+    top: -20px;
+    left: 30px;
+    max-width: 225px;
+}
+.sprite {
+    position: absolute;
+}
+.hero > .inner-wrap {
+    position: absolute;
+    max-width: 100%;
+}
+.studios-overview .hero {
+    background-image: url('/wp-content/themes/applovin/images/photo-bg-home-full-2020.jpg');
+    color: #fff;
+    background-position: 15% center;
+}
+.hero h1 {
+    line-height: 1.15em;
+    margin: 0.65em auto 0.25em;
+}
+h1 {
+    font-family: var(--font-wt-Black);
+    font-weight: 750;
+}
+
+.hero h1 {
+    width: 85%;
+    max-width: 850px;
+    position: relative;
+    z-index: 10;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+.hit-games-row h4 {
+    color: #fff;
+    margin: 0 auto 1em;
+    position: relative;
+    z-index: 10;
+}
+
+#game-slider-wrap {
+    margin: 160px 0 0;
+}
+
+@media screen and (max-width: 1200px){
+.sprite-home-bingo {
+    top: 0px;
+    left: -10%;
+    width: 20%;
+}
+}
+@media screen and (max-width: 1440px){
+.sprite-home-bingo {
+    width: 15%;
+}
+}
+
+.row{
+  overflow: initial;
+}
+
+.sprite-home-piggy {
+    top: 220px;
+    left: 0;
+    max-width: 247px;
+}
+
+.games-bg-video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.sprite-home-fruit {
+    top: -90px;
+    right: 110px;
+    max-width: 180px;
+}
+
+.sprite-home-sweetesc {
+    top: 130px;
+    right: 20px;
+    max-width: 250px;
+}
+
+.sprite-home-gem {
+    top: 290px;
+    right: 280px;
+    max-width: 75px;
+}
+
+@media screen and (max-width: 1024px){
+h1 {
+    font-size: 54px;
+}}
+
+@media screen and (max-width: 768px){
+h1 {
+    font-size: 50px;
+}
+
+
+}
+
+@media screen and (max-width: 768px){
+#page-home .hero {
+    background-image: url('/wp-content/themes/applovin/images/photo-bg-home-mobile-2020.jpg');
+    background-position: center center;
+}
+.featured-pod-wrap {
+    flex-direction: column;
+}
+.sprite{
+  display: none
+}
+}
+
+@media screen and (max-width: 1440px){
+.sprite-home-piggy {
+    width: 15%;
+}
+.sprite-home-sweetesc {
+    width: 15%;
+}
+.sprite-home-fruit {
+    width: 15%;
+}
+
+}
+
+@media screen and (max-width: 1200px){
+.sprite-home-piggy {
+    display: none;
+}
+
+.row-full{
+  padding: 0!important
+}
+}
+
+@media screen and (max-width: 480px){
+h1 {
+    font-size: 32px;
+}
+
+}
+
+#page-studios .hero > .inner-wrap {
+  top: initial!important;
+}

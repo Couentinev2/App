@@ -1,0 +1,35 @@
+.inner-wrap-1200 {
+	margin: auto;
+}
+
+.single-section{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+
+.single-section .inner-wrap-1200{
+	margin: auto;
+}
+.single-grid ul {
+	columns: 1;
+}
+
+.sub-title-main{
+	font-size: 14px;
+	color: #333333;
+	font-family: var(--font-wt-Light);
+}
+
+@media only screen and (max-width: 1000px) {
+.single-grid ul {
+  columns: 2;
+  padding-left: 0;
+}
+}
+
+@media only screen and (max-width: 760px) {
+.single-grid ul {
+  columns: 1;
+}
+}

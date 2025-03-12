@@ -1,0 +1,266 @@
+/* About Us page */
+#lava-about {
+  position: absolute;
+  top: 0;
+  left: -350px;
+  max-width: 750px;
+}
+#page-about .hero {
+  background-image: url('../images/photo-about-hero.jpg');
+  background-size: 45%;
+  background-position: right center;
+  max-width: 1440px;
+  text-align: left;
+  padding: 0;
+  overflow:visible;
+}
+#page-about .content-row:nth-child(2) {
+  padding: 0 0 100px 0
+}
+#page-about .hero h1 {
+  color: #12e3a4;
+  font-size: 26px;
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+}
+#page-about .hero h2 {
+  font-size: 50px;
+  font-family: var(--font-wt-Black);
+  font-weight: 750;
+  background: #12e3a4;
+  background: linear-gradient(180deg, rgba(18, 227, 163, 1) 0%, rgba(0, 182, 224, 1) 100%);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.25em;
+}
+#page-about .tagline-panel {
+  width: 60%;
+  padding: 0.5em 2em 2em 30px;
+  margin: 0 0 0 5%;
+  background-color: #fff;
+  box-shadow: 30px 30px 0px 0px rgba(111, 111, 230, 1);
+}
+#page-about .office-hero {
+  background-image: url('../images/photo-about-office-full.jpg');
+  background-position: 90% center;
+  background-size: cover;
+}
+#page-about .office-hero.full-height {
+  height: 90vh;
+}
+.growth-pods-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 80px auto 0;
+}
+.growth-pods-wrap > div {
+  flex: 0 1 30%;
+  margin: 0 auto 3em;
+}
+.growth-pods-wrap > div > img {
+  max-height: 100px;
+  margin: auto;
+}
+.growth-pods-wrap h2 {
+  font-family: var(--font-wt-Heavy);
+  font-weight: 700;
+  line-height: 1em;
+  margin: 1em auto 0;
+}
+.growth-pods-wrap h6 {
+  color: #666;
+  margin: 0.25em auto;
+}
+.team-photo-strip {
+  background-image: url('../images/photo-about-bottom.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 270px;
+}
+
+.board-link{
+  color: #00b6e0;
+  font-size: 16px;
+  font-family: var(--font-wt-Light);
+
+
+}
+@media screen and (max-width: 1400px) {
+  #page-about .hero h2 {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #page-about .hero {
+    background-image: url('../images/photo-about-hero-midsize.jpg');
+    background-size: 100%;
+    background-position: center bottom;
+    height: auto;
+    min-height: 105vw;
+  }
+  #page-about .content-row:nth-child(2) {
+    padding: 100px 0
+  }
+  #page-about .hero h2 {
+    font-size: 5.5vw;
+  }
+  #page-about .tagline-panel {
+    width: 80%;
+    padding: 5%;
+    margin: -5% auto 0;
+    box-shadow: 20px 20px 0px 0px rgba(111, 111, 230, 1);
+  }
+  #page-about .office-hero.full-height {
+    max-height: 50vh;
+    min-height: 400px;
+    background-attachment: local;
+  }
+}
+@media screen and (max-width: 640px) {
+  #page-about .hero {
+    background-image: unset;
+  }
+  #page-about .about-sub-hero-row {
+    padding: 0 0 100px !important;
+  }
+  .about-sub-hero-row::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 50vw;
+    background-image: url('../images/photo-about-hero-midsize.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin: 0 auto 100px;
+  }
+  #lava-about {
+    left: -230px;
+    width: 580px;
+  }
+  #page-about .hero h1 {
+    font-size: 18px;
+  }
+  #page-about .hero h2 {
+    font-size: 6vw;
+  }
+  #page-about .tagline-panel {
+    width: 100%;
+    text-align: center;
+    padding: 5% 10% 20%;
+    margin: 45% auto 0;
+    border-bottom: 20px solid rgba(111, 111, 230, 1);
+    box-shadow: none;
+  }
+  .growth-pods-wrap > div > img {
+    max-height: 90px;
+  }
+  .growth-pods-wrap > div {
+    flex: 0 1 34%;
+    margin: 0 auto;
+  }
+  .growth-pods-wrap > div:nth-child(n+3) {
+    margin: 3em auto 0;
+  }
+  .growth-pods-wrap h2 {
+  margin: 0.75em auto 0;
+  }
+  .growth-pods-wrap h6 {
+    font-size: 14px;
+  }
+  #page-about .promo-link {
+    font-size: 16px;
+  }
+  .team-photo-strip {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 37vw;
+  }
+}
+
+/* AppLovin Values Panels */
+#our-values .inner-wrap {
+display: grid;
+grid-template-columns: repeat(2, auto);
+grid-template-rows: 1fr;
+grid-column-gap: 120px;
+grid-row-gap: 0px;
+}
+
+#our-values .tt-values {
+    max-width: 230px;
+}
+
+.values-pod h3 {
+    font-family: var(--font-wt-Medium);
+    font-weight: 550;
+    max-width: 100%;
+    text-align: left;
+
+}
+
+.values-pod.value-active p {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.values-pod {
+    display: flex;
+    padding: 2.5% 0 2em;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    flex: 1 1 20%;
+}
+
+.illo-values {
+    width: 100%;
+    max-width: 64px;
+    height: auto;
+    display: inline-block;
+
+}
+#values-wrapper  {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 16px;
+grid-row-gap: 0px;
+}
+
+.values-pod div {
+    margin: auto 0;
+    padding-left: 16px;
+}
+
+
+@media screen and (max-width:1024px) {
+#our-values .inner-wrap {
+display: block;
+
+}
+
+#our-values .tt-values {
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 40px;
+}
+}
+
+@media screen and (max-width:640px) {
+#values-wrapper {
+    display: block;
+}
+
+.values-pod {
+    padding: 0;
+    padding-bottom: 24px;
+}
+
+.values-pod:last-child{
+    padding-bottom: 0;
+}
+}

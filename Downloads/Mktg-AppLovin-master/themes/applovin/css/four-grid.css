@@ -1,0 +1,136 @@
+.four-section {
+    padding:  96px 120px 96px 120px;
+    background-color: #181625;
+    color:  #FFFFFF;
+}
+
+.double-grid{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr; 
+  grid-column-gap: 32px;
+  grid-row-gap: 0px;
+  align-items: center;
+  height: 100%;
+}
+
+
+.double-one,  .double-two,  .double-three{
+  margin-bottom: 80px;
+}
+.inner-wrap-1200{
+  margin:  auto;
+} 
+
+.four-intro .div1-double  { grid-area: 1 / 1 / 2 / 2; }
+.four-intro .div2-double { grid-area: 1 / 2 / 2 / 3; } 
+
+.four-section .div1-double{
+    padding:0 48px;
+}
+
+.four-section .div2-double{
+    padding:0 48px;
+}
+
+.double-grid ul{
+    padding: 0;
+}
+
+.double-grid ul li{
+    background: url(/wp-content/themes/applovin/images/bullet-check.svg) no-repeat left center;
+    padding: 5px 10px 5px 40px;
+    list-style: none;
+    vertical-align: middle;
+}
+
+li::marker {
+    font-size: 10px;
+}
+
+.four-intro{
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    margin-bottom: 80px;
+}
+.four-intro h1{
+    margin-top: 0;
+}
+
+.four-section .grid-image {padding: 0}
+.four-section .grid-image img {width: 100%;
+margin: auto;}
+
+@media screen and (max-width: 1000px) {
+.four-section .div2-double{
+    padding: 0;
+}
+
+.grid-image img{ 
+    margin: auto }
+
+.grid-text ul {
+    text-align: left;
+      column-count: 2;
+}
+    .grid-text {
+  padding-left: 0px;
+}
+.grid-image{
+  padding-left: 0px;
+  }
+
+   .four-section {
+        padding:  80px 56px 80px 56px;
+    }
+
+    .div1-double{
+        padding-right: 0}
+
+        .single-one .grid-text{
+            margin-left: 0;
+        }
+        .single-grid{
+            grid-template-columns: initial;
+        }
+
+.double-one, .double-two, .double-three {
+  margin-bottom: 40px;
+}
+.double-image{
+    margin-bottom: 40px;
+}
+.four-section .grid-text{
+    text-align: left;
+}
+.four-section .div1-double {
+  padding: 0;
+}
+}
+
+
+@media screen and (max-width: 760px) {
+    .double-grid{
+grid-template-columns: 1fr;
+grid-template-rows: initial; 
+}
+
+
+.four-intro .grid-text { grid-area: 2 / 1 / 3 / 2; text-align: center ; padding-right: 0;}
+.four-intro .grid-image { grid-area: 1 / 1 / 2 / 2; padding-right: 0}
+
+    .four-section {
+        padding:  64px 32px 64px 32px;
+    }
+    .grid-text ul {
+    text-align: left;
+      column-count: 1;
+}
+
+.four-section .div2-double {
+  padding: 0 ;
+}
+
+}
+
